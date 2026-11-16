@@ -1,3 +1,54 @@
 Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4264.78it/s]
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 185/393 [00:00<00:00, 1780.38it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 2089.87it/s]
+d01 answered  calls=1 106.82s | Tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước năm 2021 là 7%. [sach-trang-tmdt-2023:p40:V2]
+d02 answered  calls=1 124.85s | Website thuocsi.vn thuộc Công ty TNHH Buymed. [sach-trang-tmdt-2023:p083:B01]
+d03 answered  calls=1 102.54s | Tỷ lệ đơn hàng được thanh toán bằng ví điện tử trên website, ứng dụng cung cấp dịch vụ (CCDV) thương mại điện tử là 7,5% vào năm 2023. [sach-trang-tmd
+d04 answered  calls=1 61.42s | Kênh tiếp nhận thông tin và cung cấp dịch vụ của tổ chức cung cấp dịch vụ tin cậy phải hoạt động liên tục 24 giờ trong ngày và 07 ngày trong tuần. Ngo
+d05 answered  calls=1 44.77s | 18,4% người dùng Internet toàn cầu sử dụng dịch vụ mua ngay trả sau. [sach-trang-tmdt-2023:p29:V2]
+d06 answered  calls=2 71.69s | Năm 2023, 44% doanh nghiệp sở hữu website, trong đó 42% website có tính năng đặt hàng trực tuyến. [sach-trang-tmdt-2023:p058:B00]
+d07 answered  calls=2 81.78s | Năm 2023, có 76.255 tài khoản doanh nghiệp trên Cổng thông tin quản lý hoạt động thương mại điện tử, tăng 16,4% so với năm 2022. [sach-trang-tmdt-2023
+d08 answered  calls=2 72.0s | Lượng người dùng Internet toàn cầu tháng 1/2023 là 5,158 triệu người, với tốc độ tăng trưởng là 1,90% so với năm 2022. [sach-trang-tmdt-2023:p28:V1]
+d09 answered  calls=1 59.28s | Trở ngại lớn nhất khi mua hàng trực tuyến mà người tiêu dùng gặp phải là "chất lượng kém so với quảng cáo", chiếm 54%. [sach-trang-tmdt-2023:p52:V1]
+d10 answered  calls=2 63.49s | Tỷ lệ doanh nghiệp sử dụng phần mềm quản lý nhân sự năm 2023 là 47%, giảm so với 57% của năm 2022, tức là giảm 10%. [sach-trang-tmdt-2023:p055:B00]
+d11 answered  calls=1 27.28s | Trong tổng số website/ứng dụng TMĐT, website/ứng dụng TMĐT bán hàng chiếm 28,8%. [sach-trang-tmdt-2023:p68:V1]
+d12 answered  calls=2 45.69s | Doanh thu bán lẻ hàng hóa trực tuyến năm 2023 của Indonesia là 62 tỷ USD, trong khi của Việt Nam là 16 tỷ USD. Do đó, doanh thu của Indonesia gấp khoả
+d13 answered  calls=2 48.01s | Sàn TMĐT du lịch trực tuyến được người tiêu dùng ưa chuộng nhất là Traveloka với tỷ lệ 50%. Doanh nghiệp vận hành sàn này là Công ty TNHH Traveloka Vi
+d14 answered  calls=2 92.79s | Năm 2023, tỷ lệ người dân Việt Nam sử dụng Internet là 78,6%. Trong số người dùng Internet, có 60,7% tham gia mua sắm trực tuyến. [sach-trang-tmdt-202
+d15 answered  calls=2 55.09s | Luật Giao dịch điện tử (sửa đổi) được Quốc hội thông qua vào ngày 22/6/2023 và có hiệu lực thi hành từ ngày 01/7/2024. [sach-trang-tmdt-2023:p014:B00]
+d16 answered  calls=1 27.24s | Bên Xử lý dữ liệu cá nhân phải lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân trong trường hợp thực hiện hợp đồng với Bên Kiểm soát dữ l
+d17 abstain   calls=1 20.93s | Không đủ bằng chứng để trả lời.
+d18 abstain   calls=1 17.37s | Không đủ bằng chứng để trả lời.
+d19 abstain   calls=1 19.83s | Không đủ bằng chứng để trả lời.
+d20 answered  calls=1 19.15s | Vào năm 2023, Việt Nam có 5,158 triệu người dùng Internet. [sach-trang-tmdt-2023:p28:V1]
+{
+  "config": "A3",
+  "method": "rerank",
+  "index": "BV",
+  "top_k": 5,
+  "max_steps": 8,
+  "read_page": true,
+  "result_chars": 7000,
+  "strict": true,
+  "tolerant": true,
+  "model": "gpt-4o-mini",
+  "split": "dev",
+  "n": 20,
+  "errors": 0,
+  "tool_use": "20/20",
+  "tool_calls_distribution": {
+    "1": 12,
+    "2": 8
+  },
+  "answered_answerable": "16/16",
+  "abstain_on_unanswerable": "3/4",
+  "context_evidence_rate": "15/16",
+  "auto_citation_on_gold_page": "16/16",
+  "median_latency_s": 57.19,
+  "avg_llm_calls": 2,
+  "total_prompt_tokens": 63852,
+  "total_completion_tokens": 3492,
+  "total_cost_usd": 0.0117,
+  "total_equiv_paid_cost_usd": 0.0117,
+  "avg_context_chars": 3250
+}

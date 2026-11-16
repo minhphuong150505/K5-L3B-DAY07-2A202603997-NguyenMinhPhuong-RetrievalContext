@@ -67,7 +67,7 @@ def retrieval_section(split: str) -> str:
 
 def agent_rows(split: str) -> list[list]:
     rows = []
-    for cfg in ("A0", "A1", "A2", "A3"):
+    for cfg in ("A0", "A1", "A2", "A3", "A4"):
         s = load(f"agent/{split}/{cfg}/summary.json")
         if not s:
             continue
@@ -183,8 +183,8 @@ def main() -> None:
                        sum(v for (s, _), v in dist.items() if s == "test")])
     sel_test = load(f"agent/test/{SELECTED}/summary_labels.json")
     headline = e(sel_test["pass_rate"]) if sel_test else "chưa chạy"
-    test_cost = sum((load(f"agent/test/{c}/summary.json") or {}).get("total_cost_usd", 0) for c in ("A0", "A1", "A2", "A3"))
-    dev_cost = sum((load(f"agent/dev/{c}/summary.json") or {}).get("total_cost_usd", 0) for c in ("A0", "A1", "A2", "A3"))
+    test_cost = sum((load(f"agent/test/{c}/summary.json") or {}).get("total_cost_usd", 0) for c in ("A0", "A1", "A2", "A3", "A4"))
+    dev_cost = sum((load(f"agent/dev/{c}/summary.json") or {}).get("total_cost_usd", 0) for c in ("A0", "A1", "A2", "A3", "A4"))
     total_cost = vis.get("extract_cost_usd", 0) + test_cost + dev_cost
 
     page = f"""<!doctype html>
@@ -276,7 +276,7 @@ footer{{margin-top:48px;color:var(--muted);font-size:13px}}
 <h4>Dev</h4>{table(AGENT_HEAD, agent_rows("dev"))}
 <h4>Test — baseline vs cấu hình đã chốt</h4>{table(AGENT_HEAD, agent_rows("test"))}
 <h4>Tỷ lệ đạt theo nhóm (ADVANCED.md: đúng + đủ + citation hỗ trợ; từ chối đúng)</h4>{group_table()}
-<p class="muted">A0 = Day 6 nguyên trạng (dense, index B, top-3). A1 = + index V + hybrid RRF, top-5. A2 = A1 + rerank + read_page + kiểm trích dẫn nguyên văn &amp; luật năm/đối tượng. A3 = A2 nhưng kiểm trích dẫn có dung sai (số phải khớp, ≥60% từ, sửa ID). Tiêu chí chọn công bố trước khi chạy test (<code>results/selection.json</code>): (1) số câu dev đạt, (2) từ chối đúng, (3) ít từ chối nhầm, (4) chi phí/thời gian.</p></section>
+<p class="muted">A0 = Day 6 nguyên trạng (dense, index B, top-3). A1 = + index V + hybrid RRF, top-5. A2 = A1 + rerank + read_page + kiểm trích dẫn nguyên văn &amp; luật năm/đối tượng. A3 = A2 nhưng kiểm trích dẫn có dung sai (số phải khớp, ≥60% từ, sửa ID). A4 = A3 + luật trình bày số (định dạng VN, điểm phần trăm, kiểm đối tượng/chỉ tiêu theo tiêu đề chunk). Tiêu chí chọn công bố trước khi chạy test (<code>results/selection.json</code>): (1) số câu dev đạt, (2) từ chối đúng, (3) ít từ chối nhầm, (4) chi phí/thời gian.</p></section>
 
 <section id="loi"><h2>6. Phân tích lỗi trên dev (trước/sau)</h2>{error_analysis()}</section>
 

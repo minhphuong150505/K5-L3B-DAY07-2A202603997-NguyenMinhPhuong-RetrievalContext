@@ -30,17 +30,17 @@ details img{max-width:100%;border:1px solid var(--line);border-radius:8px;margin
 svg text{fill:var(--ink);font-size:13px}svg .box{fill:var(--card);stroke:var(--accent);stroke-width:1.5}svg .hl{fill:var(--accent2)}svg .ln{stroke:var(--muted);stroke-width:1.5;fill:none;marker-end:url(#a)}
 footer{margin-top:48px;color:var(--muted);font-size:13px}
 </style></head><body>
-<nav><a href="#tong-quan">Tổng quan</a><a href="#du-lieu">Dữ liệu</a><a href="#kien-truc">Kiến trúc</a><a href="#benchmark">Benchmark</a><a href="#retrieval">Retrieval</a><a href="#agent">Agent</a><a href="#loi">Phân tích lỗi</a><a href="#vi-du">Ví dụ</a><a href="#kich-ban">Kịch bản demo</a><a href="#kiem-chung">Kiểm chứng</a><a href="#gioi-han">Giới hạn</a></nav>
+<nav><a href="#tong-quan">Tổng quan</a><a href="#du-lieu">Dữ liệu</a><a href="#kien-truc">Kiến trúc</a><a href="#benchmark">Benchmark</a><a href="#retrieval">Retrieval</a><a href="#agent">Agent</a><a href="#loi">Phân tích lỗi</a><a href="#vi-du">Ví dụ</a><a href="#kich-ban">Kịch bản demo</a><a href="#kiem-chung">Kiểm chứng</a><a href="#gioi-han">Giới hạn</a><a href="http://127.0.0.1:8765/">▶ Demo live</a></nav>
 <main>
 <section id="tong-quan">
 <h1>Agentic RAG trên Sách trắng TMĐT Việt Nam 2023</h1>
 <p class="lead">Day 7 · tiếp nối Day 6 (PostgreSQL + pgvector + SEA-LION-E5). Agent dùng model thật (<code>gpt-4o-mini</code>) để tự tìm bằng chứng trong tài liệu 100 trang có bảng, biểu đồ, sơ đồ; trả lời kèm citation có thể kiểm chứng, hoặc từ chối khi tài liệu không đủ thông tin. Sinh viên: TODO(SV) Nguyễn Minh Phương · 2A202603997.</p>
 <div class="kpis">
-<div class="kpi"><b>chưa chạy</b><span>Tỷ lệ đạt test (ADVANCED, cấu hình A2)</span></div>
+<div class="kpi"><b>chưa chạy</b><span>Tỷ lệ đạt test (ADVANCED, cấu hình A3)</span></div>
 <div class="kpi"><b>50</b><span>câu benchmark (dev 20 · test 30)</span></div>
 <div class="kpi"><b>173 + 119</b><span>chunk text (Day 6, B) + chunk trực quan (Day 7, V)</span></div>
 <div class="kpi"><b>4</b><span>phương pháp retrieval: dense, BM25, hybrid RRF, rerank</span></div>
-<div class="kpi"><b>$0.43</b><span>tổng chi phí API (index V + agent dev/test)</span></div>
+<div class="kpi"><b>$0.46</b><span>tổng chi phí API (index V + agent dev/test)</span></div>
 </div>
 </section>
 
@@ -48,7 +48,7 @@ footer{margin-top:48px;color:var(--muted);font-size:13px}
 <div class="grid2">
 <div class="card"><h4>Tài liệu</h4><ul>
 <li>Sách trắng Thương mại điện tử Việt Nam 2023 — Cục TMĐT &amp; Kinh tế số, Bộ Công Thương</li>
-<li>100 trang PDF, 81 trang nội dung; 58 trang có bảng/biểu đồ (Day 6 đánh dấu chart_heavy)</li>
+<li>100 trang PDF, 81 trang nội dung (Day 6); 49 trang Day 6 đánh dấu chart_heavy</li>
 <li>Nguồn: <code>valoma.vn/…/BCTMDT2023-file-31-1-pdf.pdf</code>, sha256 <code>4b7e4a29…ccb430f</code>; không commit PDF (chưa rõ quyền tái phân phối)</li></ul></div>
 <div class="card"><h4>Vector store (dùng lại Day 6)</h4><ul>
 <li>PostgreSQL 16 + pgvector 0.8.7, bảng <code>chunks</code>, HNSW cosine</li>
@@ -84,28 +84,50 @@ footer{margin-top:48px;color:var(--muted);font-size:13px}
 <p class="muted">Hit = chunk đúng trang và chứa toàn bộ chuỗi khớp của evidence. Context Evidence Rate = mọi evidence bắt buộc (multi-hop cần đủ các trang) nằm trong context đóng gói theo budget ký tự. Độ trễ rerank đo trên CPU.</p></section>
 
 <section id="agent"><h2>5. Agent: so sánh cấu hình</h2>
-<h4>Dev</h4><div class="tw"><table class=""><thead><tr><th>Cấu hình</th><th>Retrieval / context</th><th>Tool use</th><th>Lượt LLM TB</th><th>Context đủ evidence</th><th>Grounded 0/1/2 · TB/2</th><th>Citation hợp lệ</th><th>Từ chối đúng</th><th>Từ chối nhầm</th><th>Đạt (ADVANCED)</th><th>Thời gian TV</th><th>Chi phí</th></tr></thead><tbody><tr><td><b>A0</b></td><td>dense:B, k=3</td><td>20/20</td><td>2.25</td><td>14/16</td><td>—</td><td>—</td><td>2/4</td><td>—</td><td>—</td><td>23.55 s</td><td>$0.0096</td></tr><tr><td><b>A1</b></td><td>hybrid:BV, k=5</td><td>20/20</td><td>2</td><td>15/16</td><td>—</td><td>—</td><td>3/4</td><td>—</td><td>—</td><td>18.52 s</td><td>$0.0092</td></tr></tbody></table></div>
+<h4>Dev</h4><div class="tw"><table class=""><thead><tr><th>Cấu hình</th><th>Retrieval / context</th><th>Tool use</th><th>Lượt LLM TB</th><th>Context đủ evidence</th><th>Grounded 0/1/2 · TB/2</th><th>Citation hợp lệ</th><th>Từ chối đúng</th><th>Từ chối nhầm</th><th>Đạt (ADVANCED)</th><th>Thời gian TV</th><th>Chi phí</th></tr></thead><tbody><tr><td><b>A0</b></td><td>dense:B, k=3</td><td>20/20</td><td>2.25</td><td>14/16</td><td>3/2/11 · 1.50</td><td>15/22</td><td>2/4</td><td>0/16</td><td>13/20 = 65.0%</td><td>23.55 s</td><td>$0.0096</td></tr><tr><td><b>A1</b></td><td>hybrid:BV, k=5</td><td>20/20</td><td>2</td><td>15/16</td><td>3/2/11 · 1.50</td><td>21/23</td><td>3/4</td><td>2/16</td><td>14/20 = 70.0%</td><td>18.52 s</td><td>$0.0092</td></tr><tr><td><b>A2</b></td><td>rerank:BV, k=5, read_page, kiểm trích dẫn</td><td>20/20</td><td>2.35</td><td>15/16</td><td>8/0/8 · 1.00</td><td>10/12</td><td>3/4</td><td>7/16</td><td>11/20 = 55.0%</td><td>45.95 s</td><td>$0.0161</td></tr><tr><td><b>A3</b></td><td>rerank:BV, k=5, read_page, kiểm trích dẫn</td><td>20/20</td><td>2</td><td>15/16</td><td>1/4/11 · 1.62</td><td>18/22</td><td>3/4</td><td>0/16</td><td>14/20 = 70.0%</td><td>57.19 s</td><td>$0.0117</td></tr></tbody></table></div>
 <h4>Test — baseline vs cấu hình đã chốt</h4><div class="tw"><table class=""><thead><tr><th>Cấu hình</th><th>Retrieval / context</th><th>Tool use</th><th>Lượt LLM TB</th><th>Context đủ evidence</th><th>Grounded 0/1/2 · TB/2</th><th>Citation hợp lệ</th><th>Từ chối đúng</th><th>Từ chối nhầm</th><th>Đạt (ADVANCED)</th><th>Thời gian TV</th><th>Chi phí</th></tr></thead><tbody></tbody></table></div>
 <h4>Tỷ lệ đạt theo nhóm (ADVANCED.md: đúng + đủ + citation hỗ trợ; từ chối đúng)</h4><p class='muted'>Chưa chấm test.</p>
-<p class="muted">A0 = Day 6 nguyên trạng (dense, index B, top-3). A1 = + index V + hybrid RRF, top-5. A2 = A1 + rerank + read_page + kiểm trích dẫn nguyên văn &amp; luật năm/đối tượng. Chọn trên dev theo thứ tự ưu tiên công bố trước: (1) tỷ lệ đạt, (2) từ chối đúng, (3) chi phí/thời gian.</p></section>
+<p class="muted">A0 = Day 6 nguyên trạng (dense, index B, top-3). A1 = + index V + hybrid RRF, top-5. A2 = A1 + rerank + read_page + kiểm trích dẫn nguyên văn &amp; luật năm/đối tượng. A3 = A2 nhưng kiểm trích dẫn có dung sai (số phải khớp, ≥60% từ, sửa ID). A4 = A3 + luật trình bày số (định dạng VN, điểm phần trăm, kiểm đối tượng/chỉ tiêu theo tiêu đề chunk). Tiêu chí chọn công bố trước khi chạy test (<code>results/selection.json</code>): (1) số câu dev đạt, (2) từ chối đúng, (3) ít từ chối nhầm, (4) chi phí/thời gian.</p></section>
 
 <section id="loi"><h2>6. Phân tích lỗi trên dev (trước/sau)</h2><p class='muted'>Chưa có phân tích lỗi.</p></section>
 
-<section id="vi-du"><h2>7. Ví dụ thật từ trace</h2><p class='muted'>Chưa có trace.</p></section>
+<section id="vi-du"><h2>7. Ví dụ thật từ trace</h2><article class="card ex">
+  <div class="tag">Câu có bằng chứng · d01 · Bảng</div>
+  <h4>Theo bảng số liệu thị trường TMĐT bán lẻ Việt Nam, tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước năm 2021 là bao nhiêu?</h4>
+  <div class="two"><div><div class="k">Agent trả lời (answered)</div><p>Tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước năm 2021 là 7%. [sach-trang-tmdt-2023:p40:V2]</p></div>
+  <div><div class="k">Đáp án chuẩn / kỳ vọng</div><p>7%.</p></div></div>
+  <div class="k">Các bước tool (1 lượt, 106.82 s, $0.00058)</div><ol class="steps"><li><code>search_documents</code> tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng năm 2021 → tr.40, tr.40, tr.30, tr.40, tr.32</li><li><code>quote_check_passed</code> </li></ol>
+  <div class="k">Citation → nội dung chunk trong pgvector + ảnh trang gốc</div><details><summary><code>sach-trang-tmdt-2023:p40:V2</code> · trang 40</summary><pre>[table] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023
+(Trang 40, nửa dưới; đơn vị: không ghi)
+Ước tính số lượng người tiêu dùng mua sắm trực tuyến (triệu người) | 2018: 39,9 | 2019: 44,8 | 2020: 49,3 | 2021: 54,6 | 2022: 57,0 | 2023: 61
+Ước tính giá trị mua sắm trực tuyến của một người (USD) | 2018: 202 | 2019: 225 | 2020: 240 | 2021: 251 | 2022: 288 | 2023: 336
+Tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước | 2018: 4,2% | 2019: 4,9% | 2020: 5,5% | 2021: 7% | 2022: 7,5% | 2023: 8%
+Tỷ lệ người dân sử dụng Internet | 2018: 60% | 2019: 66% | 2020: 70% | 2021: 73% | 2022: 73,2% | 2023: 78,6%</pre><img loading='lazy' alt='Trang 40 của PDF gốc' src='../work/pages_hd/p040.png'></details>
+  <p class="verdict bad">Nhãn chấm: chưa chấm. </p>
+</article>
+<article class="card ex">
+  <div class="tag">Câu thiếu bằng chứng (từ chối) · d17 · Thiếu bằng chứng</div>
+  <h4>Doanh thu TMĐT B2C của Việt Nam năm 2017 là bao nhiêu tỷ USD?</h4>
+  <div class="two"><div><div class="k">Agent trả lời (abstain)</div><p>Không đủ bằng chứng để trả lời.</p></div>
+  <div><div class="k">Đáp án chuẩn / kỳ vọng</div><p>Hành vi mong đợi: từ chối. Biểu đồ và bảng doanh thu B2C (tr. 40) chỉ có các năm 2018–2023; tìm &#x27;2017&#x27; trong toàn văn chỉ thấy ngày ban hành văn bản pháp luật ở phụ lục.</p></div></div>
+  <div class="k">Các bước tool (1 lượt, 20.93 s, $0.00051)</div><ol class="steps"><li><code>search_documents</code> doanh thu TMĐT B2C Việt Nam 2017 → tr.40, tr.40, tr.40, tr.30, tr.33</li><li><code>abstain</code>  — Không có thông tin về doanh thu TMĐT B2C của Việt Nam năm 2017 trong tài liệu.</li></ol>
+  
+  <p class="verdict bad">Nhãn chấm: chưa chấm. </p>
+</article></section>
 
 <section id="kich-ban"><h2>8. Kịch bản demo (≈ 7 phút)</h2>
 <div class="card"><ol class="script">
 <li><span class="time">0:00</span> <b>Vấn đề.</b> Mở mục Tổng quan: tài liệu 100 trang, nhiều số liệu nằm trong biểu đồ; RAG chỉ đọc text sẽ trả lời sai hoặc bịa.</li>
 <li><span class="time">0:45</span> <b>Kiến trúc.</b> Chỉ sơ đồ: dùng lại pgvector + embedding Day 6 (index B), thêm index V đọc bảng/biểu đồ bằng vision; 4 retriever; agent có tool và tự quyết số lượt tìm.</li>
 <li><span class="time">1:45</span> <b>Benchmark minh bạch.</b> Mở <code>benchmark/questions.json</code>, chỉ một câu biểu đồ: trang, vùng, evidence. Nhấn mạnh chia dev/test trước, test không dùng để chỉnh.</li>
-<li><span class="time">2:30</span> <b>Live demo câu có bằng chứng.</b> Chạy <code>python -m src.rag.agent --split test --config A2 --ids t17</code> (multi-hop tr. 40 + tr. 37) → đọc trace: 2 lần tìm, câu trả lời có phép tính và 2 citation.</li>
-<li><span class="time">3:30</span> <b>Chứng minh trong DB.</b> Chạy <code>python -m src.rag.verify --trace results/agent/test/A2/traces.json --id t17 --find "20,5"</code> → in đúng dòng trong bảng <code>chunks</code> (index, trang, hash) và đối chiếu PDF; mở ảnh trang gốc.</li>
-<li><span class="time">4:30</span> <b>Câu thiếu bằng chứng.</b> Chạy câu t25 (doanh thu B2C 2024) → agent tìm nhiều lần rồi từ chối; so với baseline A0 từng bịa số năm khác trên dev (d17).</li>
+<li><span class="time">2:30</span> <b>Live demo câu có bằng chứng.</b> Mở <code>http://127.0.0.1:8765/</code> (server <code>python -m src.rag.demo_server --warm</code>), chọn câu t17 (multi-hop tr. 40 + tr. 37), bấm ▶ Chạy agent: pipeline sáng theo từng bước, bảng kết quả mỗi lần tìm, câu trả lời có phép tính và citation bấm được.</li>
+<li><span class="time">3:30</span> <b>Chứng minh trong DB.</b> Bấm citation → khung Chunk inspector hiện đúng dòng trong pgvector, câu SQL và ảnh trang PDF; hoặc chạy <code>python -m src.rag.verify --trace results/agent/test/A3/traces.json --id t17 --find "20,5"</code> → in đúng dòng trong bảng <code>chunks</code> (index, trang, hash) và đối chiếu PDF; mở ảnh trang gốc.</li>
+<li><span class="time">4:30</span> <b>Câu thiếu bằng chứng + so sánh retriever.</b> Chạy câu t25 (doanh thu B2C 2024) → agent tìm nhiều lần rồi từ chối; so với baseline A0 từng bịa số năm khác trên dev (d17). Bấm “So sánh 4 retriever” để thấy dense/BM25/hybrid/rerank xếp hạng khác nhau thế nào.</li>
 <li><span class="time">5:15</span> <b>Một lỗi thật.</b> Mở thẻ “Một lỗi” ở mục 7: chỉ ra nguyên nhân (đọc biểu đồ tròn / chọn sai năm) và giới hạn.</li>
-<li><span class="time">6:00</span> <b>Số liệu &amp; đánh đổi.</b> Bảng mục 4–5: chất lượng tăng từ A0 → A2, đổi lại nhiều lượt gọi hơn, rerank chậm trên CPU; tổng chi phí API $0.43.</li>
+<li><span class="time">6:00</span> <b>Số liệu &amp; đánh đổi.</b> Bảng mục 4–5: chất lượng tăng từ A0 → A2, đổi lại nhiều lượt gọi hơn, rerank chậm trên CPU; tổng chi phí API $0.46.</li>
 <li><span class="time">6:40</span> <b>Kết luận + Q&amp;A.</b> Giới hạn ở mục cuối; mọi số liệu sinh tự động từ <code>results/</code>.</li>
 </ol>
-<p class="muted">Chuẩn bị trước: <code>docker --context default compose -p day6_student_starter up -d</code> (thư mục starter Day 6), kiểm tra <code>.env</code>, chạy thử một câu để nạp model (lần đầu ~25 s). Nếu mạng/API lỗi: dùng trace đã lưu ở mục 7, không thay bằng kết quả giả.</p></div></section>
+<p class="muted">Chuẩn bị trước: <code>docker --context default compose -p day6_student_starter up -d</code> (thư mục starter Day 6), kiểm tra <code>.env</code>, chạy thử một câu để nạp model (lần đầu ~25 s). Nếu mạng/API lỗi: tab “Phát lại trace đã lưu” (hoặc mở <code>http://127.0.0.1:8765/?replay=test/A3/t17&amp;gold=1</code>) phát lại đúng trace thật đã ghi, không gọi API, không bịa kết quả.</p></div></section>
 
 <section id="kiem-chung"><h2>9. Cách kiểm chứng một câu trả lời</h2>
 <div class="card"><ol>
@@ -122,5 +144,5 @@ footer{margin-top:48px;color:var(--muted);font-size:13px}
 <li>Khớp evidence tự động dựa trên trang + chuỗi; đúng trang nhưng sai ô vẫn có thể bị tính hit — vì vậy có chấm tay câu trả lời.</li>
 <li>Benchmark 50 câu do một người soạn, có thể thiên lệch theo cách hỏi.</li>
 </ul></div></section>
-<footer>Sinh tự động lúc 2026-11-16 09:44 bởi <code>src/rag/build_demo.py</code> từ: <code>results/visual/summary.json</code>, <code>results/agent/dev/A0/summary.json</code>, <code>results/agent/dev/A1/summary.json</code>, <code>results/retrieval/dev/summary.json</code>.</footer>
+<footer>Sinh tự động lúc 2026-11-16 10:19 bởi <code>src/rag/build_demo.py</code> từ: <code>results/visual/summary.json</code>, <code>Day 6 starter/results/pages.jsonl</code>, <code>results/agent/dev/A0/summary.json</code>, <code>results/agent/dev/A1/summary.json</code>, <code>results/agent/dev/A2/summary.json</code>, <code>results/agent/dev/A3/summary.json</code>, <code>results/retrieval/dev/summary.json</code>, <code>results/agent/dev/A0/summary_labels.json</code>, <code>results/agent/dev/A1/summary_labels.json</code>, <code>results/agent/dev/A2/summary_labels.json</code>, <code>results/agent/dev/A3/summary_labels.json</code>, <code>results/agent/dev/A3/traces.json</code>.</footer>
 </main></body></html>

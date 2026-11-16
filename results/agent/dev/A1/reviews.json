@@ -1,0 +1,180 @@
+[
+ {
+  "query_id": "d01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d02",
+  "answer_grade": 0,
+  "citation_support": [],
+  "pass": false,
+  "reason": "Từ chối nhầm: bảng tr. 83 có thuocsi.vn – Buymed"
+ },
+ {
+  "query_id": "d03",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d05",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d06",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d07",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d08",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "Giá trị đúng chữ số nhưng viết '5,158 triệu' (theo cách viết VN = 5,158 triệu người, sai 1000 lần; đúng 5.158 triệu)"
+ },
+ {
+  "query_id": "d09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d10",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": false,
+  "reason": "47%/57% đúng nhưng 'giảm 10%' sai đơn vị (đúng: 10 điểm %)"
+ },
+ {
+  "query_id": "d11",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "28,8% sai (đúng 71,2%): chunk V tr. 68 đảo nhãn biểu đồ tròn"
+ },
+ {
+  "query_id": "d12",
+  "answer_grade": 0,
+  "citation_support": [],
+  "pass": false,
+  "reason": "Từ chối nhầm câu multi-hop có đáp án"
+ },
+ {
+  "query_id": "d13",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d14",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d15",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d17",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Doanh thu B2C 2017 không có (biểu đồ bắt đầu 2018) → từ chối đúng"
+ },
+ {
+  "query_id": "d18",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có thời gian giao hàng → từ chối đúng"
+ },
+ {
+  "query_id": "d19",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Lazada không có trong biểu đồ giao đồ ăn → từ chối đúng"
+ },
+ {
+  "query_id": "d20",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Không có số người dùng Internet tuyệt đối của VN → KHÔNG từ chối, trả lời: Vào tháng 1 năm 2023, Việt Nam có khoảng 51,58 triệu người dùng Internet. [sach-trang-tmdt"
+ }
+]

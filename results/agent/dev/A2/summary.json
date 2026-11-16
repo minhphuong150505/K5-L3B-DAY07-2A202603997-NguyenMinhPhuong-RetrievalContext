@@ -1,0 +1,31 @@
+{
+  "config": "A2",
+  "method": "rerank",
+  "index": "BV",
+  "top_k": 5,
+  "max_steps": 8,
+  "read_page": true,
+  "result_chars": 7000,
+  "strict": true,
+  "model": "gpt-4o-mini",
+  "split": "dev",
+  "n": 20,
+  "errors": 0,
+  "tool_use": "20/20",
+  "tool_calls_distribution": {
+    "1": 12,
+    "2": 7,
+    "4": 1
+  },
+  "answered_answerable": "9/16",
+  "abstain_on_unanswerable": "3/4",
+  "context_evidence_rate": "15/16",
+  "auto_citation_on_gold_page": "9/9",
+  "median_latency_s": 45.95,
+  "avg_llm_calls": 2.35,
+  "total_prompt_tokens": 90280,
+  "total_completion_tokens": 4257,
+  "total_cost_usd": 0.0161,
+  "total_equiv_paid_cost_usd": 0.0161,
+  "avg_context_chars": 3486
+}

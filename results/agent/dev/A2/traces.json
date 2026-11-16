@@ -2233,5 +2233,525 @@
     "equiv_cost_usd": 0.000987,
     "rate_limit_wait_s": 0.0,
     "latency_s": 129.39
+  },
+  {
+    "query_id": "d16",
+    "question": "Theo Nghị định 13/2023/NĐ-CP, trong trường hợp nào Bên Xử lý dữ liệu cá nhân phải lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân?",
+    "config": "A2",
+    "model": "gpt-4o-mini",
+    "status": "answered",
+    "answer": "Bên Xử lý dữ liệu cá nhân phải lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân trong trường hợp thực hiện hợp đồng với Bên Kiểm soát dữ liệu cá nhân. Hồ sơ này phải luôn có sẵn để phục vụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi 01 bản chính trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân. [sach-trang-tmdt-2023:p024:B01]",
+    "citations": [
+      "sach-trang-tmdt-2023:p024:B01"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Nghị định 13/2023/NĐ-CP Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân",
+        "method": "rerank:BV",
+        "top_k": 5,
+        "latency_ms": 46854.6,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "sach-trang-tmdt-2023:p024:B01",
+            "page": 24,
+            "score": 0.9858
+          },
+          {
+            "rank": 2,
+            "id": "sach-trang-tmdt-2023:p020:B00",
+            "page": 20,
+            "score": 0.9733
+          },
+          {
+            "rank": 3,
+            "id": "sach-trang-tmdt-2023:p022:B00",
+            "page": 22,
+            "score": 0.9462
+          },
+          {
+            "rank": 4,
+            "id": "sach-trang-tmdt-2023:p023:B01",
+            "page": 23,
+            "score": 0.9458
+          },
+          {
+            "rank": 5,
+            "id": "sach-trang-tmdt-2023:p023:B00",
+            "page": 23,
+            "score": 0.9236
+          }
+        ]
+      },
+      {
+        "event": "quote_check_passed",
+        "evidence": [
+          {
+            "chunk_id": "sach-trang-tmdt-2023:p024:B01",
+            "quote": "Bên Xử lý dữ liệu cá nhân tiến hành lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân trong trường hợp thực hiện hợp đồng với Bên Kiểm soát dữ liệu cá nhân."
+          }
+        ]
+      },
+      {
+        "event": "answer",
+        "dropped_citations": []
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p024:B01",
+      "sach-trang-tmdt-2023:p020:B00",
+      "sach-trang-tmdt-2023:p022:B00",
+      "sach-trang-tmdt-2023:p023:B01",
+      "sach-trang-tmdt-2023:p023:B00"
+    ],
+    "context_chunks": [
+      {
+        "id": "sach-trang-tmdt-2023:p024:B01",
+        "page": 24,
+        "text": "1. Mục tiêu\n6 Đánh giá tác động xử lý dữ liệu cá nhân\nBên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá\nnhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân\ncủa mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nBên Xử lý dữ liệu cá nhân tiến hành lập và lưu giữ Hồ sơ đánh giá tác\nđộng xử lý dữ liệu cá nhân trong trường hợp thực hiện hợp đồng\nvới Bên Kiểm soát dữ liệu cá nhân.\nHồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải luôn có sẵn để\nphục vụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ\nCông an 01 bản chính trong thời gian 60 ngày kể từ ngày tiến hành\nxử lý dữ liệu cá nhân.\nTrường hợp chuyển dữ liệu cá nhân ra nước ngoài, bên chuyển dữ\nliệu ra nước ngoài gửi 01 bản chính hồ sơ tới Bộ Công an trong thời\ngian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân."
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p020:B00",
+        "page": 20,
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\nNghị định 13/2023/NĐ-CP quy định về bảo vệ dữ liệu cá nhân và trách nhiệm bảo vệ dữ liệu cá nhân của\ncơ quan, tổ chức, cá nhân có liên quan.\n1 Phân loại dữ liệu cá nhân\nDữ liệu cá nhân cơ bản Dữ liệu cá nhân nhạy cảm\nHọ, chữ đệm và tên khai sinh, tên gọi khác (nếu có);\nNgày, tháng, năm sinh; ngày, tháng, năm chết hoặc\nmất tích;\nGiới tính;\nQuốc tịch;\nHình ảnh của cá nhân;\nTình trạng hôn nhân;\nThông tin về mối quan hệ gia đình (cha mẹ, con cái);\nThông tin về tài khoản số của cá nhân; dữ liệu cá\nnhân phản ánh hoạt động, lịch sử hoạt động trên\nkhông gian mạng;\nCác thông tin khác gắn liền với một con người cụ\nthể hoặc giúp xác định một con người cụ thể không\nthuộc quy định tại khoản 4 Điều 2 Nghị định này;\nSố điện thoại, số chứng minh nhân dân, số định\ndanh cá nhân, số hộ chiếu, số giấy phép lái xe, số\nbiển số xe, số mã số thuế cá nhân, số bảo hiểm xã\nhội, số thẻ bảo hiểm y tế;\nNơi sinh, nơi đăng ký khai sinh, nơi thường trú,\nnơi tạm trú, nơi ở hiện tại, quê quán, địa chỉ liên hệ;\nQuan điểm chính trị, quan điểm tôn giáo;\nThông tin liên quan đến nguồn gốc chủng tộc,\nnguồn gốc dân tộc;"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p022:B00",
+        "page": 22,
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\n3\n4\nTrường hợp xử lý dữ liệu cá nhân không cần sự đồng ý của chủ thể dữ liệu\nThông báo vi phạm quy định về bảo vệ dữ liệu cá nhân\nTrường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên\nquan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc\nngười khác;\nViệc công khai dữ liệu cá nhân theo quy định của luật.\nViệc xử lý dữ liệu của cơ quan nhà nước có thẩm quyền trong\ntrường hợp tình trạng khẩn cấp về quốc phòng, an ninh quốc\ngia, trật tự an toàn xã hội, thảm họa lớn, dịch bệnh nguy hiểm,...\nĐể thực hiện nghĩa vụ theo hợp đồng của chủ thể dữ liệu với cơ\nquan, tổ chức, cá nhân có liên quan theo quy định của luật;\nPhục vụ hoạt động của cơ quan nhà nước đã được quy định\ntheo luật chuyên ngành.\nTrường hợp phát hiện xảy ra vi phạm quy định bảo vệ dữ liệu cá nhân,\nBên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân\nthông báo cho Bộ Công an (Cục An ninh mạng và phòng, chống tội\nphạm sử dụng công nghệ cao) chậm nhất 72 giờ sau khi xảy ra hành vi\nvi phạm.\nTrường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo\nchậm, muộn."
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p023:B01",
+        "page": 23,
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\nChỉ tiếp nhận dữ liệu cá nhân sau khi có hợp đồng\nhoặc thỏa thuận về xử lý dữ liệu với Bên Kiểm soát\ndữ liệu cá nhân;\nXử lý dữ liệu cá nhân theo đúng hợp đồng hoặc thỏa\nthuận ký kết với Bên Kiểm soát dữ liệu cá nhân;\nThực hiện đầy đủ các biện pháp bảo vệ dữ liệu cá\nnhân quy định tại Nghị định này và các văn bản pháp\nluật khác có liên quan;\nBên Xử lý dữ liệu cá nhân chịu trách nhiệm trước chủ\nthể dữ liệu về các thiệt hại do quá trình xử lý dữ liệu\ncá nhân gây ra;\nXóa, trả lại toàn bộ dữ liệu cá nhân cho Bên Kiểm\nsoát dữ liệu cá nhân sau khi kết thúc xử lý dữ liệu;\nPhối hợp với Bộ Công an, cơ quan nhà nước có thẩm\nquyền trong bảo vệ dữ liệu cá nhân, cung cấp thông\ntin phục vụ điều tra, xử lý hành vi vi phạm quy định\ncủa pháp luật về bảo vệ dữ liệu cá nhân;"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p023:B00",
+        "page": 23,
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\n5 Trách nhiệm của Bên kiểm soát dữ liệu cá nhân và Bên xử lý dữ liệu cá nhân\nBên kiểm soát dữ liệu cá nhân Bên xử lý dữ liệu cá nhân\nThực hiện các biện pháp tổ chức và kỹ thuật\ncùng các biện pháp an toàn, bảo mật phù hợp\nđể chứng minh các hoạt động xử lý dữ liệu đã\nđược thực hiện theo quy định của pháp luật\nvề bảo vệ dữ liệu cá nhân, rà soát và cập nhật\ncác biện pháp này khi cần thiết;\nGhi lại và lưu trữ nhật ký hệ thống quá trình xử\nlý dữ liệu cá nhân;\nThông báo hành vi vi phạm quy định về bảo\nvệ dữ liệu cá nhân theo quy định tại Điều 23\nNghị định này;\nLựa chọn Bên Xử lý dữ liệu cá nhân phù hợp\nvới nhiệm vụ rõ ràng và chỉ làm việc với Bên\nXử lý dữ liệu cá nhân có các biện pháp bảo\nvệ phù hợp;\nBảo đảm các quyền của chủ thể dữ liệu theo\nquy định tại Điều 9 Nghị định này;\nBên Kiểm soát dữ liệu cá nhân chịu trách\nnhiệm trước chủ thể dữ liệu về các thiệt hại do\nquá trình xử lý dữ liệu cá nhân gây ra;\nPhối hợp với Bộ Công an, cơ quan nhà nước\ncó thẩm quyền trong bảo vệ dữ liệu cá nhân,\ncung cấp thông tin phục vụ điều tra, xử lý hành\nvi vi phạm quy định của pháp luật về bảo vệ\ndữ liệu cá nhân;"
+      }
+    ],
+    "context_chars": 5114,
+    "n_llm_calls": 2,
+    "n_tool_calls": 1,
+    "prompt_tokens": 3259,
+    "completion_tokens": 230,
+    "cost_usd": 0.000627,
+    "equiv_cost_usd": 0.000627,
+    "rate_limit_wait_s": 0.0,
+    "latency_s": 62.01
+  },
+  {
+    "query_id": "d17",
+    "question": "Doanh thu TMĐT B2C của Việt Nam năm 2017 là bao nhiêu tỷ USD?",
+    "config": "A2",
+    "model": "gpt-4o-mini",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "reason": "Không có thông tin về doanh thu TMĐT B2C của Việt Nam năm 2017 trong tài liệu.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "doanh thu TMĐT B2C Việt Nam 2017",
+        "method": "rerank:BV",
+        "top_k": 5,
+        "latency_ms": 59683.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "sach-trang-tmdt-2023:p40:V2",
+            "page": 40,
+            "score": 0.9967
+          },
+          {
+            "rank": 2,
+            "id": "sach-trang-tmdt-2023:p040:B00",
+            "page": 40,
+            "score": 0.9799
+          },
+          {
+            "rank": 3,
+            "id": "sach-trang-tmdt-2023:p40:V1",
+            "page": 40,
+            "score": 0.9674
+          },
+          {
+            "rank": 4,
+            "id": "sach-trang-tmdt-2023:p030:B01",
+            "page": 30,
+            "score": 0.9224
+          },
+          {
+            "rank": 5,
+            "id": "sach-trang-tmdt-2023:p033:B01",
+            "page": 33,
+            "score": 0.7257
+          }
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "Không có thông tin về doanh thu TMĐT B2C của Việt Nam năm 2017 trong tài liệu."
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p40:V2",
+      "sach-trang-tmdt-2023:p040:B00",
+      "sach-trang-tmdt-2023:p40:V1",
+      "sach-trang-tmdt-2023:p030:B01",
+      "sach-trang-tmdt-2023:p033:B01"
+    ],
+    "context_chunks": [
+      {
+        "id": "sach-trang-tmdt-2023:p40:V2",
+        "page": 40,
+        "text": "[table] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023\n(Trang 40, nửa dưới; đơn vị: không ghi)\nƯớc tính số lượng người tiêu dùng mua sắm trực tuyến (triệu người) | 2018: 39,9 | 2019: 44,8 | 2020: 49,3 | 2021: 54,6 | 2022: 57,0 | 2023: 61\nƯớc tính giá trị mua sắm trực tuyến của một người (USD) | 2018: 202 | 2019: 225 | 2020: 240 | 2021: 251 | 2022: 288 | 2023: 336\nTỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước | 2018: 4,2% | 2019: 4,9% | 2020: 5,5% | 2021: 7% | 2022: 7,5% | 2023: 8%\nTỷ lệ người dân sử dụng Internet | 2018: 60% | 2019: 66% | 2020: 70% | 2021: 73% | 2022: 73,2% | 2023: 78,6%"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p040:B00",
+        "page": 40,
+        "text": "I. QUY MÔ THỊ TRƯỜNG THƯƠNG MẠI ĐIỆN TỬ BÁN LẺ TẠI VIỆT NAM\n8 Doanh thu TMĐT B2C Việt Nam bao gồm doanh thu tất cả hàng hóa, dịch vụ bán qua kênh TMĐT (loại trừ các giao dịch liên quan đến lĩnh vực tài chính, ngân hàng, tín\ndụng, bảo hiểm, trò chơi trực tuyến).\n9 Số liệu cập nhật đến 6 tháng đầu năm 2023. Nguồn: Bộ Thông tin và Truyền thông\nDoanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)8\n2018 2019 2020 2021 2022 2023\nƯớc tính số lượng người tiêu dùng\nmua sắm trực tuyến (triệu người) 39,9 44,8 49,3 54,6 57,0 61\nƯớc tính giá trị mua sắm trực tuyến\ncủa một người (USD) 202 225 240 251 288 336\nTỷ trọng doanh thu TMĐT B2C so với\ntổng mức bán lẻ hàng hóa và doanh\nthu dịch vụ tiêu dùng cả nước\n4,2% 4,9% 5,5% 7% 7,5% 8%\nTỷ lệ người dân sử dụng Internet9 60% 66% 70% 73% 73,2% 78,6%\nDoanh thu B2C Tỷ lệ tăng trưởng\n2018 2019 2020 2021\n18%\n16%\n25%\n30%8,06\n10,8\n11,8\n13,7\n16,4\n20,5\n20%\n25%\n2022 2023"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p40:V1",
+        "page": 40,
+        "text": "[bar_chart] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)\n(Trang 40, giữa; đơn vị: tỷ USD)\n2018: 8,06\n2019: 10,8\n2020: 11,8\n2021: 13,7\n2022: 16,4\n2023: 20,5\nTỷ lệ tăng trưởng — 2018: 30%\nTỷ lệ tăng trưởng — 2019: 25%\nTỷ lệ tăng trưởng — 2020: 18%\nTỷ lệ tăng trưởng — 2021: 16%\nTỷ lệ tăng trưởng — 2022: 20%\nTỷ lệ tăng trưởng — 2023: 25% (*)"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p030:B01",
+        "page": 30,
+        "text": "2. Quy mô thị trường TMĐT B2C toàn cầu 2\n2.1. Toàn cầu | 26,4%\n20,6% | 23.9\n21.1 | 21.1 | 21.8 | 22.5 | 23.3\n19.5 | 16,3%\n12,2% | 11,0%\n8,2% | 10,0% | 9,2%\n3,3% | 3,3% | 3,2% | 3,4% 2,6%\n4,9 | 5,5 | 6,2 | 6,8 | 7,4\n3,4 | 4,2\n-7,5%\n2019 | 2020 | 2021 | 2022 | 2023* | 2024* | 2025*\nDo | an h th u bán | lẻ q ua | TMĐT | (nghìn tỷ US | D) | Do | an h th u bán | lẻ n goài | TMĐT | (nghìn tỷ US | D)\nTỷ | lệ th ay đ | ổi d oan h th u TMĐT | bán | lẻ | Tỷ | lệ th ay đ | ổi d oan h th u bán | lẻ n goài | TMĐT\nNguồn: Báo cáo “Global Ecommerce Forecast” - eMarketer\n2 Doanh thu TMĐT bán lẻ bao gồm hàng hóa và dịch vụ; không bao gồm dịch vụ du lịch, dịch vụ ăn uống, cá cược, dịch vụ chuyển tiền, các loại dịch vụ bất hợp pháp\nvà bán vé sự kiện, không bao gồm thanh toán các loại hóa đơn, thuế."
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p033:B01",
+        "page": 33,
+        "text": "2.7. Mỹ 6\n1.720\n1.545\n1.392\n1.56\n1.040 | 1.137\n959\n17,8% | 19,1% | 20,6%\n17,3% | 14,7% | 15,6% | 16,6%\n10,5% | 10,8% | 11,3%\n14,7% | 9,3% | 11,0%\n8,5%\n2021 | 2022 | 2023 | 2024* | 2025* | 2026* | 2027*\nDo | an h th u TMĐ | * ST | B2C | (tỷ US | D)Tỷ lệ tă ng | trưởngố | liệ | u dự b | áo\nTỷ | lệ của T | MĐT | so với | tổ ng doan h th u bán | lẻ\n5 | https://www.insiderintelligence.com/content/china-ecommerce-forecast-2023\n6 https://www.insiderintelligence.com/content/us-ecommerce-forecast-2022"
+      }
+    ],
+    "context_chars": 3180,
+    "n_llm_calls": 2,
+    "n_tool_calls": 1,
+    "prompt_tokens": 3126,
+    "completion_tokens": 65,
+    "cost_usd": 0.000508,
+    "equiv_cost_usd": 0.000508,
+    "rate_limit_wait_s": 0.0,
+    "latency_s": 133.67
+  },
+  {
+    "query_id": "d18",
+    "question": "Thời gian giao hàng trung bình của một đơn hàng TMĐT tại Việt Nam năm 2023 là bao nhiêu ngày?",
+    "config": "A2",
+    "model": "gpt-4o-mini",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "reason": "Không tìm thấy thông tin về thời gian giao hàng trung bình của đơn hàng TMĐT tại Việt Nam năm 2023.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "thời gian giao hàng trung bình đơn hàng TMĐT Việt Nam 2023",
+        "method": "rerank:BV",
+        "top_k": 5,
+        "latency_ms": 24588.8,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "sach-trang-tmdt-2023:p64:V2",
+            "page": 64,
+            "score": 0.7383
+          },
+          {
+            "rank": 2,
+            "id": "sach-trang-tmdt-2023:p77:V1",
+            "page": 77,
+            "score": 0.6121
+          },
+          {
+            "rank": 3,
+            "id": "sach-trang-tmdt-2023:p003:B00",
+            "page": 3,
+            "score": 0.3434
+          },
+          {
+            "rank": 4,
+            "id": "sach-trang-tmdt-2023:p040:B00",
+            "page": 40,
+            "score": 0.3309
+          },
+          {
+            "rank": 5,
+            "id": "sach-trang-tmdt-2023:p050:B03",
+            "page": 50,
+            "score": 0.1744
+          }
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "Không tìm thấy thông tin về thời gian giao hàng trung bình của đơn hàng TMĐT tại Việt Nam năm 2023."
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p64:V2",
+      "sach-trang-tmdt-2023:p77:V1",
+      "sach-trang-tmdt-2023:p003:B00",
+      "sach-trang-tmdt-2023:p040:B00",
+      "sach-trang-tmdt-2023:p050:B03"
+    ],
+    "context_chunks": [
+      {
+        "id": "sach-trang-tmdt-2023:p64:V2",
+        "page": 64,
+        "text": "[pie_chart] 2. Tỷ lệ chi phí hoàn tất đơn hàng và giao hàng chặng cuối so với doanh thu từ hoạt động TMĐT của doanh nghiệp\n(Trang 64, giữa; đơn vị: %)\nDưới 10% — 2023: 3 | Từ 10% - 20% — 2023: 12 | Từ 20 % - 40 % — 2023: 52 | Trên 40% — 2023: 33"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p77:V1",
+        "page": 77,
+        "text": "[bar_chart] 3. Tỷ lệ số lượng đơn hàng thành công của website, ứng dụng TMĐT bán hàng tại một số tỉnh/thành phố\n(Trang 77, giữa; đơn vị: %)\nTP. Hồ Chí Minh — 2023: 34,6%\nHà Nội — 2023: 21,8%\nBình Dương — 2023: 3,7%\nĐồng Nai — 2023: 3,2%\nĐà Nẵng — 2023: 3,0%\nCần Thơ — 2023: 2,6%\nHải Phòng — 2023: 2,5%\nBà Rịa – Vũng Tàu — 2023: 2,1%\nLong An — 2023: 1,7%\nHải Dương — 2023: 1,7%\nBắc Ninh — 2023: 1,6%\nQuảng Ninh — 2023: 1,6%\nLâm Đồng — 2023: 1,6%\nNghệ An — 2023: 1,5%\nKhánh Hòa — 2023: 1,5%\nVĩnh Phúc — 2023: 1,4%\nHưng Yên — 2023: 1,4%\nThanh Hóa — 2023: 1,4%\nNam Định — 2023: 1,3%\nThái Nguyên — 2023: 1,2%\nCác tỉnh/thành phố còn lại — 2023: 8,8%"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p003:B00",
+        "page": 3,
+        "text": "LỜI GIỚI THIỆU\nKinh tế Việt Nam 2023 duy trì xu hướng phục hồi, tiếp tục là điểm sáng của kinh tế toàn cầu (theo Cổng\nThông tin điện tử Chính phủ). Kinh tế vĩ mô cơ bản ổn định; lạm phát thấp hơn mục tiêu Quốc hội đề ra; nợ\ncông, nợ Chính phủ, nợ nước ngoài, bội chi ngân sách nhà nước được kiểm soát; tăng trưởng được thúc đẩy;\ncác cân đối lớn của nền kinh tế được bảo đảm. Tăng trưởng GDP cả năm khoảng 5% thuộc nhóm các nước tăng\ntrưởng cao trong khu vực và thế giới.\nTrong bức tranh tổng thể về kinh tế Việt Nam, thương mại điện tử tiếp tục khẳng định vị trí là một trong\nnhững lĩnh vực tiên phong của nền kinh tế số. Năm 2023, quy mô thị trường thương mại điện tử bán lẻ Việt\nNam đạt 20,5 tỷ USD, tăng khoảng 4 tỷ USD (tương đương 25%) so với năm 2022. Tốc độ tăng trưởng thương\nmại điện tử của Việt Nam được xếp vào nhóm 10 quốc gia có tốc độ tăng trưởng thương mại điện tử hàng đầu\nthế giới (tính đến tháng 12/2023 theo Statista)."
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p040:B00",
+        "page": 40,
+        "text": "I. QUY MÔ THỊ TRƯỜNG THƯƠNG MẠI ĐIỆN TỬ BÁN LẺ TẠI VIỆT NAM\n8 Doanh thu TMĐT B2C Việt Nam bao gồm doanh thu tất cả hàng hóa, dịch vụ bán qua kênh TMĐT (loại trừ các giao dịch liên quan đến lĩnh vực tài chính, ngân hàng, tín\ndụng, bảo hiểm, trò chơi trực tuyến).\n9 Số liệu cập nhật đến 6 tháng đầu năm 2023. Nguồn: Bộ Thông tin và Truyền thông\nDoanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)8\n2018 2019 2020 2021 2022 2023\nƯớc tính số lượng người tiêu dùng\nmua sắm trực tuyến (triệu người) 39,9 44,8 49,3 54,6 57,0 61\nƯớc tính giá trị mua sắm trực tuyến\ncủa một người (USD) 202 225 240 251 288 336\nTỷ trọng doanh thu TMĐT B2C so với\ntổng mức bán lẻ hàng hóa và doanh\nthu dịch vụ tiêu dùng cả nước\n4,2% 4,9% 5,5% 7% 7,5% 8%\nTỷ lệ người dân sử dụng Internet9 60% 66% 70% 73% 73,2% 78,6%\nDoanh thu B2C Tỷ lệ tăng trưởng\n2018 2019 2020 2021\n18%\n16%\n25%\n30%8,06\n10,8\n11,8\n13,7\n16,4\n20,5\n20%\n25%\n2022 2023"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p050:B03",
+        "page": 50,
+        "text": "14. Ước tính giá trị mua hàng hóa/dịch vụ qua mạng từ thương nhân nước ngoài trong năm 2023\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Giá cả rẻ hơn: 2021: 61%; 2022: 70%; 2023: 59%\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Chất lượng sản phẩm tốt hơn: 2021: 49%; 2022: 45%; 2023: 53%\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Hàng hóa có thương hiệu nước ngoài: 2021: 23%; 2022: 30%; 2023: 35%\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Chỉ có thương nhân nước ngoài có bán mặt hàng đó: 2021: 32%; 2022: 45%; 2023: 29%\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Khác: 2021: 4%; 2022: 3%; 2023: 5%"
+      }
+    ],
+    "context_chars": 3724,
+    "n_llm_calls": 2,
+    "n_tool_calls": 1,
+    "prompt_tokens": 3117,
+    "completion_tokens": 70,
+    "cost_usd": 0.00051,
+    "equiv_cost_usd": 0.00051,
+    "rate_limit_wait_s": 0.0,
+    "latency_s": 83.93
+  },
+  {
+    "query_id": "d19",
+    "question": "Bao nhiêu phần trăm người tiêu dùng ưa chuộng Lazada trong lĩnh vực dịch vụ giao đồ ăn?",
+    "config": "A2",
+    "model": "gpt-4o-mini",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "reason": "Tài liệu không chứa thông tin về tỷ lệ người tiêu dùng ưa chuộng Lazada trong lĩnh vực dịch vụ giao đồ ăn.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Lazada dịch vụ giao đồ ăn phần trăm người tiêu dùng ưa chuộng",
+        "method": "rerank:BV",
+        "top_k": 5,
+        "latency_ms": 26276.1,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "sach-trang-tmdt-2023:p047:B00",
+            "page": 47,
+            "score": 0.9929
+          },
+          {
+            "rank": 2,
+            "id": "sach-trang-tmdt-2023:p47:V1",
+            "page": 47,
+            "score": 0.9881
+          },
+          {
+            "rank": 3,
+            "id": "sach-trang-tmdt-2023:p047:B02",
+            "page": 47,
+            "score": 0.9854
+          },
+          {
+            "rank": 4,
+            "id": "sach-trang-tmdt-2023:p46:V2",
+            "page": 46,
+            "score": 0.912
+          },
+          {
+            "rank": 5,
+            "id": "sach-trang-tmdt-2023:p046:B01",
+            "page": 46,
+            "score": 0.8518
+          }
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "Tài liệu không chứa thông tin về tỷ lệ người tiêu dùng ưa chuộng Lazada trong lĩnh vực dịch vụ giao đồ ăn."
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p047:B00",
+      "sach-trang-tmdt-2023:p47:V1",
+      "sach-trang-tmdt-2023:p047:B02",
+      "sach-trang-tmdt-2023:p46:V2",
+      "sach-trang-tmdt-2023:p046:B01"
+    ],
+    "context_chunks": [
+      {
+        "id": "sach-trang-tmdt-2023:p047:B00",
+        "page": 47,
+        "text": "6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng\n51% | 50%\n15% | 13%\n7%\nShopeeFood, | Grab | Baemin | Be | Khác\nFoody\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng\n50%\n26% | 24%\n14% | 9% | 8% | 16%\nTraveloka | Agoda | Gotadi | Tripi Partner | AirBnB | KhácBooking.com"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p47:V1",
+        "page": 47,
+        "text": "[bar_chart] 6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng\n(Trang 47, nửa trên; đơn vị: Tỷ lệ người dùng Internet)\nShopeeFood, Foody — năm: 51%\nGrab — năm: 50%\nBaemin — năm: 15%\nBe — năm: 7%\nKhác — năm: 13%"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p047:B02",
+        "page": 47,
+        "text": "7. Hình thức thanh toán phổ biến\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — ShopeeFood, Foody: 51%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Grab: 50%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Baemin: 15%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Be: 7%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Khác: 13%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Traveloka: 50%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Agoda: 26%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Booking.com: 24%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Gotadi: 14%\n6.4."
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p46:V2",
+        "page": 46,
+        "text": "[bar_chart] 6.1. Sàn giao dịch TMĐT lĩnh vực bán buôn bán lẻ người tiêu dùng ưa chuộng\n(Trang 46, giữa; đơn vị: (%))\nShopee — năm: 2023: 81%\nLazada — năm: 2023: 42%\nTikTok — năm: 2023: 34%\nTiki — năm: 2023: 20%\nSendo — năm: 2023: 8%\nKhác — năm: 2023: 2%"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p046:B01",
+        "page": 46,
+        "text": "6.1. Sàn giao dịch TMĐT lĩnh vực bán buôn bán lẻ người tiêu dùng ưa chuộng\n81%\n42%\n34%\n20%\n8% | 2%\nShopee | Lazada | TikTok | Tiki | Sendo | Khác\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n70%\n23%\n15% | 14%\nGrab | Be | GoJek | Khác\n[Tiêu đề trục dọc] (Tỷ lệ người dùng Internet)"
+      }
+    ],
+    "context_chars": 2064,
+    "n_llm_calls": 2,
+    "n_tool_calls": 1,
+    "prompt_tokens": 2387,
+    "completion_tokens": 72,
+    "cost_usd": 0.000402,
+    "equiv_cost_usd": 0.000402,
+    "rate_limit_wait_s": 0.0,
+    "latency_s": 30.15
+  },
+  {
+    "query_id": "d20",
+    "question": "Việt Nam có bao nhiêu triệu người dùng Internet vào năm 2023?",
+    "config": "A2",
+    "model": "gpt-4o-mini",
+    "status": "answered",
+    "answer": "Vào năm 2023, Việt Nam có 51,58 triệu người dùng Internet. [sach-trang-tmdt-2023:p28:V1]",
+    "citations": [
+      "sach-trang-tmdt-2023:p28:V1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "số người dùng Internet Việt Nam 2023",
+        "method": "rerank:BV",
+        "top_k": 5,
+        "latency_ms": 39049.4,
+        "error": null,
+        "results": [
+          {
+            "rank": 1,
+            "id": "sach-trang-tmdt-2023:p28:V1",
+            "page": 28,
+            "score": 0.9949
+          },
+          {
+            "rank": 2,
+            "id": "sach-trang-tmdt-2023:p30:V1",
+            "page": 30,
+            "score": 0.9626
+          },
+          {
+            "rank": 3,
+            "id": "sach-trang-tmdt-2023:p042:B00",
+            "page": 42,
+            "score": 0.9462
+          },
+          {
+            "rank": 4,
+            "id": "sach-trang-tmdt-2023:p43:V1",
+            "page": 43,
+            "score": 0.9419
+          },
+          {
+            "rank": 5,
+            "id": "sach-trang-tmdt-2023:p40:V2",
+            "page": 40,
+            "score": 0.931
+          }
+        ]
+      },
+      {
+        "event": "quote_check_passed",
+        "evidence": [
+          {
+            "chunk_id": "sach-trang-tmdt-2023:p28:V1",
+            "quote": "T1/2023 — lượng người dùng: 5,158"
+          }
+        ]
+      },
+      {
+        "event": "answer",
+        "dropped_citations": []
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p28:V1",
+      "sach-trang-tmdt-2023:p30:V1",
+      "sach-trang-tmdt-2023:p042:B00",
+      "sach-trang-tmdt-2023:p43:V1",
+      "sach-trang-tmdt-2023:p40:V2"
+    ],
+    "context_chunks": [
+      {
+        "id": "sach-trang-tmdt-2023:p28:V1",
+        "page": 28,
+        "text": "[bar_chart] 1.1. Lượng người dùng Internet\n(Trang 28, nửa trên; đơn vị: triệu người)\nT1/2019 — lượng người dùng: 4,335 | T1/2020 — lượng người dùng: 4,627 | T1/2021 — lượng người dùng: 4,962 | T1/2022 — lượng người dùng: 5,060 | T1/2023 — lượng người dùng: 5,158 | T1/2019 — tốc độ tăng trưởng (%): 9,00 | T1/2020 — tốc độ tăng trưởng (%): 6,70 | T1/2021 — tốc độ tăng trưởng (%): 7,20 | T1/2022 — tốc độ tăng trưởng (%): 2,00 | T1/2023 — tốc độ tăng trưởng (%): 1,90 (*)"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p30:V1",
+        "page": 30,
+        "text": "[bar_chart] 1.5. Tỷ lệ người dùng Internet mua sắm trực tuyến hàng tuần tại một số quốc gia\n(Trang 30, nửa trên; đơn vị: %)\nThái Lan — 2023: 66,8%\nHàn Quốc — 2023: 65,6%\nIndonesia — 2023: 62,6%\nẤn Độ — 2023: 62,3%\nTrung Quốc — 2023: 61,9%\nMalaysia — 2023: 61,3%\nSingapore — 2023: 61,0%\nPhilippines — 2023: 61,0%\nViệt Nam — 2023: 60,7%\nÚc — 2023: 53,4%\nTrung bình toàn cầu — 2023: 57,6%"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p042:B00",
+        "page": 42,
+        "text": "III. TÌNH HÌNH SỬ DỤNG INTERNET\n1. Phương tiện truy cập Internet của người dân\n94% | 90%\n63%\n50% | 2022\n2023\n14%\n10%\nMáy tính để bàn | Điện thoại di động | Thiết bị khác\nMáy tính xách tay | (Ipad, Máy tính bảng)"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p43:V1",
+        "page": 43,
+        "text": "[bar_chart] 3. Mục đích sử dụng Internet\n(Trang 43, nửa trên; đơn vị: tỷ lệ người dùng Internet)\nXem phim, nghe nhạc — 2023: 59% | Đọc báo — 2023: 51% | Nghiên cứu, học tập — 2023: 48% | Tìm kiếm thông tin mua hàng — 2023: 46% | Tham gia diễn đàn, mạng xã hội — 2023: 46% | Truy cập email — 2023: 34% | Chơi game — 2023: 28% | Hoạt động khác — 2023: 21%"
+      },
+      {
+        "id": "sach-trang-tmdt-2023:p40:V2",
+        "page": 40,
+        "text": "[table] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023\n(Trang 40, nửa dưới; đơn vị: không ghi)\nƯớc tính số lượng người tiêu dùng mua sắm trực tuyến (triệu người) | 2018: 39,9 | 2019: 44,8 | 2020: 49,3 | 2021: 54,6 | 2022: 57,0 | 2023: 61\nƯớc tính giá trị mua sắm trực tuyến của một người (USD) | 2018: 202 | 2019: 225 | 2020: 240 | 2021: 251 | 2022: 288 | 2023: 336\nTỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước | 2018: 4,2% | 2019: 4,9% | 2020: 5,5% | 2021: 7% | 2022: 7,5% | 2023: 8%\nTỷ lệ người dân sử dụng Internet | 2018: 60% | 2019: 66% | 2020: 70% | 2021: 73% | 2022: 73,2% | 2023: 78,6%"
+      }
+    ],
+    "context_chars": 2064,
+    "n_llm_calls": 2,
+    "n_tool_calls": 1,
+    "prompt_tokens": 2509,
+    "completion_tokens": 114,
+    "cost_usd": 0.000444,
+    "equiv_cost_usd": 0.000444,
+    "rate_limit_wait_s": 0.0,
+    "latency_s": 46.9
   }
 ]

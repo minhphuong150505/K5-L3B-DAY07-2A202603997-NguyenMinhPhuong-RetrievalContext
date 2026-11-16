@@ -1,0 +1,182 @@
+[
+ {
+  "query_id": "d01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d07",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d08",
+  "answer_grade": 0,
+  "citation_support": [
+   false,
+   false
+  ],
+  "pass": false,
+  "reason": "Ghi 5.060 triệu (số T1/2022) thay vì 5.158; tăng trưởng 1,90% đúng"
+ },
+ {
+  "query_id": "d09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d10",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "47%/57% đúng nhưng 'giảm 10%' sai đơn vị (đúng: 10 điểm %)"
+ },
+ {
+  "query_id": "d11",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "28,8% là tỷ lệ CCDV; đúng: bán hàng 71,2%. Text layer Day 6 ghép nhãn biểu đồ tròn mơ hồ"
+ },
+ {
+  "query_id": "d12",
+  "answer_grade": 0,
+  "citation_support": [
+   true,
+   false
+  ],
+  "pass": false,
+  "reason": "Lấy 24 tỷ (Việt Nam 2025*) thay vì 16 tỷ (2023) → 2,58 lần sai"
+ },
+ {
+  "query_id": "d13",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d14",
+  "answer_grade": 1,
+  "citation_support": [
+   false,
+   true
+  ],
+  "pass": false,
+  "reason": "78% sai (đúng 78,6% người dân dùng Internet); 78% mua sắm đúng"
+ },
+ {
+  "query_id": "d15",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d17",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Doanh thu B2C 2017 không có (biểu đồ bắt đầu 2018) → KHÔNG từ chối, trả lời: Doanh thu TMĐT B2C của Việt Nam năm 2017 là 8,06 tỷ USD. [sach-trang-tmdt-2023:p040:B00]"
+ },
+ {
+  "query_id": "d18",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có thời gian giao hàng → từ chối đúng"
+ },
+ {
+  "query_id": "d19",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Lazada không có trong biểu đồ giao đồ ăn → từ chối đúng"
+ },
+ {
+  "query_id": "d20",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Không có số người dùng Internet tuyệt đối của VN → KHÔNG từ chối, trả lời: Việt Nam có 43 triệu người dùng Internet vào năm 2023. [sach-trang-tmdt-2023:p034:B01]"
+ }
+]

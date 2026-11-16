@@ -37,7 +37,18 @@ CONFIGS: dict[str, dict[str, Any]] = {
     # >=60% word overlap, quote may sit in another retrieved chunk -> citation re-assigned, 2 retries)
     "A3": {"method": "rerank", "index": "BV", "top_k": 5, "max_steps": 8, "read_page": True,
            "result_chars": 7000, "strict": True, "tolerant": True},
+    # improvement 4 (after A3 dev errors): A3 + generic answer rules (number format, percentage points,
+    # entity/metric check against the cited chunk title)
+    "A4": {"method": "rerank", "index": "BV", "top_k": 5, "max_steps": 8, "read_page": True,
+           "result_chars": 7000, "strict": True, "tolerant": True, "answer_rules": True},
 }
+
+ANSWER_RULES = """
+Quy tắc trình bày số liệu:
+- Chép số đúng như tài liệu (tiếng Việt: dấu chấm phân cách hàng nghìn, dấu phẩy thập phân). Ví dụ tài liệu ghi "5.158 (triệu người)" thì trả lời "5.158 triệu người", KHÔNG viết "5,158".
+- Hiệu của hai tỷ lệ phần trăm gọi là "điểm phần trăm" (57% → 47%: giảm 10 điểm phần trăm), không gọi là "giảm 10%".
+- Trước khi dùng một con số, đọc TIÊU ĐỀ khối/biểu đồ/bảng chứa nó: đúng quốc gia/đối tượng (ví dụ "8. Việt Nam" khác "4. Philippines"), đúng chỉ tiêu (ví dụ "mua sắm hàng tuần" khác "tham gia mua sắm trực tuyến"), đúng năm. Citation phải là chunk có tiêu đề/nhãn đúng đối tượng đó; nếu chưa có, tìm tiếp với tên đối tượng hoặc read_page.
+- Biểu đồ tròn: nếu hai nguồn (index B và V) ghép nhãn–phần trăm khác nhau, coi là không chắc chắn và nêu rõ điều đó."""
 
 STRICT_RULES = """
 Kiểm chứng bắt buộc trước khi answer:
@@ -195,7 +206,7 @@ class Agent:
 
     def run(self, qid: str, question: str, on_event=None) -> dict:
         cfg, t0 = self.cfg, time.perf_counter()
-        system = SYSTEM.format(max_steps=cfg["max_steps"], strict_rules=STRICT_RULES if cfg["strict"] else "", read_page_hint=(
+        system = SYSTEM.format(max_steps=cfg["max_steps"], strict_rules=(STRICT_RULES if cfg["strict"] else "") + (ANSWER_RULES if cfg.get("answer_rules") else ""), read_page_hint=(
             "\n   Bảng/biểu đồ/sơ đồ có thể bị cắt: dùng read_page(trang) để đọc đủ cả trang khi cần."
             if cfg["read_page"] else ""))
         messages = [{"role": "system", "content": system}, {"role": "user", "content": question}]
