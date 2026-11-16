@@ -110,7 +110,7 @@ class Handler(BaseHTTPRequestHandler):
                 d["sql"] = f"SELECT strategy, page, text, metadata FROM chunks WHERE chunk_id = '{d['chunk_id']}';"
                 return self._json(d)
             if u.path == "/api/traces":
-                p = RESULTS / "agent" / q.get("split", "test") / q.get("config", "A2") / "traces.json"
+                p = RESULTS / "agent" / q.get("split", "test") / q.get("config", "A4") / "traces.json"
                 return self._json(json.loads(p.read_text(encoding="utf-8")) if p.exists() else [])
             if u.path == "/api/retrieve":
                 from .retrievers import timed_search
@@ -125,7 +125,7 @@ class Handler(BaseHTTPRequestHandler):
                              "component_ranks": r.get("component_ranks")} for r in res]}
                 return self._json(out)
             if u.path == "/api/ask":
-                return self._ask(q.get("q", "").strip(), q.get("config", "A2"))
+                return self._ask(q.get("q", "").strip(), q.get("config", "A4"))
             return self._json({"error": "not found"}, 404)
         except BrokenPipeError:
             pass
@@ -149,14 +149,18 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(f"event: {kind}\ndata: {json.dumps(obj, ensure_ascii=False, default=str)}\n\n".encode())
             self.wfile.flush()
 
+        from .agent import CONFIGS
         with _lock:
-            push("status", {"message": f"Nạp cấu hình {cfg} (lần đầu ~20–30 s: model embedding, BM25, reranker)…"})
-            a = agent(cfg)
-            push("config", {"config": cfg, **a.cfg, "model": a.model})
             try:
+                if cfg not in CONFIGS:
+                    raise ValueError(f"cấu hình {cfg} không tồn tại (có: {', '.join(sorted(CONFIGS))}); khởi động lại server nếu vừa thêm cấu hình")
+                push("status", {"message": f"Nạp cấu hình {cfg} (lần đầu ~20–30 s: model embedding, BM25, reranker)…"})
+                a = agent(cfg)
+                push("config", {"config": cfg, **a.cfg, "model": a.model})
                 trace = a.run("live", question, on_event=lambda ev: push("step", enrich(ev)))
                 push("done", trace)
-            except Exception as e:
+            except Exception as e:  # always report inside the open SSE stream, never fake a result
+                traceback.print_exc()
                 push("error", {"error": f"{type(e).__name__}: {e}"})
 
 
@@ -166,8 +170,10 @@ def main() -> None:
     ap.add_argument("--warm", action="store_true", help="nạp sẵn agent A2 trước khi mở trang")
     a = ap.parse_args()
     if a.warm:
-        print("Đang nạp sẵn A2 + corpus…")
-        agent("A2")
+        sel = RESULTS / "selection.json"
+        warm = json.loads(sel.read_text())["selected"] if sel.exists() else "A4"
+        print(f"Đang nạp sẵn {warm} + corpus…")
+        agent(warm)
         corpus()
     srv = ThreadingHTTPServer(("127.0.0.1", a.port), Handler)
     print(f"Mở http://127.0.0.1:{a.port}/   (Ctrl+C để dừng)")
