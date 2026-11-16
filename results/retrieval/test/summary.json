@@ -1,0 +1,140 @@
+[
+  {
+    "config": "dense:B",
+    "method": "dense",
+    "index": "B",
+    "k": 3,
+    "budget": 4000,
+    "split": "test",
+    "answerable_N": 24,
+    "hit1": {
+      "n": 19,
+      "N": 24,
+      "rate": 0.792
+    },
+    "hit3": {
+      "n": 23,
+      "N": 24,
+      "rate": 0.958
+    },
+    "full_k": {
+      "n": 20,
+      "N": 24,
+      "rate": 0.833
+    },
+    "context_evidence_rate": {
+      "n": 20,
+      "N": 24,
+      "rate": 0.833
+    },
+    "page_hit3": {
+      "n": 23,
+      "N": 24,
+      "rate": 0.958
+    },
+    "mrr10": 0.876,
+    "errors": 0,
+    "median_latency_ms": 4633.1,
+    "avg_context_chars": 1936,
+    "setup_s": 0.0,
+    "cost_usd": 0.0,
+    "by_group": {
+      "chart": {
+        "hit3": 5,
+        "context": 5,
+        "N": 5
+      },
+      "image": {
+        "hit3": 5,
+        "context": 5,
+        "N": 5
+      },
+      "multihop": {
+        "hit3": 4,
+        "context": 1,
+        "N": 4
+      },
+      "table": {
+        "hit3": 5,
+        "context": 5,
+        "N": 6
+      },
+      "text": {
+        "hit3": 4,
+        "context": 4,
+        "N": 4
+      }
+    },
+    "misses_at3": [
+      "t01"
+    ]
+  },
+  {
+    "config": "rerank:BV:k=5:budget=6000",
+    "method": "rerank",
+    "index": "BV",
+    "k": 5,
+    "budget": 6000,
+    "split": "test",
+    "answerable_N": 24,
+    "hit1": {
+      "n": 22,
+      "N": 24,
+      "rate": 0.917
+    },
+    "hit3": {
+      "n": 24,
+      "N": 24,
+      "rate": 1.0
+    },
+    "full_k": {
+      "n": 22,
+      "N": 24,
+      "rate": 0.917
+    },
+    "context_evidence_rate": {
+      "n": 22,
+      "N": 24,
+      "rate": 0.917
+    },
+    "page_hit3": {
+      "n": 24,
+      "N": 24,
+      "rate": 1.0
+    },
+    "mrr10": 0.958,
+    "errors": 0,
+    "median_latency_ms": 35461.3,
+    "avg_context_chars": 3174,
+    "setup_s": 0.3,
+    "cost_usd": 0.0,
+    "by_group": {
+      "chart": {
+        "hit3": 5,
+        "context": 5,
+        "N": 5
+      },
+      "image": {
+        "hit3": 5,
+        "context": 5,
+        "N": 5
+      },
+      "multihop": {
+        "hit3": 4,
+        "context": 2,
+        "N": 4
+      },
+      "table": {
+        "hit3": 6,
+        "context": 6,
+        "N": 6
+      },
+      "text": {
+        "hit3": 4,
+        "context": 4,
+        "N": 4
+      }
+    },
+    "misses_at3": []
+  }
+]

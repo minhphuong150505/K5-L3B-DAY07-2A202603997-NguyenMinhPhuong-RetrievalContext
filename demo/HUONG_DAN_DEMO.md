@@ -58,13 +58,14 @@ Chọn trong ô **"Chọn câu từ benchmark"** để không phải gõ.
 
 | Vai trò | Câu | Vì sao chọn |
 |---|---|---|
-| Câu có bằng chứng (multi-hop) | **t17**: chênh lệch doanh thu B2C 2023 (tr. 40, 20,5 tỷ) so với doanh thu bán lẻ hàng hóa trực tuyến e-Conomy (tr. 37, 16 tỷ) | cần 2 trang và 2 biểu đồ, có phép tính; thấy rõ agent tìm 2 lần |
+| Câu có bằng chứng (multi-hop) | **t19**: sàn vận tải được ưa chuộng nhất (Grab 70%, tr. 46) + doanh nghiệp vận hành (Công ty TNHH Grab, tr. 84) | cần 2 trang (biểu đồ + bảng); A4 **đạt** trên test với 2 citation đúng |
 | Câu thiếu bằng chứng | **t25**: doanh thu TMĐT B2C Việt Nam năm **2024** | tài liệu chỉ có đến 2023: agent phải từ chối, không lấy số năm khác |
 | Câu bảng | **t01**: giá trị mua sắm trực tuyến của một người năm 2023 (336 USD, tr. 40) | ngắn, nhanh, citation trỏ thẳng vào bảng |
-| Lỗi thật (để phân tích) | **d11** (dev): tỷ lệ website bán hàng (đúng là 71,2%) | biểu đồ tròn bị đọc đảo cả ở index B lẫn V: lỗi thật, có giải thích |
+| Lỗi thật (để phân tích) | **t17** (test): 20,5 tỷ (tr. 40) − 16 tỷ (tr. 37) = 4,5 tỷ | A4 tính **đúng đáp số** nhưng chỉ trích tr. 40 → **không đạt** vì thiếu evidence tr. 37: minh họa "citation hợp lệ chưa đủ" |
+| Lỗi thật thứ hai | **d11** (dev): tỷ lệ website bán hàng (đúng là 71,2%) | biểu đồ tròn bị đọc đảo cả ở index B lẫn V |
 | Câu tự gõ (nếu lớp muốn thử) | ví dụ: "Shopee được bao nhiêu phần trăm người tiêu dùng ưa chuộng?" | 81%, tr. 46: lớp tự kiểm được ngay |
 
-> TODO(SV): sau khi chạy test xong, xem `index.html` mục 7 "Ví dụ thật từ trace". Nếu t17 hoặc t25 bị chấm KHÔNG ĐẠT ở cấu hình đã chốt, đổi sang một câu ĐẠT khác cùng nhóm cho phần demo "đúng", và giữ câu sai cho phần "lỗi". Tuyệt đối không sửa trace.
+> Kết quả test của A4: 25/30 (83,3%). t19, t25, t01 **đạt**; t17 **không đạt** (dùng làm ví dụ lỗi). Không sửa trace.
 
 ---
 
@@ -89,23 +90,23 @@ Nhấn mạnh: **agent chỉ nhận câu hỏi; đáp án chuẩn chỉ dùng l�
 
 ### 2:30 – 3:45 · LIVE: câu có bằng chứng *(tab `http://127.0.0.1:8765/`)*
 
-1. Chọn **t17** trong danh sách, cấu hình để mặc định (cấu hình đã chốt).
+1. Chọn **t19** trong danh sách, cấu hình **A4** (mặc định).
 2. Bấm **▶ Chạy agent**.
 3. Vừa chạy vừa nói, chỉ vào **sơ đồ pipeline** đang sáng lên:
-   > "LLM quyết định gọi search; câu hỏi được embed và tìm trong pgvector, BM25 tìm theo từ khóa, RRF trộn hai danh sách, cross-encoder xếp lại. Agent thấy mới có số của trang 40 nên tìm lần nữa cho e-Conomy SEA…"
+   > "LLM quyết định gọi search; câu hỏi được embed và tìm trong pgvector, BM25 tìm theo từ khóa, RRF trộn hai danh sách, cross-encoder xếp lại. Agent có tỷ lệ Grab ở biểu đồ trang 46, rồi tìm tiếp bảng doanh nghiệp gọi xe ở trang 84…"
 4. Ở **Dòng thời gian**: chỉ 2 lượt `search_documents`, nhãn **B** (text) và **V** (bảng/biểu đồ), trang, score.
-5. Ở **Kết quả**: câu trả lời có phép tính 20,5 − 16 = 4,5 tỷ USD và 2 citation.
+5. Ở **Kết quả**: Grab 70% và Công ty TNHH Grab, với 2 citation (một chunk V biểu đồ tr. 46, một chunk V bảng tr. 84). LLM có thể trả lời hơi khác lần chạy trên test; nếu sai, nói thật và phân tích.
 
 ### 3:45 – 4:30 · Chứng minh nguồn trong DB
 
 1. Bấm một **citation** (chip màu xanh). Khung **Chunk inspector** bên phải hiện:
    - đúng dòng trong bảng `chunks` của pgvector: `chunk_id`, index, trang, model embedding 1024 chiều, sha256;
    - câu SQL để tự kiểm;
-   - **ảnh trang PDF gốc**: chỉ vào cột 2023 = 20,5 trên ảnh.
+   - **ảnh trang PDF gốc**: chỉ vào cột Grab = 70% trên ảnh trang 46.
 2. (Nếu còn thời gian) chạy trong terminal:
 
    ```bash
-   $PY -m src.rag.verify --trace results/agent/test/<CẤU_HÌNH_ĐÃ_CHỐT>/traces.json --id t17 --find "20,5"
+   $PY -m src.rag.verify --trace results/agent/test/A4/traces.json --id t19 --find "70%"
    ```
 
    > "Citation hợp lệ chưa đủ. Em đối chiếu nội dung chunk với trang gốc, và script này kiểm chuỗi trong DB và trong text layer của PDF."
@@ -116,9 +117,9 @@ Nhấn mạnh: **agent chỉ nhận câu hỏi; đáp án chuẩn chỉ dùng l�
    > "Tài liệu chỉ có tới 2023. Baseline A0 trên dev từng trả lời 'năm 2017 = 8,06 tỷ', thực ra là số của năm 2018. Cấu hình mới bắt kiểm năm, đối tượng và trích dẫn nguyên văn nên agent từ chối."
 2. Bấm **So sánh 4 retriever** để thấy 4 cột dense / BM25 / hybrid / rerank, cùng chunk cùng màu viền: các phương pháp xếp hạng khác nhau.
 
-### 5:15 – 6:00 · Một lỗi thật *(tab `index.html`, mục 6–7)*
+### 5:15 – 6:00 · Một lỗi thật *(tab live → "Phát lại trace đã lưu" → test / A4 / t17; rồi `index.html` mục 6–7)*
 
-> "Đây là lỗi em chưa sửa được: biểu đồ tròn. Vision model đọc ngược nhãn ở 5/5 biểu đồ tròn em kiểm tay; câu d11 vì vậy trả lời 28,8% thay vì 71,2%. Em ghi lại trong `results/visual/manual_check.md`; hướng sửa là dùng model vision mạnh hơn hoặc đọc màu chú giải bằng toạ độ."
+> "Câu t17 agent tính đúng 20,5 − 16 = 4,5 tỷ, nhưng chỉ trích trang 40, không trích trang 37 nơi có số 16 tỷ. Theo luật chấm, thiếu evidence là không đạt: citation hợp lệ chưa đủ. Lỗi thứ hai em chưa sửa được là biểu đồ tròn. Vision model đọc ngược nhãn ở 5/5 biểu đồ tròn em kiểm tay; câu d11 vì vậy trả lời 28,8% thay vì 71,2%. Em ghi lại trong `results/visual/manual_check.md`; hướng sửa là dùng model vision mạnh hơn hoặc đọc màu chú giải bằng toạ độ."
 
 Chỉ bảng **Phân tích lỗi trên dev (trước/sau)**: 2+ lỗi, giả thuyết, kết quả sau khi sửa (kể cả lần sửa làm **xấu đi**, A2 từ chối nhầm nhiều, rồi A3 sửa lại).
 
@@ -138,7 +139,7 @@ Chỉ bảng **Phân tích lỗi trên dev (trước/sau)**: 2+ lỗi, giả thu
 
 | Sự cố | Cách xử lý |
 |---|---|
-| Mất mạng / OpenAI lỗi / chậm | Tab **"Phát lại trace đã lưu"** → chọn `test` + cấu hình đã chốt + câu → ▶ Phát lại. Đây là trace thật đã ghi, **không gọi API**. Hoặc mở thẳng `http://127.0.0.1:8765/?replay=test/<CẤU_HÌNH>/t17&gold=1` |
+| Mất mạng / OpenAI lỗi / chậm | Tab **"Phát lại trace đã lưu"** → chọn `test` + cấu hình đã chốt + câu → ▶ Phát lại. Đây là trace thật đã ghi, **không gọi API**. Hoặc mở thẳng `http://127.0.0.1:8765/?replay=test/A4/t17&gold=1` |
 | Server demo chưa chạy | chạy lại mục 1.2 bước (2), rồi Ctrl+Shift+R |
 | DB không lên | `docker --context default ps`; bật lại bằng lệnh mục 1.2 bước (1). Nếu vẫn lỗi: trình bày bằng `index.html` + phát lại không dùng được inspector; nói rõ là đang dùng trace đã lưu |
 | Lần chạy đầu chậm (~30 s) | do nạp model; nói trước "lần đầu nạp model embedding và reranker" |
@@ -159,7 +160,7 @@ Chỉ bảng **Phân tích lỗi trên dev (trước/sau)**: 2+ lỗi, giả thu
 | Sao score lúc 0,99 lúc 124? | Mỗi phương pháp một thang điểm: dense là cosine 0–1; BM25 không có giới hạn trên (khoảng 20–190); RRF ≤ 0,033; rerank là xác suất 0–1. Chỉ so thứ hạng trong cùng một phương pháp, vì vậy hybrid dùng RRF theo rank. |
 | Tách từ tiếng Việt? | BM25 dùng âm tiết + bigram âm tiết để xấp xỉ từ ghép ("thương mại", "điện tử"). |
 | Chi phí? | Index V khoảng $0,41 cho 100 trang (một lần); agent khoảng $0,0005 mỗi câu; embedding và rerank chạy local, chi phí 0. |
-| Vì sao không đạt 100%? | Lỗi biểu đồ tròn, model nhỏ (`gpt-4o-mini`) đôi khi chọn sai năm hoặc từ chối nhầm, và rerank chạy trên CPU nên chậm. |
+| Vì sao không đạt 90% (bonus)? | Test 25/30 = 83,3% < 90%: multi-hop chỉ 1/4 (thiếu citation trang thứ hai, lấy số dự báo 2027), một câu từ chối nhầm, một câu nhầm "ưa chuộng" thành "thị phần GMV". Em không chỉnh theo test; muốn thử lại phải sửa trên dev và soạn bộ test mới. |
 
 ---
 

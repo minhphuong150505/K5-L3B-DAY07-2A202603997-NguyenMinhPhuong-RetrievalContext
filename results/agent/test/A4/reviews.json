@@ -1,0 +1,265 @@
+[
+ {
+  "query_id": "t01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t07",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t08",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t10",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t11",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t12",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t13",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t14",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t15",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t17",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "Đáp số đúng (20,5 − 16 = 4,5) nhưng chỉ trích tr. 40; số 16 tỷ e-Conomy (tr. 37) không có citation → thiếu evidence"
+ },
+ {
+  "query_id": "t18",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "Trung Quốc 50,2% đúng; '3.982 tỷ' là dự báo 2027 (đúng 2.682 tỷ năm 2022), citation p32:V1 không chứa số này"
+ },
+ {
+  "query_id": "t19",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t20",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "34,6% / 24,1% / 10,5 điểm đều đúng nhưng chỉ trích tr. 77; 24,1% ở tr. 82 không có citation → thiếu evidence"
+ },
+ {
+  "query_id": "t21",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t22",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t23",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t24",
+  "answer_grade": 0,
+  "citation_support": [],
+  "pass": false,
+  "reason": "Từ chối nhầm: tr. 13 có đủ 2 nội dung đánh giá định kỳ"
+ },
+ {
+  "query_id": "t25",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có B2C Việt Nam 2024 (chỉ có 2018–2023; 2024* chỉ cho toàn cầu/TQ/Mỹ) → từ chối đúng"
+ },
+ {
+  "query_id": "t26",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Nhật Bản trong biểu đồ 1.3 (tr. 29) → từ chối đúng"
+ },
+ {
+  "query_id": "t27",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Không có thị phần GMV; 81% là tỷ lệ người dùng ưa chuộng (tr. 46) → KHÔNG từ chối, khẳng định vô căn cứ: Shopee chiếm 81% thị phần giá trị giao dịch (GMV) thương mại điện tử tại Việt Nam năm 2023. [sach-tr"
+ },
+ {
+  "query_id": "t28",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không nêu mức phạt trong phần Nghị định 13/2023 → từ chối đúng"
+ },
+ {
+  "query_id": "t29",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Úc trong biểu đồ 2.3.2 (tr. 63) → từ chối đúng"
+ },
+ {
+  "query_id": "t30",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có tỷ lệ hoàn trả đơn hàng → từ chối đúng"
+ }
+]

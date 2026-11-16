@@ -1,0 +1,273 @@
+[
+ {
+  "query_id": "t01",
+  "answer_grade": 0,
+  "citation_support": [
+   false,
+   false
+  ],
+  "pass": false,
+  "reason": "Sai: trả lời phân bố chi tiêu (tr. 48) và tự quy đổi tỷ giá; đáp án 336 USD ở bảng tr. 40"
+ },
+ {
+  "query_id": "t02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t07",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "11 quyền đúng; quyền số 11 sai ('khiếu nại, tố cáo, khởi kiện' là số 9; số 11 là 'tự bảo vệ')"
+ },
+ {
+  "query_id": "t08",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t10",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t12",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t13",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t14",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t15",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t17",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   false
+  ],
+  "pass": false,
+  "reason": "20,5 tỷ đúng; '16,4 tỷ' sai (16,4 là B2C 2022; e-Conomy 2023 là 16 tỷ, tr. 37) → chênh lệch 4,1 sai"
+ },
+ {
+  "query_id": "t18",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   false
+  ],
+  "pass": false,
+  "reason": "Trung Quốc 50,2% đúng; '3.982 tỷ' là dự báo 2027, đúng là 2.682 tỷ (2022)"
+ },
+ {
+  "query_id": "t19",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t20",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t21",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t22",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t23",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai văn bản: nêu Chỉ thị 18/CT-TTg; đúng là Quyết định 645/QĐ-TTg (tr. 3)"
+ },
+ {
+  "query_id": "t24",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "t25",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Không có B2C Việt Nam 2024 (chỉ có 2018–2023; 2024* chỉ cho toàn cầu/TQ/Mỹ) → KHÔNG từ chối, khẳng định vô căn cứ: Doanh thu TMĐT B2C của Việt Nam năm 2024 ước đạt 25 tỷ USD. [sach-trang-tmdt-2023:p030:B01]"
+ },
+ {
+  "query_id": "t26",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Không có Nhật Bản trong biểu đồ 1.3 (tr. 29) → KHÔNG từ chối, khẳng định vô căn cứ: Thời gian truy cập Internet trung bình mỗi ngày của người dùng tại Nhật Bản năm 2023 được phân bố nh"
+ },
+ {
+  "query_id": "t27",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Không có thị phần GMV; 81% là tỷ lệ người dùng ưa chuộng (tr. 46) → KHÔNG từ chối, khẳng định vô căn cứ: Shopee chiếm 81% thị phần giá trị giao dịch (GMV) trong lĩnh vực bán buôn bán lẻ của thương mại điện"
+ },
+ {
+  "query_id": "t28",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không nêu mức phạt trong phần Nghị định 13/2023 → từ chối đúng"
+ },
+ {
+  "query_id": "t29",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Úc trong biểu đồ 2.3.2 (tr. 63) → từ chối đúng"
+ },
+ {
+  "query_id": "t30",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có tỷ lệ hoàn trả đơn hàng → từ chối đúng"
+ }
+]
