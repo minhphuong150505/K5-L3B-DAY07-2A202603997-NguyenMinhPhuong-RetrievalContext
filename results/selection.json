@@ -41,7 +41,21 @@
       "abstain_correct": "3/4",
       "false_abstain": "0/16",
       "cost_usd": 0.014
+    },
+    "A5": {
+      "pass": "15/20 = 75.0%",
+      "grounded_mean_over_2": 1.625,
+      "abstain_correct": "3/4",
+      "false_abstain": "0/16",
+      "cost_usd": 0.0161
     }
   },
-  "note": "Chốt trước khi chạy bất kỳ câu test nào; sau thời điểm này không đổi code agent/retrieval/prompt. Test chạy A0 (baseline) và A4."
+  "note": "Chốt trước khi chạy bất kỳ câu test nào; sau thời điểm này không đổi code agent/retrieval/prompt. Test chạy A0 (baseline) và A4.",
+  "test2": {
+    "frozen_at": "2026-11-16T12:02:41+07:00",
+    "selected": "A4",
+    "baseline": "A0",
+    "reason": "Sau khi test gốc đạt 83,3% (<90%), thử A5 (A4 + kiểm đủ citation + luật chỉ tiêu) trên dev: 15/20 < A4 17/20 → giữ A4 theo cùng tiêu chí. test2 (benchmark/questions_test2.json) đã commit trước khi viết A5; chạy A0 và A4 trên test2 đúng một lần.",
+    "note": "Không chỉnh gì sau thời điểm này cho tới khi chấm xong test2."
+  }
 }

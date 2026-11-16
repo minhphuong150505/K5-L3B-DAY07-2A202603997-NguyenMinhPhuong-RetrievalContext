@@ -41,7 +41,16 @@ CONFIGS: dict[str, dict[str, Any]] = {
     # entity/metric check against the cited chunk title)
     "A4": {"method": "rerank", "index": "BV", "top_k": 5, "max_steps": 8, "read_page": True,
            "result_chars": 7000, "strict": True, "tolerant": True, "answer_rules": True},
+    # improvement 5 (after A4 errors; judged on dev, then on the fresh test2 only):
+    # A4 + citation-coverage check (every source number in the answer must sit in a cited chunk)
+    # + rule against substituting a near-synonym metric (preference rate != market share, % != count)
+    "A5": {"method": "rerank", "index": "BV", "top_k": 5, "max_steps": 8, "read_page": True,
+           "result_chars": 7000, "strict": True, "tolerant": True, "answer_rules": True, "coverage": True},
 }
+
+METRIC_RULES = """
+- Không thay chỉ tiêu được hỏi bằng chỉ tiêu gần nghĩa: tỷ lệ người dùng ưa chuộng ≠ thị phần/GMV; tỷ lệ % ≠ số lượng tuyệt đối; số của toàn cầu/khu vực ≠ số của Việt Nam; tỷ lệ mua sắm hàng tuần ≠ tỷ lệ tham gia mua sắm. Nếu tài liệu không có đúng chỉ tiêu đó cho đúng đối tượng/năm → abstain.
+- Câu hỏi gồm nhiều ý lấy từ nhiều trang: mỗi con số phải được trích từ chunk chứa chính con số đó (citation cho TỪNG trang đã dùng)."""
 
 ANSWER_RULES = """
 Quy tắc trình bày số liệu:
@@ -163,6 +172,35 @@ def _supported(quote: str, text: str) -> bool:
     return sum(w in tw for w in words) / len(words) >= 0.6
 
 
+def _source_numbers(text: str) -> set[str]:
+    """Numbers worth checking: >=2 digits or with a decimal/thousand separator; years 1900-2100 excluded."""
+    out = set()
+    for n in re.findall(r"\d+(?:[.,]\d+)*", text):
+        digits = re.sub(r"[.,]", "", n)
+        if len(digits) < 2 and not re.search(r"[.,]", n):
+            continue
+        if re.fullmatch(r"(19|20)\d\d", n):
+            continue
+        out.add(digits)
+    return out
+
+
+def uncovered_numbers(answer: str, cited: list[str], seen: dict) -> dict[str, list[str]]:
+    """Numbers in the answer that appear in some retrieved chunk but in none of the cited chunks."""
+    def nums(t):
+        return {re.sub(r"[.,]", "", n) for n in re.findall(r"\d+(?:[.,]\d+)*", t)}
+    cited_nums = set().union(*(nums(seen[c]["text"]) for c in cited if c in seen)) if cited else set()
+    body = re.sub(r"\[[^\]]*\]", "", answer)
+    missing = {}
+    for n in _source_numbers(body):
+        if n in cited_nums:
+            continue
+        holders = [k for k, v in seen.items() if n in nums(v["text"])]
+        if holders:  # number comes from the document but its chunk is not cited
+            missing[n] = holders[:6]
+    return missing
+
+
 def check_quotes_tolerant(evidence: list, seen: dict, citations: list[str]) -> tuple[list[str], list[str]]:
     """Returns (problems, supported_citation_ids). A quote supports the chunk that actually contains it."""
     problems, ok = [], []
@@ -206,7 +244,7 @@ class Agent:
 
     def run(self, qid: str, question: str, on_event=None) -> dict:
         cfg, t0 = self.cfg, time.perf_counter()
-        system = SYSTEM.format(max_steps=cfg["max_steps"], strict_rules=(STRICT_RULES if cfg["strict"] else "") + (ANSWER_RULES if cfg.get("answer_rules") else ""), read_page_hint=(
+        system = SYSTEM.format(max_steps=cfg["max_steps"], strict_rules=(STRICT_RULES if cfg["strict"] else "") + (ANSWER_RULES if cfg.get("answer_rules") else "") + (METRIC_RULES if cfg.get("coverage") else ""), read_page_hint=(
             "\n   Bảng/biểu đồ/sơ đồ có thể bị cắt: dùng read_page(trang) để đọc đủ cả trang khi cần."
             if cfg["read_page"] else ""))
         messages = [{"role": "system", "content": system}, {"role": "user", "content": question}]
@@ -214,6 +252,7 @@ class Agent:
         events, llm_calls = _Events(on_event), []
         quote_retry_used = False
         quote_retries = 0
+        coverage_retry_used = False
         result: dict[str, Any] = {}
         for step in range(cfg["max_steps"]):
             final_only = step == cfg["max_steps"] - 1
@@ -301,6 +340,19 @@ class Agent:
                             valid = []
                         else:
                             events.append({"event": "quote_check_passed", "evidence": args.get("evidence")})
+                    if cfg.get("coverage") and ans and valid and not coverage_retry_used:
+                        miss = uncovered_numbers(ans, valid, seen)
+                        if miss:
+                            coverage_retry_used = True
+                            events.append({"event": "coverage_check_failed", "uncited_numbers": miss})
+                            hint = "; ".join(f"số {n} có trong: " + ", ".join(
+                                f"{h} ({seen[h]['text'].splitlines()[0][:70]})" for h in hs) for n, hs in miss.items())
+                            messages.append({"role": "tool", "tool_call_id": call.get("id", name), "name": name,
+                                             "content": "TỪ CHỐI: câu trả lời dùng con số chưa có citation. " + hint
+                                             + ". Kiểm tra đúng đối tượng/năm theo tiêu đề chunk, trích bổ sung chunk đúng (kèm evidence) rồi answer lại; nếu con số đó không đúng đối tượng thì sửa câu trả lời hoặc abstain."})
+                            continue
+                        if cfg.get("coverage"):
+                            events.append({"event": "coverage_check_passed"})
                     for c in valid:
                         if f"[{c}]" not in ans:
                             ans += f" [{c}]"

@@ -1,0 +1,180 @@
+[
+ {
+  "query_id": "d01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d03",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai: 31,7% là Internet banking; ví điện tử CCDV là 7,5% (tr. 72). A4 trả lời đúng câu này → biến động của model"
+ },
+ {
+  "query_id": "d04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d07",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d08",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d10",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d11",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "28,8% sai (đúng 71,2%): chunk V tr. 68 đảo nhãn"
+ },
+ {
+  "query_id": "d12",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   false
+  ],
+  "pass": false,
+  "reason": "Đáp số 3,875 đúng nhưng số 16 lấy từ Philippines (p035:B03); kiểm 'đủ citation' không bắt được vì số có trong chunk được trích, sai đối tượng"
+ },
+ {
+  "query_id": "d13",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d14",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   false
+  ],
+  "pass": false,
+  "reason": "78,6% đúng; 60,7% sai chỉ tiêu (mua sắm hàng tuần tr. 30) dù có luật chỉ tiêu"
+ },
+ {
+  "query_id": "d15",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ, citation đúng trang/vùng (đối chiếu ảnh trang)"
+ },
+ {
+  "query_id": "d17",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Doanh thu B2C 2017 không có (biểu đồ bắt đầu 2018) → từ chối đúng"
+ },
+ {
+  "query_id": "d18",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có thời gian giao hàng → từ chối đúng"
+ },
+ {
+  "query_id": "d19",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Lazada không có trong biểu đồ giao đồ ăn → từ chối đúng"
+ },
+ {
+  "query_id": "d20",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Không có số người dùng Internet tuyệt đối của VN → KHÔNG từ chối, trả lời: Việt Nam có 5.158 triệu người dùng Internet vào năm 2023. [sach-trang-tmdt-2023:p28:V1]"
+ }
+]
