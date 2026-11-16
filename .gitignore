@@ -9,3 +9,7 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Tài liệu gốc không có giấy phép tái phân phối rõ ràng: tải lại theo README
+data/BCTMDT2023-file-31-1-pdf.pdf
+work/

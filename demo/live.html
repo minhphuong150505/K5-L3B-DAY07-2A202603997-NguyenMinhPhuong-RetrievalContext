@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RAG Live Demo</title>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#16202c;--muted:#5d6a78;--line:#dce3eb;--accent:#1554a5;--accent2:#e7effa;--b:#2f6fb5;--v:#b5562f;--ok:#1e7a46;--bad:#b3261e;--warn:#9a6700;--code:#eef2f6;--glow:#ffd166}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1319;--card:#161d25;--ink:#e6ebf1;--muted:#9aa7b4;--line:#2a3542;--accent:#6ea8ff;--accent2:#1a283a;--b:#6ea8ff;--v:#f0a070;--ok:#4cc38a;--bad:#ff7b72;--warn:#e3b341;--code:#1f2933;--glow:#e3b341}}
+:root[data-theme="dark"]{--bg:#0e1319;--card:#161d25;--ink:#e6ebf1;--muted:#9aa7b4;--line:#2a3542;--accent:#6ea8ff;--accent2:#1a283a;--b:#6ea8ff;--v:#f0a070;--ok:#4cc38a;--bad:#ff7b72;--warn:#e3b341;--code:#1f2933;--glow:#e3b341}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:10}
+header h1{font-size:18px;margin:0}
+.pill{font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.pill.on{color:var(--ok);border-color:var(--ok)}.pill.off{color:var(--bad);border-color:var(--bad)}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;cursor:pointer;font:inherit}
+.tabs button:first-child{border-radius:8px 0 0 8px}.tabs button:last-child{border-radius:0 8px 8px 0}
+.tabs button.act{background:var(--accent);color:#fff;border-color:var(--accent)}
+main{max-width:1400px;margin:0 auto;padding:16px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:16px}
+@media (max-width:960px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+h2{font-size:15px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+textarea,select,input{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px;width:100%}
+textarea{min-height:64px;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.row>*{flex:1 1 160px}
+button.main{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:9px 14px;font:inherit;font-weight:600;cursor:pointer;flex:0 0 auto}
+button.sec{background:var(--card);color:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:8px 12px;font:inherit;cursor:pointer;flex:0 0 auto}
+button:disabled{opacity:.5;cursor:wait}
+label.chk{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);flex:0 0 auto}label.chk input{width:auto}
+.gold{margin-top:8px;padding:8px 10px;border-left:3px solid var(--warn);background:var(--accent2);font-size:13px;display:none}
+.gold.show{display:block}
+/* pipeline */
+svg.pipe{width:100%;height:auto;display:block}
+svg.pipe .n rect{fill:var(--card);stroke:var(--line);stroke-width:1.5;rx:10;transition:all .3s}
+svg.pipe .n text{fill:var(--ink);font-size:12.5px;text-anchor:middle;pointer-events:none}
+svg.pipe .n .sub{fill:var(--muted);font-size:11px}
+svg.pipe .n.used rect{stroke:var(--accent);fill:var(--accent2)}
+svg.pipe .n.active rect{stroke:var(--glow);stroke-width:3;fill:var(--accent2);filter:drop-shadow(0 0 6px var(--glow))}
+svg.pipe .n.ok rect{stroke:var(--ok);stroke-width:3}svg.pipe .n.bad rect{stroke:var(--bad);stroke-width:3}
+svg.pipe path{stroke:var(--line);stroke-width:2;fill:none;transition:stroke .3s}
+svg.pipe path.used{stroke:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-top:10px}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.stat b{display:block;font-size:18px;font-variant-numeric:tabular-nums}.stat span{font-size:11px;color:var(--muted)}
+/* timeline */
+#timeline{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.ev{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card);animation:in .35s ease-out}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ev{animation:none}svg.pipe *{transition:none}}
+.ev .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.ev .t{font-weight:600}.ev .m{font-size:12px;color:var(--muted)}
+.badge{font-size:11px;font-weight:700;padding:1px 6px;border-radius:5px;color:#fff;background:var(--muted)}
+.badge.B{background:var(--b)}.badge.V{background:var(--v)}
+.ev.llm{border-left:4px solid var(--accent)}.ev.search{border-left:4px solid var(--b)}.ev.answer{border-left:4px solid var(--ok)}
+.ev.abstain{border-left:4px solid var(--warn)}.ev.err{border-left:4px solid var(--bad)}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums;margin-top:6px}
+th,td{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr.clk{cursor:pointer}tr.clk:hover td{background:var(--accent2)}
+td.snip{color:var(--muted);max-width:360px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+code,pre{font:12.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);border-radius:6px}
+code{padding:1px 4px}pre{padding:10px;white-space:pre-wrap;overflow-x:auto;margin:6px 0}
+.answer{font-size:16px;line-height:1.6}
+.cite{display:inline-block;margin:2px;padding:1px 8px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);font-size:12px;cursor:pointer;background:none;font-family:inherit}
+#inspector img{max-width:100%;border:1px solid var(--line);border-radius:8px;margin-top:8px}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:2px 10px;font-size:13px}.kv div:nth-child(odd){color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:1200px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.col h3{font-size:13px;margin:0 0 4px}.col .item{border:1px solid var(--line);border-radius:8px;padding:6px;margin:4px 0;font-size:12px;cursor:pointer}
+.muted{color:var(--muted)}.hide{display:none}
+.side{display:flex;flex-direction:column;gap:16px}
+@media (min-width:961px){.side .card{position:sticky;top:70px;max-height:calc(100vh - 90px);overflow:auto}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Agentic RAG · Sách trắng TMĐT 2023 · Live</h1>
+  <div class="tabs" role="tablist"><button id="tabLive" class="act">Chạy live</button><button id="tabReplay">Phát lại trace đã lưu</button></div>
+  <span id="srv" class="pill">đang kiểm tra server…</span>
+</header>
+<main>
+<div>
+  <section class="card">
+    <h2>1 · Câu hỏi</h2>
+    <select id="pick" aria-label="Chọn câu từ benchmark"><option value="">— Chọn câu từ benchmark hoặc tự gõ —</option></select>
+    <textarea id="q" placeholder="Nhập câu hỏi về Sách trắng TMĐT Việt Nam 2023…"></textarea>
+    <div class="row" id="liveCtl">
+      <select id="cfg" aria-label="Cấu hình"><option value="A2">A2 · rerank + read_page + kiểm trích dẫn (đã chốt)</option><option value="A1">A1 · hybrid RRF + index V</option><option value="A0">A0 · baseline Day 6 (dense, index B)</option></select>
+      <button class="main" id="run">▶ Chạy agent</button>
+      <button class="sec" id="cmp">So sánh 4 retriever</button>
+      <label class="chk"><input type="checkbox" id="showGold"> Hiện đáp án chuẩn (người trình bày)</label>
+    </div>
+    <div class="row hide" id="replayCtl">
+      <select id="rsplit"><option value="test">test</option><option value="dev">dev</option></select>
+      <select id="rcfg"><option value="A2">A2</option><option value="A1">A1</option><option value="A0">A0</option></select>
+      <select id="rq"></select>
+      <button class="main" id="replay">▶ Phát lại</button>
+    </div>
+    <div id="gold" class="gold"></div>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <h2>2 · Pipeline (sáng lên theo từng bước)</h2>
+    <svg class="pipe" viewBox="0 0 980 250" role="img" aria-label="Sơ đồ pipeline RAG">
+      <path id="e-q-llm" d="M95 125 H140"/><path id="e-llm-s" d="M255 110 C290 80 300 60 330 60"/><path id="e-llm-p" d="M255 140 C290 170 300 195 330 195"/>
+      <path id="e-s-emb" d="M445 60 H470"/><path id="e-emb-st" d="M560 60 H585"/><path id="e-s-bm" d="M445 70 C460 110 460 125 470 125"/>
+      <path id="e-st-rrf" d="M675 60 C690 60 690 95 705 95"/><path id="e-bm-rrf" d="M560 125 C640 125 680 110 705 105"/>
+      <path id="e-rrf-rr" d="M765 115 V140"/><path id="e-st-ctx" d="M675 70 C700 160 700 195 705 195"/>
+      <path id="e-rr-ctx" d="M765 180 V185"/><path id="e-p-ctx" d="M445 195 H705"/>
+      <path id="e-ctx-llm" d="M705 215 C500 245 260 240 200 155"/>
+      <path id="e-llm-a" d="M200 95 C220 20 820 10 870 60"/><path id="e-llm-x" d="M210 155 C300 250 820 250 870 200"/>
+      <g class="n" id="n-q"><rect x="10" y="100" width="85" height="50"/><text x="52" y="122">Câu hỏi</text><text class="sub" x="52" y="139">người dùng</text></g>
+      <g class="n" id="n-llm"><rect x="140" y="95" width="115" height="60"/><text x="197" y="118">LLM agent</text><text class="sub" x="197" y="136" id="lbl-model">gpt-4o-mini</text></g>
+      <g class="n" id="n-s"><rect x="330" y="35" width="115" height="50"/><text x="387" y="57">search_documents</text><text class="sub" x="387" y="74">tool</text></g>
+      <g class="n" id="n-p"><rect x="330" y="170" width="115" height="50"/><text x="387" y="192">read_page</text><text class="sub" x="387" y="209">tool</text></g>
+      <g class="n" id="n-emb"><rect x="470" y="35" width="90" height="50"/><text x="515" y="57">Embedding</text><text class="sub" x="515" y="74">SEA-LION-E5</text></g>
+      <g class="n" id="n-st"><rect x="585" y="35" width="90" height="50"/><text x="630" y="57">pgvector</text><text class="sub" x="630" y="74">B + V, HNSW</text></g>
+      <g class="n" id="n-bm"><rect x="470" y="100" width="90" height="50"/><text x="515" y="122">BM25</text><text class="sub" x="515" y="139">âm tiết+bigram</text></g>
+      <g class="n" id="n-rrf"><rect x="705" y="75" width="120" height="40"/><text x="765" y="100">Hybrid RRF</text></g>
+      <g class="n" id="n-rr"><rect x="705" y="140" width="120" height="40"/><text x="765" y="165">Rerank bge-m3</text></g>
+      <g class="n" id="n-ctx"><rect x="705" y="185" width="120" height="45"/><text x="765" y="205">Context</text><text class="sub" x="765" y="221" id="lbl-ctx">0 chunk</text></g>
+      <g class="n" id="n-a"><rect x="870" y="35" width="100" height="55"/><text x="920" y="58">Trả lời</text><text class="sub" x="920" y="76">+ citation</text></g>
+      <g class="n" id="n-x"><rect x="870" y="175" width="100" height="55"/><text x="920" y="198">Từ chối</text><text class="sub" x="920" y="216">thiếu bằng chứng</text></g>
+    </svg>
+    <div class="stats">
+      <div class="stat"><b id="s-steps">0</b><span>lượt LLM</span></div>
+      <div class="stat"><b id="s-search">0</b><span>lượt truy xuất</span></div>
+      <div class="stat"><b id="s-tok">0</b><span>token</span></div>
+      <div class="stat"><b id="s-cost">$0</b><span>chi phí</span></div>
+      <div class="stat"><b id="s-time">0 s</b><span>thời gian</span></div>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <h2>3 · Kết quả</h2>
+    <div id="final" class="muted">Chưa chạy.</div>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <h2>4 · Dòng thời gian (trace)</h2>
+    <div id="status" class="muted"></div>
+    <div id="timeline"></div>
+  </section>
+
+  <section class="card hide" id="cmpCard" style="margin-top:16px">
+    <h2>Retrieval Inspector · top-5 mỗi phương pháp (index B+V, câu hỏi gốc)</h2>
+    <div id="cmpOut" class="cols"></div>
+    <p class="muted" style="font-size:12px">Cùng một chunk được tô cùng màu viền ở các cột. Hybrid ghi rank thành phần (dense/bm25); rerank chấm lại 20 ứng viên hybrid bằng cross-encoder.</p>
+  </section>
+</div>
+
+<div class="side">
+  <section class="card" id="inspector">
+    <h2>Chunk inspector (dữ liệu thật trong pgvector)</h2>
+    <p class="muted">Bấm một dòng kết quả tìm kiếm hoặc một citation để xem chunk đúng như lưu trong DB, ảnh trang PDF gốc và câu SQL để tự kiểm.</p>
+  </section>
+</div>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); }
+  for (const k of kids) e.append(k instanceof Node ? k : document.createTextNode(k ?? '')); return e; };
+let QUESTIONS = [], running = false, stats, cfgInfo = {}, ctxIds = new Set(), t0 = 0, textCache = {};
+
+async function ping() {
+  try { const r = await fetch('/api/questions'); QUESTIONS = await r.json(); $('#srv').textContent = 'server: đang chạy'; $('#srv').className = 'pill on'; fillQuestions(); }
+  catch { $('#srv').textContent = 'server chưa chạy: python -m src.rag.demo_server'; $('#srv').className = 'pill off'; }
+}
+function fillQuestions() {
+  const pick = $('#pick');
+  for (const split of ['dev', 'test']) {
+    const g = el('optgroup', { label: split.toUpperCase() });
+    QUESTIONS.filter(q => q.split === split).forEach(q => g.append(el('option', { value: q.id }, `${q.id} · ${q.group} · ${q.question.slice(0, 90)}`)));
+    pick.append(g);
+  }
+}
+$('#pick').addEventListener('change', e => { const q = QUESTIONS.find(x => x.id === e.target.value); if (q) { $('#q').value = q.question; showGold(q); } });
+$('#showGold').addEventListener('change', () => showGold(QUESTIONS.find(x => x.id === $('#pick').value)));
+function showGold(q) {
+  const box = $('#gold'); box.replaceChildren(); box.classList.toggle('show', !!(q && $('#showGold').checked));
+  if (!q) return;
+  if (q.answerable) { box.append(el('b', {}, 'Đáp án chuẩn: '), q.expected_answer, el('br'), el('span', { class: 'muted' }, 'Evidence: ' + q.gold.map(g => `tr.${g.page} — ${g.region}`).join('; '))); }
+  else box.append(el('b', {}, 'Kỳ vọng: từ chối. '), q.absence_reason);
+}
+
+/* ---------- pipeline highlighting ---------- */
+function resetPipe() { document.querySelectorAll('svg.pipe .n,svg.pipe path').forEach(n => n.classList.remove('used', 'active', 'ok', 'bad')); }
+function light(nodes, edges = []) {
+  document.querySelectorAll('svg.pipe .n.active').forEach(n => n.classList.remove('active'));
+  nodes.forEach(id => { const n = $('#n-' + id); if (n) n.classList.add('used', 'active'); });
+  edges.forEach(id => { const e = $('#e-' + id); if (e) e.classList.add('used'); });
+}
+function searchPath(method) {
+  const base = { nodes: ['s', 'emb', 'st'], edges: ['llm-s', 's-emb', 'emb-st'] };
+  if (method === 'bm25') return { nodes: ['s', 'bm'], edges: ['llm-s', 's-bm'] };
+  if (method === 'hybrid' || method === 'rerank') { base.nodes.push('bm', 'rrf'); base.edges.push('s-bm', 'st-rrf', 'bm-rrf'); }
+  if (method === 'rerank') { base.nodes.push('rr'); base.edges.push('rrf-rr', 'rr-ctx'); } else base.edges.push('st-ctx');
+  base.nodes.push('ctx'); base.edges.push('ctx-llm'); return base;
+}
+
+/* ---------- stats ---------- */
+function resetRun() {
+  stats = { steps: 0, search: 0, tok: 0, cost: 0 }; ctxIds = new Set(); t0 = performance.now(); textCache = {};
+  $('#timeline').replaceChildren(); $('#final').replaceChildren('Đang chạy…'); $('#status').textContent = ''; resetPipe(); light(['q']); updStats();
+}
+function updStats(final) {
+  $('#s-steps').textContent = stats.steps; $('#s-search').textContent = stats.search; $('#s-tok').textContent = stats.tok.toLocaleString('vi-VN');
+  $('#s-cost').textContent = '$' + stats.cost.toFixed(5); $('#s-time').textContent = (final ?? (performance.now() - t0) / 1000).toFixed(1) + ' s';
+  $('#lbl-ctx').textContent = ctxIds.size + ' chunk';
+}
+
+/* ---------- event rendering ---------- */
+function onStep(ev) {
+  const tl = $('#timeline');
+  if (ev.event === 'llm') {
+    stats.steps++; stats.tok += (ev.prompt_tokens || 0) + (ev.completion_tokens || 0); stats.cost += ev.cost_usd || 0;
+    light(['llm'], ['q-llm']);
+    const dec = el('ul', {}); (ev.decisions || []).forEach(d => { let a = d.args; try { a = JSON.stringify(JSON.parse(d.args)); } catch {} dec.append(el('li', {}, el('code', {}, d.tool), ' ', (a || '').slice(0, 300))); });
+    tl.append(el('div', { class: 'ev llm' }, el('div', { class: 'h' }, el('span', { class: 't' }, `LLM lượt ${ev.step}${ev.final_only ? ' (lượt cuối: chỉ answer/abstain)' : ''}`), el('span', { class: 'm' }, `${ev.prompt_tokens}+${ev.completion_tokens} token · ${ev.latency_s}s`)), el('div', { class: 'm' }, 'Model quyết định gọi:'), dec));
+  } else if (ev.event === 'search') {
+    stats.search++;
+    if (ev.tool === 'read_page') light(['p', 'ctx'], ['llm-p', 'p-ctx', 'ctx-llm']);
+    else { const p = searchPath((cfgInfo.method) || (ev.method || '').split(':')[0]); light(p.nodes, p.edges); }
+    const rows = (ev.results || []).map(r => { ctxIds.add(r.id); if (r.text) textCache[r.id] = r.text;
+      return el('tr', { class: 'clk', onclick: () => inspect(r.id) }, el('td', {}, r.rank ?? ''), el('td', {}, el('span', { class: 'badge ' + (r.index || idxOf(r.id)) }, r.index || idxOf(r.id))), el('td', {}, el('code', {}, r.id.replace('sach-trang-tmdt-2023:', ''))), el('td', {}, r.page), el('td', {}, r.score ?? ''), el('td', { class: 'snip' }, (r.text || textCache[r.id] || '').replace(/\s+/g, ' ').slice(0, 140))); });
+    const title = ev.tool === 'read_page' ? `read_page(trang ${ev.page})` : `search_documents("${ev.query}")`;
+    tl.append(el('div', { class: 'ev search' }, el('div', { class: 'h' }, el('span', { class: 't' }, title), el('span', { class: 'm' }, `${ev.method || ''} ${ev.top_k ? 'top-' + ev.top_k : ''} ${ev.latency_ms ? '· ' + ev.latency_ms + ' ms' : ''} ${ev.error ? '· LỖI ' + ev.error : ''}`)),
+      el('table', {}, el('thead', {}, el('tr', {}, ...['#', 'Index', 'chunk_id', 'Trang', 'Score', 'Nội dung'].map(h => el('th', {}, h)))), el('tbody', {}, ...rows))));
+  } else if (ev.event.startsWith('quote_check')) {
+    const ok = ev.event === 'quote_check_passed';
+    light(['ctx']);
+    tl.append(el('div', { class: 'ev ' + (ok ? 'answer' : 'err') }, el('div', { class: 't' }, ok ? 'Kiểm trích dẫn: ĐẠT — mỗi citation có đoạn trích nguyên văn trong chunk' : 'Kiểm trích dẫn: KHÔNG ĐẠT — yêu cầu model sửa hoặc từ chối'),
+      el('pre', {}, JSON.stringify(ok ? ev.evidence : ev.problems, null, 1))));
+  } else if (ev.event === 'answer') { light(['a'], ['llm-a']); $('#n-a').classList.add('ok'); }
+  else if (ev.event === 'abstain' || ev.event === 'step_limit' || ev.event === 'invalid_or_missing_citations') {
+    light(['x'], ['llm-x']); $('#n-x').classList.add('ok');
+    tl.append(el('div', { class: 'ev abstain' }, el('div', { class: 't' }, 'Từ chối (' + ev.event + ')'), el('div', {}, ev.reason || '')));
+  } else if (ev.event === 'error') { tl.append(el('div', { class: 'ev err' }, el('div', { class: 't' }, 'Lỗi'), ev.error || '')); }
+  updStats();
+  tl.lastElementChild?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+}
+const idxOf = id => (id.match(/:(B|V)\d+$/) || [])[1] || (id.includes(':B') ? 'B' : 'V');
+
+function onDone(t) {
+  (t.context_chunks || []).forEach(c => { ctxIds.add(c.id); textCache[c.id] = c.text; });
+  stats.steps = t.n_llm_calls ?? stats.steps; stats.search = t.n_tool_calls ?? stats.search;
+  stats.tok = (t.prompt_tokens || 0) + (t.completion_tokens || 0); stats.cost = t.cost_usd || 0; updStats(t.latency_s);
+  const box = $('#final'); box.replaceChildren();
+  const status = t.status === 'answered' ? 'Đã trả lời' : t.status === 'abstain' ? 'Từ chối' : 'Lỗi';
+  box.append(el('div', { class: 'h' }, el('span', { class: 'badge', style: `background:var(${t.status === 'answered' ? '--ok' : t.status === 'abstain' ? '--warn' : '--bad'})` }, status), ' ',
+    el('span', { class: 'muted' }, `${t.n_llm_calls} lượt LLM · ${t.n_tool_calls} lượt truy xuất · ${t.context_chars} ký tự context · ${t.latency_s}s · $${(t.cost_usd || 0).toFixed(5)}`)));
+  const ans = el('p', { class: 'answer' });
+  (t.answer || '').split(/(\[[^\]]+\])/).forEach(part => { const m = part.match(/^\[([^\]]+)\]$/);
+    if (m) ans.append(el('button', { class: 'cite', onclick: () => inspect(m[1]) }, m[1].replace('sach-trang-tmdt-2023:', ''))); else ans.append(part); });
+  box.append(ans);
+  if (t.reason) box.append(el('p', { class: 'muted' }, 'Lý do: ' + t.reason));
+  if ((t.citations || []).length) { box.append(el('div', { class: 'muted' }, 'Bấm citation để xem chunk + trang gốc:')); t.citations.forEach(c => box.append(el('button', { class: 'cite', onclick: () => inspect(c) }, c))); inspect(t.citations[0]); }
+  if (t.status === 'answered') $('#n-a').classList.add('ok'); else if (t.status === 'abstain') $('#n-x').classList.add('ok');
+  document.querySelectorAll('svg.pipe .n.active').forEach(n => n.classList.remove('active'));
+}
+
+/* ---------- inspector ---------- */
+async function inspect(id) {
+  const box = $('#inspector'); box.replaceChildren(el('h2', {}, 'Chunk inspector (dữ liệu thật trong pgvector)'), el('p', { class: 'muted' }, 'Đang đọc DB…'));
+  try {
+    const r = await fetch('/api/chunk?id=' + encodeURIComponent(id)); const d = await r.json();
+    if (d.error) throw new Error(d.error);
+    const md = d.metadata || {};
+    box.replaceChildren(el('h2', {}, 'Chunk inspector (dữ liệu thật trong pgvector)'),
+      el('div', { class: 'kv' }, el('div', {}, 'chunk_id'), el('div', {}, el('code', {}, d.chunk_id)), el('div', {}, 'index'), el('div', {}, el('span', { class: 'badge ' + d.strategy }, d.strategy), d.strategy === 'B' ? ' text PDF (Day 6)' : ' bảng/biểu đồ do vision đọc (Day 7)'),
+        el('div', {}, 'trang PDF'), el('div', {}, String(d.page)), el('div', {}, 'loại / vùng'), el('div', {}, `${md.visual_type || 'text'} ${md.region ? '· ' + md.region : ''}`),
+        el('div', {}, 'embedding'), el('div', {}, `${d.model_name} · ${d.dims} chiều`), el('div', {}, 'sha256(text)'), el('div', {}, el('code', {}, (d.text_hash || '').slice(0, 20) + '…'))),
+      el('pre', {}, d.text),
+      el('div', { class: 'muted' }, 'Tự kiểm trong psql:'), el('pre', {}, d.sql),
+      el('div', { class: 'muted' }, `Trang ${d.page} của PDF gốc (đối chiếu số liệu bằng mắt):`),
+      el('img', { src: `/pages/p${String(d.page).padStart(3, '0')}.png`, alt: `Ảnh trang ${d.page} PDF gốc`, loading: 'lazy' }));
+  } catch (e) { box.append(el('p', { class: 'ev err' }, 'Không đọc được chunk: ' + e.message)); }
+}
+
+/* ---------- live run ---------- */
+$('#run').addEventListener('click', () => {
+  const q = $('#q').value.trim(); if (!q || running) return;
+  running = true; $('#run').disabled = true; resetRun();
+  const es = new EventSource(`/api/ask?config=${$('#cfg').value}&q=${encodeURIComponent(q)}`);
+  const timer = setInterval(() => updStats(), 300);
+  const end = () => { es.close(); clearInterval(timer); running = false; $('#run').disabled = false; };
+  es.addEventListener('status', e => $('#status').textContent = JSON.parse(e.data).message);
+  es.addEventListener('config', e => { cfgInfo = JSON.parse(e.data); $('#lbl-model').textContent = cfgInfo.model; $('#status').textContent = `Cấu hình ${cfgInfo.config}: ${cfgInfo.method} trên index ${cfgInfo.index}, top-${cfgInfo.top_k}, tối đa ${cfgInfo.max_steps} lượt${cfgInfo.read_page ? ', có read_page' : ''}${cfgInfo.strict ? ', kiểm trích dẫn' : ''}.`; });
+  es.addEventListener('step', e => onStep(JSON.parse(e.data)));
+  es.addEventListener('done', e => { onDone(JSON.parse(e.data)); end(); });
+  es.addEventListener('error', e => { if (e.data) onStep({ event: 'error', error: JSON.parse(e.data).error }); else if (running) onStep({ event: 'error', error: 'Mất kết nối tới server' }); end(); });
+});
+
+/* ---------- retrieval comparison ---------- */
+$('#cmp').addEventListener('click', async () => {
+  const q = $('#q').value.trim(); if (!q) return;
+  const card = $('#cmpCard'), out = $('#cmpOut'); card.classList.remove('hide'); out.replaceChildren(el('p', { class: 'muted' }, 'Đang chạy dense, BM25, hybrid, rerank… (rerank trên CPU có thể mất 10–30 s)'));
+  card.scrollIntoView({ behavior: 'smooth' });
+  try {
+    const d = await (await fetch('/api/retrieve?q=' + encodeURIComponent(q))).json(); if (d.error) throw new Error(d.error);
+    const palette = ['#e4572e', '#29335c', '#f3a712', '#669bbc', '#a8c686', '#9b5de5', '#00bbf9', '#f15bb5'], color = {}; let ci = 0;
+    out.replaceChildren(...['dense', 'bm25', 'hybrid', 'rerank'].map(m => el('div', { class: 'col' }, el('h3', {}, `${m} · ${d[m].ms} ms`),
+      ...d[m].results.map(r => { color[r.id] ??= palette[ci++ % palette.length];
+        return el('div', { class: 'item', style: `border-left:5px solid ${color[r.id]}`, onclick: () => inspect(r.id) },
+          el('div', {}, el('b', {}, '#' + r.rank + ' '), el('span', { class: 'badge ' + r.index }, r.index), ` tr.${r.page} · ${r.score}`, r.component_ranks ? ` · ${Object.entries(r.component_ranks).map(([k, v]) => k + ':' + v).join(' ')}` : ''),
+          el('div', { class: 'muted' }, r.text.replace(/\s+/g, ' ').slice(0, 110))); }))));
+  } catch (e) { out.replaceChildren(el('p', { class: 'ev err' }, 'Lỗi: ' + e.message)); }
+});
+
+/* ---------- replay saved traces ---------- */
+let TRACES = [];
+async function loadTraces() {
+  TRACES = await (await fetch(`/api/traces?split=${$('#rsplit').value}&config=${$('#rcfg').value}`)).json();
+  $('#rq').replaceChildren(...TRACES.map(t => el('option', { value: t.query_id }, `${t.query_id} · ${t.status} · ${t.question.slice(0, 70)}`)));
+  if (!TRACES.length) $('#rq').append(el('option', {}, '(chưa có trace)'));
+}
+['#rsplit', '#rcfg'].forEach(s => $(s).addEventListener('change', loadTraces));
+$('#rq').addEventListener('change', () => { const t = TRACES.find(x => x.query_id === $('#rq').value); if (t) { $('#q').value = t.question; showGold(QUESTIONS.find(q => q.id === t.query_id)); } });
+$('#replay').addEventListener('click', async () => {
+  const t = TRACES.find(x => x.query_id === $('#rq').value); if (!t || running) return;
+  running = true; resetRun(); $('#q').value = t.question; showGold(QUESTIONS.find(q => q.id === t.query_id));
+  cfgInfo = { method: (t.events.find(e => e.method)?.method || '').split(':')[0] };
+  (t.context_chunks || []).forEach(c => textCache[c.id] = c.text);
+  $('#status').textContent = `Phát lại trace đã lưu: ${$('#rsplit').value}/${$('#rcfg').value}/${t.query_id} (model ${t.model}). Không gọi API.`;
+  for (const ev of t.events) { if (ev.event === 'search') ev.results = ev.results.map(r => ({ ...r, index: idxOf(r.id), text: textCache[r.id] })); onStep(ev); await new Promise(r => setTimeout(r, 700)); }
+  onDone(t); running = false;
+});
+$('#tabLive').addEventListener('click', () => { $('#tabLive').classList.add('act'); $('#tabReplay').classList.remove('act'); $('#liveCtl').classList.remove('hide'); $('#replayCtl').classList.add('hide'); });
+$('#tabReplay').addEventListener('click', () => { $('#tabReplay').classList.add('act'); $('#tabLive').classList.remove('act'); $('#replayCtl').classList.remove('hide'); $('#liveCtl').classList.add('hide'); loadTraces(); });
+ping().then(async () => {
+  // ?replay=test/A3/t17  → mở sẵn chế độ phát lại đúng câu (tiện khi trình bày); &gold=1 hiện đáp án chuẩn
+  const p = new URLSearchParams(location.search), rp = p.get('replay');
+  if (p.get('gold')) $('#showGold').checked = true;
+  if (!rp) return;
+  const [split, cfg, qid] = rp.split('/');
+  $('#tabReplay').click(); $('#rsplit').value = split; $('#rcfg').value = cfg; await loadTraces();
+  $('#rq').value = qid; $('#rq').dispatchEvent(new Event('change')); $('#replay').click();
+});
+</script>
+</body>
+</html>

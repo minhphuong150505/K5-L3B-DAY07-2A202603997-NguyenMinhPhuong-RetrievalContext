@@ -1,0 +1,2527 @@
+[
+  {
+    "query_id": "d01",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "Theo bảng số liệu thị trường TMĐT bán lẻ Việt Nam, tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước năm 2021 là bao nhiêu?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 2.0,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p40:V2",
+        "page": 40,
+        "score": 124.48859960139849,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023\n(Trang 40, nửa dưới; đơn vị: không ghi)\nƯớc tính số lượng người tiêu dùng mua sắm trực tuyến (triệu người) | 2018: 39,9 | 2019: 44,8 | 2020: 49,3 | 2021: 54,6 | 2022: 57,0 | 2023: 61\nƯớc tính giá trị mua sắm trực tuyến của một người (USD) | 2018: 202 | 2019: 225 | 2020: 240 | 2021: 251 | 2022: 288 | 2023: 336\nTỷ trọng doanh thu TMĐT B2C so với tổ"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p040:B00",
+        "page": 40,
+        "score": 124.4235571873707,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. QUY MÔ THỊ TRƯỜNG THƯƠNG MẠI ĐIỆN TỬ BÁN LẺ TẠI VIỆT NAM\n8 Doanh thu TMĐT B2C Việt Nam bao gồm doanh thu tất cả hàng hóa, dịch vụ bán qua kênh TMĐT (loại trừ các giao dịch liên quan đến lĩnh vực tài chính, ngân hàng, tín\ndụng, bảo hiểm, trò chơi trực tuyến).\n9 Số liệu cập nhật đến 6 tháng đầu năm 2023. Nguồn: Bộ Thông tin và Truyền thông\nDoanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)8\n201"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p032:B01",
+        "page": 32,
+        "score": 53.02748191698571,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2.5. Top 10 quốc gia có tỷ lệ TMĐT bán lẻ lớn nhất toàn cầu năm 2022\nTru ng Quố | c | 46,3%\nVươ | ngq | uốc | An h | 36,3%\nHàn Q | uố c | 32,2%\nĐan M | ạc h | 20,2%\nIndonesia | 20,2%\nNa Uy | 19,4%\nMỹ | 16,1% | ( Doanh thu TMĐT B2C so với Tổng doanh thu bán lẻ )\nPhần | L an | 14,6%\nThụy Đi | ển | 14,1%\nCanada | 13,6%\nNguồn: Báo cáo “Global Ecommerce Forecast” - eMarketer"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p32:V2",
+        "page": 32,
+        "score": 53.02748191698571,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 2.5. Top 10 quốc gia có tỷ lệ TMĐT bán lẻ lớn nhất toàn cầu năm 2022\n(Trang 32, nửa dưới; đơn vị: %)\nTrung Quốc — 2022: 46,3% | Vương quốc Anh — 2022: 36,3% | Hàn Quốc — 2022: 32,2% | Đan Mạch — 2022: 20,2% | Indonesia — 2022: 20,2% | Na Uy — 2022: 19,4% | Mỹ — 2022: 16,1% | Phần Lan — 2022: 14,6% | Thụy Điển — 2022: 14,1% | Canada — 2022: 13,6% (Doanh thu TMĐT B2C so với Tổng doanh th"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p030:B01",
+        "page": 30,
+        "score": 52.940000814215544,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Quy mô thị trường TMĐT B2C toàn cầu 2\n2.1. Toàn cầu | 26,4%\n20,6% | 23.9\n21.1 | 21.1 | 21.8 | 22.5 | 23.3\n19.5 | 16,3%\n12,2% | 11,0%\n8,2% | 10,0% | 9,2%\n3,3% | 3,3% | 3,2% | 3,4% 2,6%\n4,9 | 5,5 | 6,2 | 6,8 | 7,4\n3,4 | 4,2\n-7,5%\n2019 | 2020 | 2021 | 2022 | 2023* | 2024* | 2025*\nDo | an h th u bán | lẻ q ua | TMĐT | (nghìn tỷ US | D) | Do | an h th u bán | lẻ n goài | TMĐT | (nghìn tỷ US | D)\nTỷ "
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p003:B00",
+        "page": 3,
+        "score": 45.153446347791274,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "LỜI GIỚI THIỆU\nKinh tế Việt Nam 2023 duy trì xu hướng phục hồi, tiếp tục là điểm sáng của kinh tế toàn cầu (theo Cổng\nThông tin điện tử Chính phủ). Kinh tế vĩ mô cơ bản ổn định; lạm phát thấp hơn mục tiêu Quốc hội đề ra; nợ\ncông, nợ Chính phủ, nợ nước ngoài, bội chi ngân sách nhà nước được kiểm soát; tăng trưởng được thúc đẩy;\ncác cân đối lớn của nền kinh tế được bảo đảm. Tăng trưởng GDP cả năm kh"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p037:B04",
+        "page": 37,
+        "score": 40.70756284674838,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nViệt Nam (đơn vị: Tỷ USD) — 2023 — Tốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến: 11%\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu bán lẻ hàng hóa trực tuyến: 24\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu vận tải và thực phẩm: 4\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu du lịch trực tuyến: 7\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu nội dung nghe nhìn trực"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p037:B03",
+        "page": 37,
+        "score": 39.52201590691408,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nSingapore (đơn vị: Tỷ USD) — 2025 — Doanh thu du lịch trực tuyến: 9\n7. Singapore (đơn vị: Tỷ USD) — 2025 — Doanh thu nội dung nghe nhìn trực tuyến: 4\n7. Singapore (đơn vị: Tỷ USD) — 2025 — Tốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến: 14%\n8. Việt Nam (đơn vị: Tỷ USD) — 2022 — Doanh thu bán lẻ hàng hóa trực tuyến: 15\n8. Việt Nam (đơn vị: Tỷ USD) — 2022 — Doanh thu vận tải và "
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p050:B03",
+        "page": 50,
+        "score": 39.446844294438485,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "14. Ước tính giá trị mua hàng hóa/dịch vụ qua mạng từ thương nhân nước ngoài trong năm 2023\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Giá cả rẻ hơn: 2021: 61%; 2022: 70%; 2023: 59%\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p037:B02",
+        "page": 37,
+        "score": 37.66337498957131,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\n[Số liệu biểu đồ đọc bằng OCR – Tesseract, vị trí và series lấy từ hình vẽ PDF]\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu bán lẻ hàng hóa trực tuyến: 8\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu vận tải và thực phẩm: 4\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu du lịch trực tuyến: 5\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu nội dung nghe nhìn trực tuyến: 2\n7. "
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p40:V2",
+      "sach-trang-tmdt-2023:p040:B00",
+      "sach-trang-tmdt-2023:p032:B01"
+    ],
+    "context_chars": 2050,
+    "gold_pages": [
+      40
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d02",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "Trong nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT bán buôn bán lẻ, website thuocsi.vn thuộc doanh nghiệp nào?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.4,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p083:B01",
+        "page": 83,
+        "score": 82.45341935374815,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.2. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT bán buôn bán lẻ\nSTT Website/ứng dụng Tên doanh nghiệp\n1 Lazada Công ty TNHH Recess\n2 samsung.com.vn Công Ty TNHH Điện Tử Samsung Vina\n3 Selly Công ty TNHH Selly\n4 Sendo Công ty Cổ Phần Công Nghệ Sen Đỏ\n5 Shopee Công ty TNHH Shopee\n6 thuocsi.vn Công ty TNHH Buymed\n7 Tiki Công ty TNHH TI KI\n8 TIKTOK TIKTOK PTE. LTD.\n9 VinShop Công ty cổ"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p83:V2",
+        "page": 83,
+        "score": 79.16868003615382,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 4.2. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT bán buôn bán lẻ\n(Trang 83, nửa dưới; đơn vị: không ghi)\n1 | Lazada | Công ty TNHH Recess\n2 | samsung.com.vn | Công Ty TNHH Điện Tử Samsung Vina\n3 | Selly | Công ty TNHH Selly\n4 | Sendo | Công ty Cổ Phần Công Nghệ Sen Đỏ\n5 | Shopee | Công ty TNHH Shopee\n6 | thuocsi.vn | Công ty TNHH Buymed\n7 | Tiki | Công ty TNHH TI KI\n8 | TIKT"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p085:B00",
+        "page": 85,
+        "score": 61.458823544231535,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.4. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT giao đồ ăn\nSTT Website/ứng dụng Tên doanh nghiệp\n1 Traveloka Công ty TNHH Traveloka Việt Nam\n2 Gotadi Công ty Cổ phần Công nghệ du lịch Gotadi\n3 Tripi Partner Công ty Cổ phần du lịch Việt Nam Vntravel\n4 Travellink.vn Công ty Cổ phần Công nghệ và Truyền thông VNLINK\n5 Onedanang.vn Công ty TNHH Truyền Thông và Công nghệ One Office"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p084:B01",
+        "page": 84,
+        "score": 60.482344217745506,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.4. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT giao đồ ăn\nSTT Website/ứng dụng Tên doanh nghiệp\n1 Baemin Công ty TNHH Woowa Brothers Việt Nam\n2 Be Công ty Cổ phần BE GROUP\n3 Grab Công ty TNHH Grab\n4 ShopeeFood, Foody Công ty Cổ phần Foody\n5 Utop Công ty Cổ phần Công nghệ UTOP"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p85:V1",
+        "page": 85,
+        "score": 57.84789290890216,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 4.5. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT du lịch trực tuyến\n(Trang 85, nửa trên; đơn vị: không ghi)\nSTT | Website/ứng dụng: giá trị | Tên doanh nghiệp: giá trị\n1 | Traveloka | Công ty TNHH Traveloka Việt Nam\n2 | Gotadi | Công ty Cổ phần Công nghệ du lịch Gotadi\n3 | Tripi Partner | Công ty Cổ phần du lịch Việt Nam Vntravel\n4 | Travellink.vn | Công ty Cổ phần Công nghệ"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p084:B00",
+        "page": 84,
+        "score": 57.613522254116006,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.3. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT gọi xe 19\n19 Taxi, xe ôm\nSTT Website/ứng dụng Tên doanh nghiệp\n1 Be Công ty Cổ phần BE GROUP\n2 GoJek Công ty Cổ phần Thương mại Công nghệ Go Viet\n3 Grab Công ty TNHH Grab\n4 GV Ship Công Ty Cổ Phần GV ASIA\n5 HeyU Công ty Cổ phần công nghệ HeyU Việt Nam"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p84:V2",
+        "page": 84,
+        "score": 57.0408717962073,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 4.4. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT giao đồ ăn\n(Trang 84, nửa dưới; đơn vị: không ghi)\n1 | Baemin | Công ty TNHH Woowa Brothers Việt Nam\n2 | Be | Công ty Cổ phần BE GROUP\n3 | Grab | Công ty TNHH Grab\n4 | ShopeeFood, Foody | Công ty Cổ phần Foody\n5 | Utop | Công ty Cổ phần Công nghệ UTOP"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p84:V1",
+        "page": 84,
+        "score": 55.62789903060998,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 4.3. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT gọi xe\n(Trang 84, nửa trên; đơn vị: không ghi)\n1 | Be | Công ty Cổ phần BE GROUP\n2 | GoJek | Công ty Cổ phần Thương mại Công nghệ Go Viet\n3 | Grab | Công ty TNHH Grab\n4 | GV Ship | Công Ty Cổ Phần GV ASIA\n5 | HeyU | Công ty Cổ phần công nghệ HeyU Việt Nam"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p083:B00",
+        "page": 83,
+        "score": 50.615117033281265,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Thị phần dịch vụ TMĐT 18\n4.1. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT\n18 Dữ liệu được tổng hợp từ báo cáo tình hình hoạt động TMĐT năm 2022 của 797 doanh nghiệp CCDVTMĐT gửi về Bộ Công Thương.\nSTT Website/ứng dụng Tên doanh nghiệp\n1 Baemin Công ty TNHH Woowa Brothers Việt Nam\n2 Be Công ty Cổ phần BE GROUP\n3 GoJek Công ty Cổ phần Thương mại Công nghệ Go Viet\n4 Grab Công ty TNH"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p085:B01",
+        "page": 85,
+        "score": 50.51754251418932,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.5. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT du lịch trực tuyến\nV. KHÓ KHĂN, TRỞ NGẠI KHI VẬN HÀNH WEBSITE, ỨNG DỤNG DI ĐỘNG\nDoanh nghiệp đánh giá về khó khăn, trở ngại khi vận hành website, ứng dụng di động theo thang điểm từ 0 - 2\n(không cản trở: 0, cản trở nhiều: 2).\nKhó khăn, trở ngại khi vận hành website, ứng dụng TMĐT Mức độ khó khăn\nVận chuyển, giao nhận 0,64\nThu hút khác"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p083:B01",
+      "sach-trang-tmdt-2023:p83:V2",
+      "sach-trang-tmdt-2023:p085:B00"
+    ],
+    "context_chars": 1555,
+    "gold_pages": [
+      83
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d03",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "Tỷ lệ đơn hàng được thanh toán bằng ví điện tử trên website, ứng dụng cung cấp dịch vụ (CCDV) TMĐT là bao nhiêu?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.7,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p072:B00",
+        "page": 72,
+        "score": 68.1856971189863,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Thanh toán\n4.1. Tỷ lệ đơn hàng được thanh toán qua các hình thức\nTi ền | Th ẻ | Th ẻ | Hìn | h\nmặt | Ví điện | th an h | Mob | il e | th ức\n(C OD | ) | tử | toán nộ | i toán | Mon | ey | kh ác\nđịa | quốc | tế\nWebsite, ứng dụng | 50,6 | % | 2,8% | 3,1% | 2,8% | 1,4%\nTMĐT bán hàng\nWebsite, ứng dụng\nCCDV TMĐT | 46,3 | % | 31,7 | % | 7,5% | 3,6% | 0,7%"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p72:V1",
+        "page": 72,
+        "score": 51.566187600023305,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 4.1. Tỷ lệ đơn hàng được thanh toán qua các hình thức\n(Trang 72, giữa; đơn vị: %)\nTiền mặt (COD) | cột1: 50,6 | cột2: 46,3\nInternet banking | cột1: 34,1 | cột2: 31,7\nVí điện tử | cột1: 2,8 | cột2: 7,5\nThẻ thanh toán nội địa | cột1: 3,1 | cột2: 4,6\nThẻ thanh toán quốc tế | cột1: 2,8 | cột2: 3,6\nMobile Money | cột1: 1,4 | cột2: 0,7\nHình thức khác | cột1: 5,2 | cột2: 5,6"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p079:B01",
+        "page": 79,
+        "score": 47.19378189903997,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Hoạt động của người bán nước ngoài trên website/ứng dụng TMĐT 17\n2.1. Tỷ lệ website/ứng dụng cung cấp dịch vụ TMĐT có gian hàng của người bán nước ngoài\n3,9%\nCó\nKhông\n96,1%\n17 Số liệu phần này tổng hợp từ các website, ứng dụng CCDV TMĐT có người bán nước ngoài hoạt động"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p070:B00",
+        "page": 70,
+        "score": 41.392604209177485,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "II. CÁC TIỆN ÍCH HỖ TRỢ ĐƯỢC CUNG CẤP TRÊN WEBSITE, ỨNG DỤNG DI ĐỘNG TMĐT\n1. Tỷ lệ website, ứng dụng TMĐT yêu cầu người dùng đăng ký thành viên khi mua hàng\n17,3% | website, ứng dụng TMĐT bán hàng\n36,4% | website, ứng dụng CCDV TMĐT"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p064:B01",
+        "page": 64,
+        "score": 38.90859837305805,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tỷ lệ chi phí hoàn tất đơn hàng và giao hàng chặng cuối so với doanh thu từ hoạt động TMĐT\ncủa doanh nghiệp\n3%\n12% | Dưới 10%\nTừ 10% - 20%\n52% | Từ 20 % - 40 %\n33% | Trên 40%\n3. Phương thức thanh toán mà doanh nghiệp đang sử dụng\nThanh toán tiền mặt | 88%\nChuyển khoản Internet banking | 87%\nVí điện tử | 22%\nThẻ thanh toán nội địa | 15%\nThẻ thanh toán quốc tế | 12%\nTài khoản mobile, SMS | 9%\nTha"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p74:V1",
+        "page": 74,
+        "score": 37.87807260023763,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 5.2. Phương thức giao hàng được sử dụng phổ biến\n(Trang 74, giữa; đơn vị: không ghi)\nNhân viên công ty giao hàng | Website, ứng dụng TMĐT bán hàng: 50,6% | Website, ứng dụng CCDV TMĐT: 46,3%\nThuê dịch vụ giao hàng | Website, ứng dụng TMĐT bán hàng: 34,1% | Website, ứng dụng CCDV TMĐT: 31,7%\nKết hợp cả hai | Website, ứng dụng TMĐT bán hàng: 2,8% | Website, ứng dụng CCDV TMĐT: 7,5%\nKhông hỗ "
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p79:V1",
+        "page": 79,
+        "score": 36.89429877479917,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[pie_chart] 2.1. Tỷ lệ website/ứng dụng cung cấp dịch vụ TMĐT có gian hàng của người bán nước ngoài\n(Trang 79, nửa dưới; đơn vị: %)\nCó — 2023: 3,9%\nKhông — 2023: 96,1%"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p079:B00",
+        "page": 79,
+        "score": 36.23130272801888,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "IV. TÌNH HÌNH KINH DOANH TRÊN WEBSITE, ỨNG DỤNG CUNG CẤP DỊCH VỤ TMĐT\n1. Lĩnh vực hoạt động của website, ứng dụng TMĐT\nBán buôn, bán | lẻ | hàng | hóa | 55,3%\nDịch | vụ | rao | vặt | (việc | l àm , bất | động | sả | n, | xe | cộ)8,5%\nDịch | vụ | du | lịch | trực | tuy ến, | OTAs5,4%\nDịch | vụ | giao , | đặt | đồ ă | n4,6%\nDịch | vụ | đặt | phòng k hác | h | sạ n 4,1%\nDịch | vụ | gọi | xe | công | "
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p074:B00",
+        "page": 74,
+        "score": 32.60003394901294,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "5.2. Phương thức giao hàng được sử dụng phổ biến\nWebsite, ứng dụng | Website, ứng dụng\nTMĐT bán hàng | CCDV TMĐT\nNhân viên công ty giao hàng | 50,6% | 46,3%\nThuê dịch vụ giao hàng | 34,1% | 31,7%\nKết hợp cả hai | 2,8% | 7,5%\nKhông hỗ trợ | 3,1% | 4,6%"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p069:B00",
+        "page": 69,
+        "score": 31.279991218711412,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Website/ứng dụng cung cấp dịch vụ TMĐT\n2.1. Mô hình hoạt động\n56,3%\n41,0%\n13,7%\n1,3%\nSàn | giao dịch | Mạng | xã hội | có Website, | ứng | dụng Website, | ứng | dụng\nTMĐT | hoạt | động kinh | khuy | ến | mại | trự c đấu giá trự c tuy | ến\ndoanh | tuy | ến"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p072:B00",
+      "sach-trang-tmdt-2023:p72:V1",
+      "sach-trang-tmdt-2023:p079:B01"
+    ],
+    "context_chars": 1135,
+    "gold_pages": [
+      72
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d04",
+    "split": "dev",
+    "group": "image",
+    "answerable": true,
+    "question": "Theo sơ đồ trách nhiệm của tổ chức cung cấp dịch vụ tin cậy, kênh tiếp nhận thông tin và cung cấp dịch vụ phải hoạt động như thế nào?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.6,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p015:B00",
+        "page": 15,
+        "score": 84.94830630698873,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Luật Giao dịch điện tử (sửa đổi)\n1\n1\n3\n3\n5\n2\n2\n4\n4\n2\n3\nĐiều kiện kinh doanh dịch vụ tin cậy\nTrách nhiệm của tổ chức cung cấp dịch vụ tin cậy\nLà doanh nghiệp được thành lập và hoạt động hợp pháp trên lãnh thổ Việt Nam;\nCông bố công khai quy trình đăng ký sử dụng dịch vụ, các biểu mẫu và chi phí liên quan;\nĐáp ứng điều kiện tài chính, nhân lực quản lý và kỹ thuật phù hợp với từng loại hình\ndịch v"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p016:B00",
+        "page": 16,
+        "score": 63.9238856117915,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Luật Giao dịch điện tử (sửa đổi)\n5\n6\n1\n7\n2\n8\n3\nThực hiện các biện pháp nghiệp vụ, tạm dừng, chấm dứt cung cấp dịch vụ hoặc\nthực hiện biện pháp nghiệp vụ khác theo yêu cầu của cơ quan có thẩm quyền\ntheo quy định của pháp luật;\nThực hiện trách nhiệm của chủ quản hệ thống thông tin phục vụ cung cấp dịch vụ\ntin cậy đáp ứng yêu cầu bảo đảm an toàn thông tin mạng tối thiểu cấp độ 3 theo\nquy định của "
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p16:V1",
+        "page": 16,
+        "score": 49.825292006253925,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[diagram] 4 Dịch vụ chứng thực hợp đồng điện tử\n(Trang 16, giữa; đơn vị: không ghi)\n1. Tổ chức CCDV chứng thực hợp đồng điện tử trong thương mại phải đáp ứng điều kiện hoạt động cung cấp dịch vụ chứng thực hợp đồng điện tử theo quy định của pháp luật về TMĐT và điều kiện kinh doanh dịch vụ tin cậy theo quy định tại Điều 29 của Luật này;\n2. Xác nhận đăng ký hoạt động CCDV chứng thực hợp đồng điện t"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p012:B00",
+        "page": 12,
+        "score": 49.778000711153325,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\n7\n9\n11\n13\nChỉ định, công bố công khai đầu mối tiếp nhận và giải quyết phản ánh, yêu cầu,\nkhiếu nại của NTD liên quan đến sản phẩm, hàng hóa, dịch vụ, nội dung thông\ntin trên nền tảng số trung gian; tiếp nhận và giải quyết phản ánh, yêu cầu,\nkhiếu nại của NTD đối với tổ chức thiết lập, vận hành nền tảng số trung gian;\nTrực tiếp lưu trữ thông tin ho"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p010:B00",
+        "page": 10,
+        "score": 46.92036504718892,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. CẬP NHẬT MỘT SỐ CHÍNH SÁCH PHÁP LUẬT LIÊN QUAN ĐẾN THƯƠNG MẠI ĐIỆN TỬ\n1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\nNgày 20/6/2023, Quốc hội đã thông qua Luật Bảo vệ người tiêu dùng (sửa đổi), có hiệu lực thi hành kể từ ngày\n01/7/2024. Luật đã bổ sung trách nhiệm của tổ chức, cá nhân kinh doanh với người tiêu dùng (NTD) trong các giao\ndịch trên không gian mạng.\n1\n2\nPhân loại tổ chức, cá nh"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p012:B01",
+        "page": 12,
+        "score": 45.67537667938829,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\nDuy trì tài khoản báo cáo trực tuyến và cung cấp thông tin, dữ liệu cập nhật\nđến thời điểm được yêu cầu báo cáo để phục vụ hoạt động thanh tra, kiểm\ntra của CQQLNN có thẩm quyền theo quy định của pháp luật;\nChịu trách nhiệm với NTD theo quy định của pháp luật về TMĐT trong\ntrường hợp tổ chức, cá nhân kinh doanh trong nước và nước ngoài bán,\ncung c"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p096:B01",
+        "page": 96,
+        "score": 43.78574402190722,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "PHỤ LỤC: BẢNG CẬP NHẬT KHUNG PHÁP LÝ CƠ BẢN VỀ THƯƠNG MẠI ĐIỆN TỬ\ncác tổ chức cung cấp dịch vụ chứng thực chữ ký số do Bộ trưởng Bộ\nThông tin và Truyền thông ban hành\n14/3/2011 Thông tư 32/2011/TT-BTC hướng dẫn về khởi tạo, phát hành và sử dụng hóa đơn điện tử bán hàng hóa, cung ứng dịch vụ Nghị định số 27/2007/NĐ-CP\n15/11/2010\nThông tư 25/2010/TT-BTTTT quy định việc thu thập, sử dụng, chia sẻ,\nđả"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p011:B00",
+        "page": 11,
+        "score": 43.18839076410003,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\n3 Trách nhiệm của tổ chức thiết lập, vận hành nền tảng số trung gian với NTD trong giao dịch\ntrên không gian mạng\n1\n3\n5\n2\n4\n6\nCó trách nhiệm thực hiện quy định tại Điều 37 và Điều 38, Mục 2 Chương III\ntrong trường hợp cung cấp dịch vụ liên tục;\nXây dựng, công bố công khai quy chế hoạt động của nền tảng số trung gian\ncho NTD, trong đó phân định rõ "
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p020:B01",
+        "page": 20,
+        "score": 36.5865544331697,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\nThông tin về đặc điểm di truyền được thừa hưởng\nhoặc có được của cá nhân;\nThông tin về thuộc tính vật lý, đặc điểm sinh học\nriêng của cá nhân;\nThông tin về đời sống tình dục, xu hướng tình dục\ncủa cá nhân;\nDữ liệu về tội phạm, hành vi phạm tội được thu\nthập, lưu trữ bởi các cơ quan thực thi pháp luật;\nDữ liệu về vị trí của cá nhâ"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p011:B01",
+        "page": 11,
+        "score": 34.933140619871246,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\nHiển thị đầy đủ, minh bạch thông tin sản phẩm, hàng hóa, dịch vụ do tổ\nchức, cá nhân kinh doanh bán, cung cấp, bao gồm các nội dung bắt buộc thể\nhiện trên nhãn hàng hóa theo quy định của pháp luật về nhãn hàng hóa, trừ\ncác thông tin có tính chất riêng biệt theo sản phẩm, bao gồm: ngày, tháng,\nnăm sản xuất; thời hạn sử dụng; số lô sản xuất; số khun"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p015:B00",
+      "sach-trang-tmdt-2023:p016:B00",
+      "sach-trang-tmdt-2023:p16:V1"
+    ],
+    "context_chars": 3251,
+    "gold_pages": [
+      15
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d05",
+    "split": "dev",
+    "group": "image",
+    "answerable": true,
+    "question": "Theo infographic về hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu, bao nhiêu phần trăm người dùng sử dụng dịch vụ mua ngay trả sau?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.6,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p29:V2",
+        "page": 29,
+        "score": 138.3988922999119,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n(Trang 29, nửa dưới; đơn vị: %)\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\n14,2% | người dùng Internet mua hàng đã qua sử dụng\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\n18,4% | người dùng Internet sử dụng dịch vụ mua ngay trả sau"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p029:B01",
+        "page": 29,
+        "score": 138.1131235612425,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\nngười dùng Internet mua hàng đã qua sử dụng | 14,2%\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\nngười dùng Internet sử dụng dịch vụ mua ngay trả sau | 18,4%"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p30:V1",
+        "page": 30,
+        "score": 48.31130790871306,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.5. Tỷ lệ người dùng Internet mua sắm trực tuyến hàng tuần tại một số quốc gia\n(Trang 30, nửa trên; đơn vị: %)\nThái Lan — 2023: 66,8%\nHàn Quốc — 2023: 65,6%\nIndonesia — 2023: 62,6%\nẤn Độ — 2023: 62,3%\nTrung Quốc — 2023: 61,9%\nMalaysia — 2023: 61,3%\nSingapore — 2023: 61,0%\nPhilippines — 2023: 61,0%\nViệt Nam — 2023: 60,7%\nÚc — 2023: 53,4%\nTrung bình toàn cầu — 2023: 57,6%"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p051:B00",
+        "page": 51,
+        "score": 43.71639221634456,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "V. ĐÁNH GIÁ MỨC ĐỘ HÀI LÒNG VỀ HOẠT ĐỘNG MUA SẮM TRỰC TUYẾN\n1. Mức độ hài lòng của người tiêu dùng trực tuyến\n53%\n47%\n42%\n32%\n2022\n2023\n14%\n8%\n1% | 3%\nRất hài lòng | Hài lòng | Bình thường | Không hài lòng"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p030:B00",
+        "page": 30,
+        "score": 42.34485042863488,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.5. Tỷ lệ người dùng Internet mua sắm trực tuyến hàng tuần tại một số quốc gia\nThái L | an | 66,8%\nHàn | Q uốc | 65,6%\nIndonesia | 62,6%\nẤn | Độ | 62,3%\nTru ng Quốc | 61,9%\nMalaysia | 61,3%\nSingapore | 61,0%\nPhilippines | 61,0%\nViệt N am | 60,7%\nÚc | 53,4%\nTru ng bình to àn | c ầu | 57,6%"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p44:V2",
+        "page": 44,
+        "score": 40.49512062588836,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 2. Tỷ lệ người dùng Internet tham gia mua sắm trực tuyến\n(Trang 44, giữa; đơn vị: %)\n78%"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p48:V1",
+        "page": 48,
+        "score": 35.66132830227853,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[pie_chart] 8. Số lượng hàng hóa/dịch vụ mua sắm trực tuyến trung bình của một người trong năm\n(Trang 48, giữa; đơn vị: phần trăm)\nDưới 5 sản phẩm/dịch vụ — năm: 7% | Từ 5 đến 10 sản phẩm/dịch vụ — năm: 29% | Từ 10 đến 15 sản phẩm/dịch vụ — năm: 13% | Từ 15 đến 30 sản phẩm/dịch vụ — năm: 21% | Từ 30 đến 50 sản phẩm/dịch vụ — năm: 26% | Trên 50 sản phẩm/dịch vụ — năm: 5%"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p047:B01",
+        "page": 47,
+        "score": 32.0350680104881,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "7. Hình thức thanh toán phổ biến\n76%\n60%\n20% | 14% | 21%\n6% | 3%\nTiền mặt | Chuyển | Thẻ ATM | Thẻ tín dụng | Ví điện tử | Mobile | Trả góp\nkhi nhận hàng | Khoản | nội địa | thẻ ghi nợ | Money | (mua trước\ntrả sau)\n[Tiêu đề trục dọc] (Tỷ lệ người dùng Internet)"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p046:B02",
+        "page": 46,
+        "score": 31.277038217136866,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Website TMĐT bán hàng: 34%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Sàn giao dịch TMĐT: 61%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Diễn đàn"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p47:V3",
+        "page": 47,
+        "score": 30.461848716289957,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 7. Hình thức thanh toán phổ biến\n(Trang 47, nửa dưới; đơn vị: Tỷ lệ người dùng Internet)\nTiền mặt khi nhận hàng — năm: 76%\nChuyển Khoản — năm: 60%\nThẻ ATM nội địa — năm: 20%\nThẻ tín dụng thẻ ghi nợ — năm: 14%\nVí điện tử — năm: 21%\nMobile Money — năm: 6%\nTrả góp (mua trước trả sau) — năm: 3%"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p29:V2",
+      "sach-trang-tmdt-2023:p029:B01",
+      "sach-trang-tmdt-2023:p30:V1"
+    ],
+    "context_chars": 1208,
+    "gold_pages": [
+      29
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d06",
+    "split": "dev",
+    "group": "image",
+    "answerable": true,
+    "question": "Bao nhiêu phần trăm doanh nghiệp sở hữu website và trong số đó bao nhiêu phần trăm website có tính năng đặt hàng trực tuyến?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p058:B00",
+        "page": 58,
+        "score": 84.81259283487331,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "III. DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ\n1. Thương mại điện tử trên nền tảng website\n1.1. Website của doanh nghiệp\n44% | doanh nghiệp sở hữu website, trong đó 42% website có tính năng đặt hàng trực tuyến."
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p58:V1",
+        "page": 58,
+        "score": 81.93162010547428,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.1. Website của doanh nghiệp\n(Trang 58, nửa trên; đơn vị: %)\ndoanh nghiệp sở hữu website — 2023: 44%; website có tính năng đặt hàng trực tuyến — 2023: 42%"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p73:V2",
+        "page": 73,
+        "score": 41.47420226559636,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 5.1. Tính năng hỗ trợ trực tuyến\n(Trang 73, giữa; đơn vị: phần trăm)\n92,1% | website, ứng dụng TMĐT có tính năng hỗ trợ trực tuyến"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p078:B00",
+        "page": 78,
+        "score": 36.03050392288359,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Thị phần TMĐT bán hàng16\n4.1. Danh sách website TMĐT bán hàng có chức năng đặt hàng trực tuyến dẫn đầu về doanh thu"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p058:B01",
+        "page": 58,
+        "score": 32.157873908564866,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.2. Mục đích xây dựng website của doanh nghiệp\nXây dựng uy tín, quảng bá và nâng tầm thương hiệu | 81%\nQuảng cáo, tiếp thị, giới thiệu sản phẩm, dịch vụ | 76%\nMở rộng khả năng tương tác, phản hồi từ khách hàng | 57%\nThêm kênh bán buôn, bán lẻ sản phẩm, cung cấp dịch vụ | 45%\nđến khách hàng\nMục đích khác | 1%\n(Tỷ lệ doanh nghiệp sở hữu website)"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p061:B01",
+        "page": 61,
+        "score": 31.66585948495797,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tình hình vận hành website, ứng dụng di động TMĐT\n2.1. Đánh giá của doanh nghiệp về mức độ hiệu quả của các hình thức bán hàng\nQua ứng dụng di động | 25% | 52% | 23%\nQua website của doanh nghiệp | 23% | 53% | 24%\nQua sàn giao dịch TMĐT | 26% | 51% | 24%\nQua mạng xã hội | 16% | 50% | 34%\n(Tỷ lệ doanh nghiệp sở hữu website/ứng dụng di động)\nThấp | Trung bình | Cao\n[Tiêu đề trục dọc] (Tỷ lệ doanh "
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p058:B02",
+        "page": 58,
+        "score": 31.231349229470535,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.3. Website tương tác trực tuyến với khách hàng\n66% | website của doanh nghiệp có tính năng tương tác trực tuyến13 với khách hàng\nHình thức phản hồi trực tuyến với khách hàng\n66% | 61%\n44%\n2%\nQua | nhân sự | phụQua | thông tinQua | chat bot | Hình | thứ | c khác\ntrách | tư ơng tác liên hệ khách | tự động\ntrực tiếp | hàng | để lại\n13 Facebook Messenger, Zalo, Viber, Whatsapp,...\n[Tiêu đề trục dọc]"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p019:B01",
+        "page": 19,
+        "score": 30.5452959119636,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "3. Nghị định số 91/2022/NĐ-CP ngày 30 tháng 10 năm 2022 của Chính phủ\n1\n2\n3\nDoanh thu bán hàng thông qua\nchức năng đặt hàng trực tuyến của sàn\n4\n3\n4\n2\n1\nChủ sở hữu sàn thương mại\nđiện tử có trách nhiệm cung\ncấp đầy đủ, chính xác và đúng\nhạn theo quy định cho cơ quan\nthuế thông tin của thương nhân,\ntổ chức, cá nhân có tiến hành một\nphần hoặc toàn bộ quy trình mua\nbán hàng hóa, dịch vụ trên sàn\ngiao"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p078:B02",
+        "page": 78,
+        "score": 30.381022672247212,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.1. Danh sách website TMĐT bán hàng có chức năng đặt hàng trực tuyến dẫn đầu về doanh thu\n18 | viettelpost.com.vn | Tổng Công ty Cổ phần Bưu Chính Viettel\n19 | vn.myherbalife.com | Công ty TNHH MTV Herbalife Việt Nam\n20 | wework.com | Công ty TNHH WeWork Việt Nam\n16 Dữ liệu được tổng hợp từ báo cáo tình hình hoạt động TMĐT năm 2022 của 2.030 doanh nghiệp gửi về Bộ Công Thương."
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p58:V3",
+        "page": 58,
+        "score": 29.26067422704468,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.3. Website tương tác trực tuyến với khách hàng\n(Trang 58, nửa dưới; đơn vị: %)\nwebsite có tính năng tương tác trực tuyến với khách hàng — 2023: 66%; Qua nhân sự phụ trách tương tác trực tiếp — 2023: 66%; Qua thông tin liên hệ khách hàng để lại — 2023: 61%; Qua chat bot tự động — 2023: 44%; Hình thức khác — 2023: 2%"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p058:B00",
+      "sach-trang-tmdt-2023:p58:V1",
+      "sach-trang-tmdt-2023:p73:V2"
+    ],
+    "context_chars": 649,
+    "gold_pages": [
+      58
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d07",
+    "split": "dev",
+    "group": "image",
+    "answerable": true,
+    "question": "Năm 2023 có bao nhiêu tài khoản doanh nghiệp trên Cổng thông tin quản lý hoạt động TMĐT và tăng bao nhiêu so với năm 2022?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.3,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p026:B00",
+        "page": 26,
+        "score": 120.99039151941417,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "II. THÔNG TIN QUẢN LÝ HOẠT ĐỘNG THƯƠNG MẠI ĐIỆN TỬ\nSố lượng phản ánh, khiếu nại trên\nCổng thông tin quản lý hoạt động TMĐT năm 2023\n76.255 tài khoản doanh nghiệp\ntăng 16,4% so với năm 2022\n26.250 tài khoản cá nhân\ntăng 10,8% so với năm 2022\n105.103 hồ sơ thông báo\ntăng 12,1% so với năm 2022"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p26:V1",
+        "page": 26,
+        "score": 102.1592729712422,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] Số lượng phản ánh, khiếu nại trên Cổng thông tin quản lý hoạt động TMĐT năm 2023\n(Trang 26, nửa trên; đơn vị: tài khoản/hồ sơ/website)\n76.255 tài khoản doanh nghiệp | tăng 16,4% so với năm 2022\n26.250 tài khoản cá nhân | tăng 10,8% so với năm 2022\n105.103 hồ sơ thông báo | tăng 12,1% so với năm 2022\n9.604 hồ sơ đăng ký | tăng 14,3% so với năm 2022\n48.348 website/ứng dụng đã được xác "
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p026:B01",
+        "page": 26,
+        "score": 38.347318123659825,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "9.604 hồ sơ đăng ký\ntăng 14,3% so với năm 2022\n48.348 website/ứng dụng đã được xác nhận thông báo\ntăng 6,7% so với năm 2022\n1.218 website/ứng dụng đã được xác nhận đăng ký\ntăng 1,1% so với năm 2022\n18,0% 12,6%\n14,4%\n12,6%\n17,1%\n26,1%\nCác loại hành vi khác\nChưa đăng ký, thông báo\nwebsite/ứng dụng\nGiả mạo thông tin đăng ký\nKinh doanh hàng giả, hàng cấm\nLừa đảo trong thanh toán\nMạo danh website/ứng d"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p025:B00",
+        "page": 25,
+        "score": 36.10685276875872,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Mục tiêu\nSửa đổi chính sách, pháp luật liên quan đến TMĐT;\nXây dựng cơ sở dữ liệu quản lý thuế đổi với TMĐT, kinh doanh trên nền\ntảng số;\nKết nối, chia sẻ dữ liệu giữa các cơ quan liên quan để tăng cường công tác\nquản lý thuế đối với hoạt động kinh doanh TMĐT, hoạt động cung cấp sản\nphẩm, dịch vụ số xuyên biên giới;\nThực hiện chuyển đổi sử dụng mã định danh cá nhân làm mã số thuế; tích\nhợp sử d"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p064:B01",
+        "page": 64,
+        "score": 34.47447595120982,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tỷ lệ chi phí hoàn tất đơn hàng và giao hàng chặng cuối so với doanh thu từ hoạt động TMĐT\ncủa doanh nghiệp\n3%\n12% | Dưới 10%\nTừ 10% - 20%\n52% | Từ 20 % - 40 %\n33% | Trên 40%\n3. Phương thức thanh toán mà doanh nghiệp đang sử dụng\nThanh toán tiền mặt | 88%\nChuyển khoản Internet banking | 87%\nVí điện tử | 22%\nThẻ thanh toán nội địa | 15%\nThẻ thanh toán quốc tế | 12%\nTài khoản mobile, SMS | 9%\nTha"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p64:V2",
+        "page": 64,
+        "score": 29.813589134241152,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[pie_chart] 2. Tỷ lệ chi phí hoàn tất đơn hàng và giao hàng chặng cuối so với doanh thu từ hoạt động TMĐT của doanh nghiệp\n(Trang 64, giữa; đơn vị: %)\nDưới 10% — 2023: 3 | Từ 10% - 20% — 2023: 12 | Từ 20 % - 40 % — 2023: 52 | Trên 40% — 2023: 33"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p003:B00",
+        "page": 3,
+        "score": 29.137707763238843,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "LỜI GIỚI THIỆU\nKinh tế Việt Nam 2023 duy trì xu hướng phục hồi, tiếp tục là điểm sáng của kinh tế toàn cầu (theo Cổng\nThông tin điện tử Chính phủ). Kinh tế vĩ mô cơ bản ổn định; lạm phát thấp hơn mục tiêu Quốc hội đề ra; nợ\ncông, nợ Chính phủ, nợ nước ngoài, bội chi ngân sách nhà nước được kiểm soát; tăng trưởng được thúc đẩy;\ncác cân đối lớn của nền kinh tế được bảo đảm. Tăng trưởng GDP cả năm kh"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p015:B00",
+        "page": 15,
+        "score": 29.025511655292362,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Luật Giao dịch điện tử (sửa đổi)\n1\n1\n3\n3\n5\n2\n2\n4\n4\n2\n3\nĐiều kiện kinh doanh dịch vụ tin cậy\nTrách nhiệm của tổ chức cung cấp dịch vụ tin cậy\nLà doanh nghiệp được thành lập và hoạt động hợp pháp trên lãnh thổ Việt Nam;\nCông bố công khai quy trình đăng ký sử dụng dịch vụ, các biểu mẫu và chi phí liên quan;\nĐáp ứng điều kiện tài chính, nhân lực quản lý và kỹ thuật phù hợp với từng loại hình\ndịch v"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p055:B00",
+        "page": 55,
+        "score": 27.653785231559162,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "3. Quy mô của doanh nghiệp tham gia khảo sát\n12%\nDoanh nghiệp vừ a và nhỏ\nDoanh nghiệp lớn\n88%\nII. MỨC ĐỘ SẴN SÀNG ỨNG DỤNG TMĐT CỦA DOANH NGHIỆP\n1. Hạ tầng công nghệ thông tin\n1.1. Các phần mềm phổ biến được doanh nghiệp sử dụng\n57%\n47%\n31% | 33%28%29%\n2022\n22% | 20% | 2023\nQuản lý nhân sự | Quản lý chuỗi | Quản lý chăm sóc | Quản trị\ncung ứng | khách hàng | doanh nghiệp\n[Tiêu đề trục dọc] (Tỷ lệ"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p065:B01",
+        "page": 65,
+        "score": 25.45177913623893,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tỷ lệ doanh nghiệp có sử dụng dịch vụ công trực tuyến liên quan tới các thủ tục đăng ký, cấp\nphép, khai báo... được cung cấp trên website của cơ quan nhà nước\n86%\n83%\n[Tiêu đề trục dọc] (Tỷ lệ doanh nghiệp)\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n1. Tỷ lệ doanh nghiệp có tra cứu thông tin trên website của cơ quan nhà nước — Thường xuyên: 2022: 36%; 2023: 36%\n1. Tỷ lệ doanh"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p026:B00",
+      "sach-trang-tmdt-2023:p26:V1",
+      "sach-trang-tmdt-2023:p026:B01"
+    ],
+    "context_chars": 1374,
+    "gold_pages": [
+      26
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d08",
+    "split": "dev",
+    "group": "chart",
+    "answerable": true,
+    "question": "Lượng người dùng Internet toàn cầu tháng 1/2023 là bao nhiêu và tốc độ tăng trưởng là bao nhiêu?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.0,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p28:V1",
+        "page": 28,
+        "score": 59.793102712707075,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.1. Lượng người dùng Internet\n(Trang 28, nửa trên; đơn vị: triệu người)\nT1/2019 — lượng người dùng: 4,335 | T1/2020 — lượng người dùng: 4,627 | T1/2021 — lượng người dùng: 4,962 | T1/2022 — lượng người dùng: 5,060 | T1/2023 — lượng người dùng: 5,158 | T1/2019 — tốc độ tăng trưởng (%): 9,00 | T1/2020 — tốc độ tăng trưởng (%): 6,70 | T1/2021 — tốc độ tăng trưởng (%): 7,20 | T1/2022 — tố"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p28:V2",
+        "page": 28,
+        "score": 42.80375340832113,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.2. Thời gian trung bình truy cập Internet toàn cầu\n(Trang 28, nửa dưới; đơn vị: giờ phút)\nQ3 - 2018 — thời gian: 6 giờ 46 phút | Q3 - 2019 — thời gian: 6 giờ 38 phút | Q3 - 2020 — thời gian: 6 giờ 55 phút | Q3 - 2021 — thời gian: 6 giờ 57 phút | Q3 - 2022 — thời gian: 6 giờ 37 phút | Q3 - 2018 — tốc độ tăng trưởng (%): 0,50 | Q3 - 2019 — tốc độ tăng trưởng (%): -2,50 | Q3 - 2020 — tố"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p028:B00",
+        "page": 28,
+        "score": 42.432525580779,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. THƯƠNG MẠI ĐIỆN TỬ THẾ GIỚI\n1. Tình hình sử dụng Internet và tham gia TMĐT toàn cầu 1\n1.1. Lượng người dùng Internet | 5.1 58\n5.060\n4.962\n4.627\n4.335\n9,00 | 7,20\n6,70\n2,00 | 1,90\nT1 /2 019 | T1 /2 020 | T1 /2 021 | T1 /2 022 | T1 /2 023\nLượng người dùng | (tri ệu người) | Tốc độ | tăn | g trư ởng (% )"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p029:B01",
+        "page": 29,
+        "score": 34.007033642292264,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\nngười dùng Internet mua hàng đã qua sử dụng | 14,2%\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\nngười dùng Internet sử dụng dịch vụ mua ngay trả sau | 18,4%"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p29:V2",
+        "page": 29,
+        "score": 33.28749966564137,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n(Trang 29, nửa dưới; đơn vị: %)\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\n14,2% | người dùng Internet mua hàng đã qua sử dụng\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\n18,4% | người dùng Internet sử dụng dịch vụ mua ngay trả sau"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p028:B01",
+        "page": 28,
+        "score": 32.866345214096214,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.2. Thời gian trung bình truy cập Internet toàn cầu\n6 g | iờ 46 phút | 6 g | iờ 38 phút | 6 g | iờ 55 phút | 6 giờ | 57 | ph | út | 6 gi | ờ 37 ph | út\n4,30\n0,50\n0,50\n-2,50\n-4,80\nQ3 - 2018 | Q3 - 2019 | Q3 - 2020 | Q3 - 2021 | Q3 - 2022\nThời | g ian | Tốc | độ tăng trưởng( | %)\n1 | Số liệu phần này thu thập từ Báo cáo “Digital 2023 global overview report” của We are social & Meltwater"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p003:B00",
+        "page": 3,
+        "score": 32.35641175558694,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "LỜI GIỚI THIỆU\nKinh tế Việt Nam 2023 duy trì xu hướng phục hồi, tiếp tục là điểm sáng của kinh tế toàn cầu (theo Cổng\nThông tin điện tử Chính phủ). Kinh tế vĩ mô cơ bản ổn định; lạm phát thấp hơn mục tiêu Quốc hội đề ra; nợ\ncông, nợ Chính phủ, nợ nước ngoài, bội chi ngân sách nhà nước được kiểm soát; tăng trưởng được thúc đẩy;\ncác cân đối lớn của nền kinh tế được bảo đảm. Tăng trưởng GDP cả năm kh"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p35:V2",
+        "page": 35,
+        "score": 24.96501420498054,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 4. Philippines\n(Trang 35, nửa dưới; đơn vị: Tỷ USD)\nDoanh thu bán lẻ hàng hóa trực tuyến — 2022: 15\nDoanh thu vận tải và thực phẩm — 2022: 2\nDoanh thu du lịch trực tuyến — 2022: 1\nDoanh thu nội dung nghe nhìn trực tuyến — 2022: 3\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến — 2022: 29%\nDoanh thu bán lẻ hàng hóa trực tuyến — 2023: 16\nDoanh thu vận tải và thực phẩm — 2023: 2\nD"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p36:V1",
+        "page": 36,
+        "score": 24.914098009375273,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 5. Thái Lan\n(Trang 36, nửa trên; đơn vị: Tỷ USD)\nDoanh thu bán lẻ hàng hóa trực tuyến — 2022: 20\nDoanh thu vận tải và thực phẩm — 2022: 3\nDoanh thu du lịch trực tuyến — 2022: 3\nDoanh thu nội dung nghe nhìn trực tuyến — 2022: 5\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến — 2022: -1%\nDoanh thu bán lẻ hàng hóa trực tuyến — 2023: 22\nDoanh thu vận tải và thực phẩm — 2023: 3\nDoan"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p35:V1",
+        "page": 35,
+        "score": 24.531211016141825,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 3. Indonesia\n(Trang 35, nửa trên; đơn vị: Tỷ USD)\nDoanh thu bán lẻ hàng hóa trực tuyến — 2022: 58\nDoanh thu vận tải và thực phẩm — 2022: 8\nDoanh thu du lịch trực tuyến — 2022: 3\nDoanh thu nội dung nghe nhìn trực tuyến — 2022: 6\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến — 2022: 20%\nDoanh thu bán lẻ hàng hóa trực tuyến — 2023: 62\nDoanh thu vận tải và thực phẩm — 2023: 7\nDoa"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p28:V1",
+      "sach-trang-tmdt-2023:p28:V2",
+      "sach-trang-tmdt-2023:p028:B00"
+    ],
+    "context_chars": 1418,
+    "gold_pages": [
+      28
+    ],
+    "first_hit_rank": 3,
+    "hit1": false,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 0.3333333333333333
+  },
+  {
+    "query_id": "d09",
+    "split": "dev",
+    "group": "chart",
+    "answerable": true,
+    "question": "Trở ngại lớn nhất khi mua hàng trực tuyến mà người tiêu dùng gặp phải là gì và chiếm bao nhiêu phần trăm?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p052:B00",
+        "page": 52,
+        "score": 46.67297824896521,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "3. Các trở ngại khi mua hàng trực tuyến\nChất lượng kém so với quảng cáo | 54%\nLo ngại thông tin cá nhân bị tiết lộ | 42%\nGiá cả (cao hơn mua trực tiếp/không rõ ràng) | 29%\nChi phí vận chuyển cao | 29%\nChất lượng dịch vụ vận chuyển và giao nhận kém | 21%\nDịch vụ chăm sóc khách hàng kém | 18%\nĐặt hàng trực tuyến rắc rối | 18%\nWebsite/ứng dụng không chuyên nghiệp | 13%\nThanh toán phức tạp | 12%\nKhác "
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p52:V1",
+        "page": 52,
+        "score": 43.760629072917965,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 3. Các trở ngại khi mua hàng trực tuyến\n(Trang 52, nửa trên; đơn vị: tỷ lệ người tiêu dùng)\nChất lượng kém so với quảng cáo — 2023: 54% | Lo ngại thông tin cá nhân bị tiết lộ — 2023: 42% | Giá cả (cao hơn mua trực tiếp/không rõ ràng) — 2023: 29% | Chi phí vận chuyển cao — 2023: 29% | Chất lượng dịch vụ vận chuyển và giao nhận kém — 2023: 21% | Dịch vụ chăm sóc khách hàng kém — 2023: 18"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p44:V3",
+        "page": 44,
+        "score": 30.674186964688115,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 3. Cách thức tìm kiếm thông tin khi mua hàng trực tuyến\n(Trang 44, nửa dưới; đơn vị: %)\nBạn bè, người thân giới thiệu trực tiếp — 2023: 53% | Xem bình luận, đánh giá trên mạng — 2023: 52% | Qua quảng cáo trực tuyến — 2023: 52% | Xem quảng cáo truyền thống — 2023: 38% | Website/ứng dụng đã thông báo/đăng ký với Bộ Công Thương — 2023: 15% | Khác — 2023: 2% (Tỷ lệ người tiêu dùng trực tuy"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p044:B01",
+        "page": 44,
+        "score": 30.115034854412276,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tỷ lệ người dùng Internet tham gia mua sắm trực tuyến\n78%\n3. Cách thức tìm kiếm thông tin khi mua hàng trực tuyến\nBạn bè, người thân giới thiệu trực tiếp | 53%\nXem bình luận, đánh giá trên mạng | 52%\n(Mạng xã hội /sàn TMĐT)\nQua quảng cáo trực tuyến | 52%\n(mạng xã hội/công cụ tìm kiếm/email quảng cáo)\nXem quảng cáo truyền thống | 38%\n(tivi /báo điện tử /báo giấy)\nWebsite/ứng dụng đã thông báo/đă"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p085:B01",
+        "page": 85,
+        "score": 29.545259398223394,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.5. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT du lịch trực tuyến\nV. KHÓ KHĂN, TRỞ NGẠI KHI VẬN HÀNH WEBSITE, ỨNG DỤNG DI ĐỘNG\nDoanh nghiệp đánh giá về khó khăn, trở ngại khi vận hành website, ứng dụng di động theo thang điểm từ 0 - 2\n(không cản trở: 0, cản trở nhiều: 2).\nKhó khăn, trở ngại khi vận hành website, ứng dụng TMĐT Mức độ khó khăn\nVận chuyển, giao nhận 0,64\nThu hút khác"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p051:B02",
+        "page": 51,
+        "score": 25.704473767105803,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tiêu chí người tiêu dùng trực tuyến quan tâm khi tham gia mua sắm\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n1. Mức độ hài lòng của người tiêu dùng trực tuyến — Rất hài lòng: 2022: 14%; 2023: 8%\n1. Mức độ hài lòng của người tiêu dùng trực tuyến — Hài lòng: 2022: 53%; 2023: 42%\n1. Mức độ hài lòng của người tiêu dùng trực tuyến — Bình thường: 2022: 32%; 2023: 47%\n1. Mức độ hài "
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p046:B02",
+        "page": 46,
+        "score": 25.282118081066432,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Website TMĐT bán hàng: 34%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Sàn giao dịch TMĐT: 61%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Diễn đàn"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p85:V2",
+        "page": 85,
+        "score": 24.627740568253834,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] V. KHÓ KHĂN, TRỞ NGẠI KHI VẬN HÀNH WEBSITE, ỨNG DỤNG DI ĐỘNG\n(Trang 85, giữa; đơn vị: không ghi)\nKhó khăn, trở ngại khi vận hành website, ứng dụng TMĐT | Mức độ khó khăn\nVận chuyển, giao nhận | 0,64\nThu hút khách hàng (marketing, khuyến mại….) | 1,06\nVận hành website (nguồn nhân lực, an ninh mạng…) | 0,89\nĐầu tư cho công nghệ | 0,93\nChi phí khác | 0,68"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p43:V2",
+        "page": 43,
+        "score": 24.25781749693946,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[pie_chart] 1. Phương thức mua sắm người tiêu dùng ưu tiên lựa chọn\n(Trang 43, giữa; đơn vị: phần trăm)\nMua sắm qua mạng — 2023: 20% | Mua sắm truyền thống — 2023: 50% | Không có sự ưu tiên nào — 2023: 30%"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p052:B01",
+        "page": 52,
+        "score": 22.760023126760945,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Lý do chưa mua sắm trực tuyến\nMua hàng tại cửa hàng thuận tiện hơn | 40%\nSợ lộ thông tin cá nhân | 29%\nKhó kiểm định chất lượng hàng hóa | 29%\nKhông tin tưởng đơn vị bán hàng | 24%\nHàng hóa, dịch vụ không phong phú | 18%\nKhông có các loại thẻ thanh toán | 15%\nChưa có kinh nghiệm mua bán trên mạng | 15%\nKhông có nhu cầu mua bán | 14%\nCách thức đặt hàng trực tuyến quá rắc rối | 13%\nKhông có đủ th"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p052:B00",
+      "sach-trang-tmdt-2023:p52:V1",
+      "sach-trang-tmdt-2023:p44:V3"
+    ],
+    "context_chars": 1508,
+    "gold_pages": [
+      52
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d10",
+    "split": "dev",
+    "group": "chart",
+    "answerable": true,
+    "question": "Tỷ lệ doanh nghiệp sử dụng phần mềm quản lý nhân sự năm 2023 là bao nhiêu và thay đổi thế nào so với năm 2022?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.3,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p055:B00",
+        "page": 55,
+        "score": 71.14140184847216,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "3. Quy mô của doanh nghiệp tham gia khảo sát\n12%\nDoanh nghiệp vừ a và nhỏ\nDoanh nghiệp lớn\n88%\nII. MỨC ĐỘ SẴN SÀNG ỨNG DỤNG TMĐT CỦA DOANH NGHIỆP\n1. Hạ tầng công nghệ thông tin\n1.1. Các phần mềm phổ biến được doanh nghiệp sử dụng\n57%\n47%\n31% | 33%28%29%\n2022\n22% | 20% | 2023\nQuản lý nhân sự | Quản lý chuỗi | Quản lý chăm sóc | Quản trị\ncung ứng | khách hàng | doanh nghiệp\n[Tiêu đề trục dọc] (Tỷ lệ"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p55:V2",
+        "page": 55,
+        "score": 60.40518741197833,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.1. Các phần mềm phổ biến được doanh nghiệp sử dụng\n(Trang 55, giữa; đơn vị: %)\nQuản lý nhân sự — 2022: 57%; 2023: 47% | Quản lý chuỗi cung ứng — 2022: 31%; 2023: 28% | Quản lý chăm sóc khách hàng — 2022: 33%; 2023: 29% | Quản trị doanh nghiệp — 2022: 22%; 2023: 20%"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p026:B00",
+        "page": 26,
+        "score": 51.774416587412915,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "II. THÔNG TIN QUẢN LÝ HOẠT ĐỘNG THƯƠNG MẠI ĐIỆN TỬ\nSố lượng phản ánh, khiếu nại trên\nCổng thông tin quản lý hoạt động TMĐT năm 2023\n76.255 tài khoản doanh nghiệp\ntăng 16,4% so với năm 2022\n26.250 tài khoản cá nhân\ntăng 10,8% so với năm 2022\n105.103 hồ sơ thông báo\ntăng 12,1% so với năm 2022"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p26:V1",
+        "page": 26,
+        "score": 49.06470474093413,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] Số lượng phản ánh, khiếu nại trên Cổng thông tin quản lý hoạt động TMĐT năm 2023\n(Trang 26, nửa trên; đơn vị: tài khoản/hồ sơ/website)\n76.255 tài khoản doanh nghiệp | tăng 16,4% so với năm 2022\n26.250 tài khoản cá nhân | tăng 10,8% so với năm 2022\n105.103 hồ sơ thông báo | tăng 12,1% so với năm 2022\n9.604 hồ sơ đăng ký | tăng 14,3% so với năm 2022\n48.348 website/ứng dụng đã được xác "
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p026:B01",
+        "page": 26,
+        "score": 33.10936987290896,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "9.604 hồ sơ đăng ký\ntăng 14,3% so với năm 2022\n48.348 website/ứng dụng đã được xác nhận thông báo\ntăng 6,7% so với năm 2022\n1.218 website/ứng dụng đã được xác nhận đăng ký\ntăng 1,1% so với năm 2022\n18,0% 12,6%\n14,4%\n12,6%\n17,1%\n26,1%\nCác loại hành vi khác\nChưa đăng ký, thông báo\nwebsite/ứng dụng\nGiả mạo thông tin đăng ký\nKinh doanh hàng giả, hàng cấm\nLừa đảo trong thanh toán\nMạo danh website/ứng d"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p057:B00",
+        "page": 57,
+        "score": 30.6240443042954,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Nguồn nhân lực cho thương mại điện tử\n65% | doanh nghiệp ưu tiên tuyển dụng nhân sự được đào tạo về CNTT và TMĐT\n3. Tình hình sử dụng chữ ký số, hợp đồng và hóa đơn điện tử năm 2023\n80% | doanh nghiệp có sử dụng chữ ký điện tử\n41% | doanh nghiệp có sử dụng hợp đồng điện tử trong giao dịch\n22% | doanh nghiệp có sử dụng dịch vụ chứng thực hợp đồng điện tử"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p065:B01",
+        "page": 65,
+        "score": 29.603997129190233,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tỷ lệ doanh nghiệp có sử dụng dịch vụ công trực tuyến liên quan tới các thủ tục đăng ký, cấp\nphép, khai báo... được cung cấp trên website của cơ quan nhà nước\n86%\n83%\n[Tiêu đề trục dọc] (Tỷ lệ doanh nghiệp)\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n1. Tỷ lệ doanh nghiệp có tra cứu thông tin trên website của cơ quan nhà nước — Thường xuyên: 2022: 36%; 2023: 36%\n1. Tỷ lệ doanh"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p065:B00",
+        "page": 65,
+        "score": 29.45413621809444,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Tỷ lệ doanh nghiệp cho phép khách hàng mua hàng trả góp\n18%\nVI. TÌNH HÌNH SỬ DỤNG DỊCH VỤ CÔNG TRỰC TUYẾN CỦA DOANH NGHIỆP\n1. Tỷ lệ doanh nghiệp có tra cứu thông tin trên website của cơ quan nhà nước\n60% | 60%\n2022\n36% | 36% | 2023\n4% | 4%\nThường xuyên | Thỉnh thoảng | Chưa bao giờ"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p064:B01",
+        "page": 64,
+        "score": 27.448516057360905,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tỷ lệ chi phí hoàn tất đơn hàng và giao hàng chặng cuối so với doanh thu từ hoạt động TMĐT\ncủa doanh nghiệp\n3%\n12% | Dưới 10%\nTừ 10% - 20%\n52% | Từ 20 % - 40 %\n33% | Trên 40%\n3. Phương thức thanh toán mà doanh nghiệp đang sử dụng\nThanh toán tiền mặt | 88%\nChuyển khoản Internet banking | 87%\nVí điện tử | 22%\nThẻ thanh toán nội địa | 15%\nThẻ thanh toán quốc tế | 12%\nTài khoản mobile, SMS | 9%\nTha"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p65:V1",
+        "page": 65,
+        "score": 26.332456834268854,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1. Tỷ lệ doanh nghiệp có tra cứu thông tin trên website của cơ quan nhà nước\n(Trang 65, giữa; đơn vị: (Tỷ lệ doanh nghiệp))\nThường xuyên — 2022: 36%; 2023: 36%\nThỉnh thoảng — 2022: 60%; 2023: 60%\nChưa bao giờ — 2022: 4%; 2023: 4%"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p055:B00",
+      "sach-trang-tmdt-2023:p55:V2",
+      "sach-trang-tmdt-2023:p026:B00"
+    ],
+    "context_chars": 1592,
+    "gold_pages": [
+      55
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d11",
+    "split": "dev",
+    "group": "chart",
+    "answerable": true,
+    "question": "Trong tổng số website/ứng dụng TMĐT (phần thông tin chung chương V), website/ứng dụng TMĐT bán hàng chiếm bao nhiêu phần trăm?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.0,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p75:V1",
+        "page": 75,
+        "score": 35.2697486556754,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 5.3. Các chính sách, cơ chế hỗ trợ khách hàng\n(Trang 75, giữa; đơn vị: %)\nChính sách bảo hành, bảo trì sản phẩm, dịch vụ | Website, ứng dụng TMĐT bán hàng: 77,3% | Website, ứng dụng CCDV TMĐT: 74,1%\nChính sách đổi trả hàng và hoàn tiền | Website, ứng dụng TMĐT bán hàng: 77,1% | Website, ứng dụng CCDV TMĐT: 77,5%\nChính sách giải quyết tranh chấp, khiếu nại | Website, ứng dụng TMĐT bán hàng:"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p068:B00",
+        "page": 68,
+        "score": 33.38080254834476,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. THÔNG TIN CHUNG15\n28,8% | Website/ứ | ng | dụng\nTMĐT | bán hàng\n71,2% | Website/ứ | ng | dụng\nCCDV | TMĐT\n1. Website/ứng dụng TMĐT bán hàng\n1.1. Mô hình hoạt động\nWebsite/ứng dụng có\ntính năng bán hàng trực tuyến\n50,9% | 49,1%\nWebsite/ứng dụng chỉ\ngiới thiệu sản phẩm, dịch vụ"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p74:V1",
+        "page": 74,
+        "score": 30.05736388188318,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 5.2. Phương thức giao hàng được sử dụng phổ biến\n(Trang 74, giữa; đơn vị: không ghi)\nNhân viên công ty giao hàng | Website, ứng dụng TMĐT bán hàng: 50,6% | Website, ứng dụng CCDV TMĐT: 46,3%\nThuê dịch vụ giao hàng | Website, ứng dụng TMĐT bán hàng: 34,1% | Website, ứng dụng CCDV TMĐT: 31,7%\nKết hợp cả hai | Website, ứng dụng TMĐT bán hàng: 2,8% | Website, ứng dụng CCDV TMĐT: 7,5%\nKhông hỗ "
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p68:V1",
+        "page": 68,
+        "score": 29.149381316013365,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[pie_chart] 1. Website/ứng dụng TMĐT bán hàng\n(Trang 68, nửa trên; đơn vị: %)\nWebsite/ứng dụng TMĐT bán hàng — 2023: 28,8%\nWebsite/ứng dụng CCDV TMĐT — 2023: 71,2%"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p076:B00",
+        "page": 76,
+        "score": 28.301075201151026,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "III. TÌNH HÌNH KINH DOANH TRÊN WEBSITE, ỨNG DỤNG TMĐT BÁN HÀNG\n1. Hàng hóa, dịch vụ được mua, sử dụng nhiều nhất trên website, ứng dụng TMĐT bán hàng"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p070:B00",
+        "page": 70,
+        "score": 26.131741973002168,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "II. CÁC TIỆN ÍCH HỖ TRỢ ĐƯỢC CUNG CẤP TRÊN WEBSITE, ỨNG DỤNG DI ĐỘNG TMĐT\n1. Tỷ lệ website, ứng dụng TMĐT yêu cầu người dùng đăng ký thành viên khi mua hàng\n17,3% | website, ứng dụng TMĐT bán hàng\n36,4% | website, ứng dụng CCDV TMĐT"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p70:V1",
+        "page": 70,
+        "score": 26.084639836006406,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1. Tỷ lệ website, ứng dụng TMĐT yêu cầu người dùng đăng ký thành viên khi mua hàng\n(Trang 70, giữa; đơn vị: %)\nwebsite, ứng dụng TMĐT bán hàng — 2023: 17,3%\nwebsite, ứng dụng CCDV TMĐT — 2023: 36,4%"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p73:V2",
+        "page": 73,
+        "score": 25.29568651357792,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 5.1. Tính năng hỗ trợ trực tuyến\n(Trang 73, giữa; đơn vị: phần trăm)\n92,1% | website, ứng dụng TMĐT có tính năng hỗ trợ trực tuyến"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p075:B00",
+        "page": 75,
+        "score": 25.272270234260745,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "5.3. Các chính sách, cơ chế hỗ trợ khách hàng\nWebsite, ứng dụng | Website, ứng dụng\nTMĐT bán hàng | CCDV TMĐT\nChính sách bảo hành, | 77,3% | 74,1%\nbảo trì sản phẩm, dịch vụ\nChính sách đổi trả hàng | 77,1% | 77,5%\nvà hoàn tiền\nChính sách giải quyết | 81,0% | 85,9%\ntranh chấp, khiếu nại\nChính sách bảo vệ | 91,5% | 93,4%\nthông tin cá nhân\nCơ chế và quy trình rà soát | 79,0% | 86,5%\nvà kiểm duyệt thôn"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p079:B01",
+        "page": 79,
+        "score": 24.98219787454436,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Hoạt động của người bán nước ngoài trên website/ứng dụng TMĐT 17\n2.1. Tỷ lệ website/ứng dụng cung cấp dịch vụ TMĐT có gian hàng của người bán nước ngoài\n3,9%\nCó\nKhông\n96,1%\n17 Số liệu phần này tổng hợp từ các website, ứng dụng CCDV TMĐT có người bán nước ngoài hoạt động"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p75:V1",
+      "sach-trang-tmdt-2023:p068:B00",
+      "sach-trang-tmdt-2023:p74:V1"
+    ],
+    "context_chars": 1709,
+    "gold_pages": [
+      68
+    ],
+    "first_hit_rank": 2,
+    "hit1": false,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 0.5
+  },
+  {
+    "query_id": "d12",
+    "split": "dev",
+    "group": "multihop",
+    "answerable": true,
+    "question": "Theo số liệu e-Conomy SEA trong Sách trắng, doanh thu bán lẻ hàng hóa trực tuyến năm 2023 của Indonesia gấp khoảng bao nhiêu lần của Việt Nam?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.3,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p034:B01",
+        "page": 34,
+        "score": 61.64301770117396,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Quy mô nền kinh tế Internet phân theo quốc gia năm 2023\nIndonesia | 82\n109\nThái Lan | 36 | 49\nViệt Nam | 30 | 43\nPhilippines | 24 | 35\nMalaysia | 23 | 30\nSingapore | 22 | 29\n2023 | 2025* | * Số liệu dự báo\n7 | Đơn vị tính: Tỷ USD\nSố liệu được tổng hợp từ Báo cáo e-Conomy SEA 2023 – Google, Temasek, Bain & Company"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p035:B02",
+        "page": 35,
+        "score": 53.42765942979857,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Philippines\n[Số liệu biểu đồ đọc bằng OCR – Tesseract, vị trí và series lấy từ hình vẽ PDF]\n3. Indonesia (đơn vị: Tỷ USD) — 2022 — Doanh thu bán lẻ hàng hóa trực tuyến: 58\n3. Indonesia (đơn vị: Tỷ USD) — 2022 — Doanh thu vận tải và thực phẩm: 8\n3. Indonesia (đơn vị: Tỷ USD) — 2022 — Doanh thu du lịch trực tuyến: 3\n3. Indonesia (đơn vị: Tỷ USD) — 2022 — Doanh thu nội dung nghe nhìn trực tuyến: 6"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p037:B04",
+        "page": 37,
+        "score": 53.03143317571838,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nViệt Nam (đơn vị: Tỷ USD) — 2023 — Tốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến: 11%\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu bán lẻ hàng hóa trực tuyến: 24\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu vận tải và thực phẩm: 4\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu du lịch trực tuyến: 7\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu nội dung nghe nhìn trực"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p037:B03",
+        "page": 37,
+        "score": 51.83426482447338,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nSingapore (đơn vị: Tỷ USD) — 2025 — Doanh thu du lịch trực tuyến: 9\n7. Singapore (đơn vị: Tỷ USD) — 2025 — Doanh thu nội dung nghe nhìn trực tuyến: 4\n7. Singapore (đơn vị: Tỷ USD) — 2025 — Tốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến: 14%\n8. Việt Nam (đơn vị: Tỷ USD) — 2022 — Doanh thu bán lẻ hàng hóa trực tuyến: 15\n8. Việt Nam (đơn vị: Tỷ USD) — 2022 — Doanh thu vận tải và "
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p37:V2",
+        "page": 37,
+        "score": 51.10282268750846,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 8. Việt Nam\n(Trang 37, nửa dưới; đơn vị: Tỷ USD)\nDoanh thu bán lẻ hàng hóa trực tuyến — 2022: 15\nDoanh thu vận tải và thực phẩm — 2022: 3\nDoanh thu du lịch trực tuyến — 2022: 3\nDoanh thu nội dung nghe nhìn trực tuyến — 2022: 5\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến — 2022: 37%\nDoanh thu bán lẻ hàng hóa trực tuyến — 2023: 16\nDoanh thu vận tải và thực phẩm — 2023: 3\nDoan"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p037:B01",
+        "page": 37,
+        "score": 50.0683841007377,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nDoanh thu bán lẻ hàng hóa trực tuyến | Doanh thu du lịch trực tuyến\nDoanh thu vận tải và thực phẩm | Doanh thu nội dung nghe nhìn trực tuyến\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến\nĐơn vị tính: Tỷ USD"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p037:B02",
+        "page": 37,
+        "score": 49.4717143815136,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\n[Số liệu biểu đồ đọc bằng OCR – Tesseract, vị trí và series lấy từ hình vẽ PDF]\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu bán lẻ hàng hóa trực tuyến: 8\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu vận tải và thực phẩm: 4\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu du lịch trực tuyến: 5\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu nội dung nghe nhìn trực tuyến: 2\n7. "
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p35:V1",
+        "page": 35,
+        "score": 49.013547747620535,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 3. Indonesia\n(Trang 35, nửa trên; đơn vị: Tỷ USD)\nDoanh thu bán lẻ hàng hóa trực tuyến — 2022: 58\nDoanh thu vận tải và thực phẩm — 2022: 8\nDoanh thu du lịch trực tuyến — 2022: 3\nDoanh thu nội dung nghe nhìn trực tuyến — 2022: 6\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến — 2022: 20%\nDoanh thu bán lẻ hàng hóa trực tuyến — 2023: 62\nDoanh thu vận tải và thực phẩm — 2023: 7\nDoa"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p035:B00",
+        "page": 35,
+        "score": 47.43764314320447,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "3. Indonesia\n2022 | 2023 | 2025\nDoanh thu bán lẻ hàng hóa trực tuyến | Doanh thu du lịch trực tuyến\nDoanh thu vận tải và thực phẩm | Doanh thu nội dung nghe nhìn trực tuyến\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến\nĐơn vị tính: Tỷ USD"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p34:V1",
+        "page": 34,
+        "score": 46.684646477759124,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1. Quy mô nền kinh tế Internet phân theo lĩnh vực\n(Trang 34, nửa trên; đơn vị: Tỷ USD)\nDoanh thu bán lẻ hàng hóa trực tuyến — 2022: 130\nDoanh thu bán lẻ hàng hóa trực tuyến — 2023: 139\nDoanh thu bán lẻ hàng hóa trực tuyến — 2025*: 186\nDoanh thu vận tải và giao đồ ăn — 2022: 18\nDoanh thu vận tải và giao đồ ăn — 2023: 23\nDoanh thu vận tải và giao đồ ăn — 2025*: 34\nDoanh thu du lịch trực "
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p034:B01",
+      "sach-trang-tmdt-2023:p035:B02",
+      "sach-trang-tmdt-2023:p037:B04"
+    ],
+    "context_chars": 1946,
+    "gold_pages": [
+      35,
+      37
+    ],
+    "first_hit_rank": 2,
+    "hit1": false,
+    "hit3": true,
+    "full_k": false,
+    "context_full": false,
+    "page_hit3": true,
+    "rr": 0.5
+  },
+  {
+    "query_id": "d13",
+    "split": "dev",
+    "group": "multihop",
+    "answerable": true,
+    "question": "Sàn TMĐT du lịch trực tuyến nào được người tiêu dùng ưa chuộng nhất (tỷ lệ bao nhiêu) và doanh nghiệp nào vận hành sàn này theo danh sách doanh nghiệp dẫn đầu thị trường?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.7,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p047:B02",
+        "page": 47,
+        "score": 64.73595684633129,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "7. Hình thức thanh toán phổ biến\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — ShopeeFood, Foody: 51%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Grab: 50%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Baemin: 15%\n6.3. Sàn giao dịch T"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p085:B01",
+        "page": 85,
+        "score": 56.85593087237332,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.5. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT du lịch trực tuyến\nV. KHÓ KHĂN, TRỞ NGẠI KHI VẬN HÀNH WEBSITE, ỨNG DỤNG DI ĐỘNG\nDoanh nghiệp đánh giá về khó khăn, trở ngại khi vận hành website, ứng dụng di động theo thang điểm từ 0 - 2\n(không cản trở: 0, cản trở nhiều: 2).\nKhó khăn, trở ngại khi vận hành website, ứng dụng TMĐT Mức độ khó khăn\nVận chuyển, giao nhận 0,64\nThu hút khác"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p046:B02",
+        "page": 46,
+        "score": 53.51186594625439,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Website TMĐT bán hàng: 34%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Sàn giao dịch TMĐT: 61%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Diễn đàn"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p047:B03",
+        "page": 47,
+        "score": 52.58978238626219,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "7. Hình thức thanh toán phổ biến\nSàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Tripi Partner: 9%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — AirBnB: 8%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Khác: 16%\n7. Hình thức thanh toán phổ biến — Tiền mặt khi nhận hàng: 76%\n7. Hình thức thanh toán phổ bi"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p047:B00",
+        "page": 47,
+        "score": 52.39573399960244,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng\n51% | 50%\n15% | 13%\n7%\nShopeeFood, | Grab | Baemin | Be | Khác\nFoody\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng\n50%\n26% | 24%\n14% | 9% | 8% | 16%\nTraveloka | Agoda | Gotadi | Tripi Partner | AirBnB | KhácBooking.com"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p47:V2",
+        "page": 47,
+        "score": 50.78404254034396,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng\n(Trang 47, giữa; đơn vị: Tỷ lệ người dùng Internet)\nTraveloka — năm: 50%\nAgoda — năm: 26%\nBooking.com — năm: 24%\nGotadi — năm: 14%\nTripi Partner — năm: 9%\nAirBnB — năm: 8%\nKhác — năm: 16%"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p85:V1",
+        "page": 85,
+        "score": 50.5635788218224,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] 4.5. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT du lịch trực tuyến\n(Trang 85, nửa trên; đơn vị: không ghi)\nSTT | Website/ứng dụng: giá trị | Tên doanh nghiệp: giá trị\n1 | Traveloka | Công ty TNHH Traveloka Việt Nam\n2 | Gotadi | Công ty Cổ phần Công nghệ du lịch Gotadi\n3 | Tripi Partner | Công ty Cổ phần du lịch Việt Nam Vntravel\n4 | Travellink.vn | Công ty Cổ phần Công nghệ"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p046:B03",
+        "page": 46,
+        "score": 48.98253169438341,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\nSàn giao dịch TMĐT lĩnh vực bán buôn bán lẻ người tiêu dùng ưa chuộng — Khác: 2%\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng — Grab: 70%\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng — Be: 23%\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộ"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p046:B01",
+        "page": 46,
+        "score": 45.039621598120334,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.1. Sàn giao dịch TMĐT lĩnh vực bán buôn bán lẻ người tiêu dùng ưa chuộng\n81%\n42%\n34%\n20%\n8% | 2%\nShopee | Lazada | TikTok | Tiki | Sendo | Khác\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n70%\n23%\n15% | 14%\nGrab | Be | GoJek | Khác\n[Tiêu đề trục dọc] (Tỷ lệ người dùng Internet)"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p085:B00",
+        "page": 85,
+        "score": 40.49354895353484,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4.4. Nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT giao đồ ăn\nSTT Website/ứng dụng Tên doanh nghiệp\n1 Traveloka Công ty TNHH Traveloka Việt Nam\n2 Gotadi Công ty Cổ phần Công nghệ du lịch Gotadi\n3 Tripi Partner Công ty Cổ phần du lịch Việt Nam Vntravel\n4 Travellink.vn Công ty Cổ phần Công nghệ và Truyền thông VNLINK\n5 Onedanang.vn Công ty TNHH Truyền Thông và Công nghệ One Office"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p047:B02",
+      "sach-trang-tmdt-2023:p085:B01",
+      "sach-trang-tmdt-2023:p046:B02"
+    ],
+    "context_chars": 2671,
+    "gold_pages": [
+      47,
+      83,
+      85
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": false,
+    "context_full": false,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d14",
+    "split": "dev",
+    "group": "multihop",
+    "answerable": true,
+    "question": "Năm 2023, tỷ lệ người dân Việt Nam sử dụng Internet là bao nhiêu, và trong số người dùng Internet có bao nhiêu phần trăm tham gia mua sắm trực tuyến?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 2.1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p44:V2",
+        "page": 44,
+        "score": 60.97956947626678,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 2. Tỷ lệ người dùng Internet tham gia mua sắm trực tuyến\n(Trang 44, giữa; đơn vị: %)\n78%"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p029:B01",
+        "page": 29,
+        "score": 52.68474038087069,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\nngười dùng Internet mua hàng đã qua sử dụng | 14,2%\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\nngười dùng Internet sử dụng dịch vụ mua ngay trả sau | 18,4%"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p29:V2",
+        "page": 29,
+        "score": 51.61297942399501,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n(Trang 29, nửa dưới; đơn vị: %)\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\n14,2% | người dùng Internet mua hàng đã qua sử dụng\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\n18,4% | người dùng Internet sử dụng dịch vụ mua ngay trả sau"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p40:V2",
+        "page": 40,
+        "score": 51.118448744186985,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023\n(Trang 40, nửa dưới; đơn vị: không ghi)\nƯớc tính số lượng người tiêu dùng mua sắm trực tuyến (triệu người) | 2018: 39,9 | 2019: 44,8 | 2020: 49,3 | 2021: 54,6 | 2022: 57,0 | 2023: 61\nƯớc tính giá trị mua sắm trực tuyến của một người (USD) | 2018: 202 | 2019: 225 | 2020: 240 | 2021: 251 | 2022: 288 | 2023: 336\nTỷ trọng doanh thu TMĐT B2C so với tổ"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p040:B00",
+        "page": 40,
+        "score": 51.10278954832859,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. QUY MÔ THỊ TRƯỜNG THƯƠNG MẠI ĐIỆN TỬ BÁN LẺ TẠI VIỆT NAM\n8 Doanh thu TMĐT B2C Việt Nam bao gồm doanh thu tất cả hàng hóa, dịch vụ bán qua kênh TMĐT (loại trừ các giao dịch liên quan đến lĩnh vực tài chính, ngân hàng, tín\ndụng, bảo hiểm, trò chơi trực tuyến).\n9 Số liệu cập nhật đến 6 tháng đầu năm 2023. Nguồn: Bộ Thông tin và Truyền thông\nDoanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)8\n201"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p044:B01",
+        "page": 44,
+        "score": 48.17426152461089,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Tỷ lệ người dùng Internet tham gia mua sắm trực tuyến\n78%\n3. Cách thức tìm kiếm thông tin khi mua hàng trực tuyến\nBạn bè, người thân giới thiệu trực tiếp | 53%\nXem bình luận, đánh giá trên mạng | 52%\n(Mạng xã hội /sàn TMĐT)\nQua quảng cáo trực tuyến | 52%\n(mạng xã hội/công cụ tìm kiếm/email quảng cáo)\nXem quảng cáo truyền thống | 38%\n(tivi /báo điện tử /báo giấy)\nWebsite/ứng dụng đã thông báo/đă"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p30:V1",
+        "page": 30,
+        "score": 43.643307283306974,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.5. Tỷ lệ người dùng Internet mua sắm trực tuyến hàng tuần tại một số quốc gia\n(Trang 30, nửa trên; đơn vị: %)\nThái Lan — 2023: 66,8%\nHàn Quốc — 2023: 65,6%\nIndonesia — 2023: 62,6%\nẤn Độ — 2023: 62,3%\nTrung Quốc — 2023: 61,9%\nMalaysia — 2023: 61,3%\nSingapore — 2023: 61,0%\nPhilippines — 2023: 61,0%\nViệt Nam — 2023: 60,7%\nÚc — 2023: 53,4%\nTrung bình toàn cầu — 2023: 57,6%"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p043:B00",
+        "page": 43,
+        "score": 42.572329551706055,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "3. Mục đích sử dụng Internet\nXem phim, nghe nhạc… | 59%\nĐọc báo | 51%\nNghiên cứu, học tập | 48%\nTìm kiếm thông tin mua hàng | 46%\nTham gia diễn đàn, mạng xã hội | 46%\nTruy cập email | 34%\nChơi game | 28%\nHoạt động khác | 21%\n(Tỷ lệ người dùng Internet)"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p043:B01",
+        "page": 43,
+        "score": 42.25625370557181,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "IV. TÌNH HÌNH THAM GIA MUA SẮM TRỰC TUYẾN\n1. Phương thức mua sắm người tiêu dùng ưu tiên lựa chọn\n20% | Mua sắm qua mạng\n50% | Mua sắm truyền thống\n30% | Không có sự ưu tiên nào"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p43:V1",
+        "page": 43,
+        "score": 41.415766737960965,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 3. Mục đích sử dụng Internet\n(Trang 43, nửa trên; đơn vị: tỷ lệ người dùng Internet)\nXem phim, nghe nhạc — 2023: 59% | Đọc báo — 2023: 51% | Nghiên cứu, học tập — 2023: 48% | Tìm kiếm thông tin mua hàng — 2023: 46% | Tham gia diễn đàn, mạng xã hội — 2023: 46% | Truy cập email — 2023: 34% | Chơi game — 2023: 28% | Hoạt động khác — 2023: 21%"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p44:V2",
+      "sach-trang-tmdt-2023:p029:B01",
+      "sach-trang-tmdt-2023:p29:V2"
+    ],
+    "context_chars": 925,
+    "gold_pages": [
+      40,
+      44
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": false,
+    "context_full": false,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d15",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "Luật Giao dịch điện tử (sửa đổi) được Quốc hội thông qua ngày nào và có hiệu lực thi hành từ ngày nào?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p014:B00",
+        "page": 14,
+        "score": 93.90404761901047,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\n1\n3\n2\n2. Luật Giao dịch điện tử (sửa đổi)\nNgày 22/6/2023, Quốc hội đã thông qua Luật Giao dịch điện tử (sửa đổi), có hiệu lực thi hành kể từ ngày 01/7/2024.\nDỊCH VỤ TIN CẬY\n1 Phân loại dịch vụ tin cậy\nDịch vụ cấp dấu thời gian;\nDịch vụ chứng thực thông điệp dữ liệu;\nDịch vụ chứng thực chữ ký số công cộng;"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p016:B01",
+        "page": 16,
+        "score": 65.22175935430079,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Luật Giao dịch điện tử (sửa đổi)\nĐối với hồ sơ đăng ký hoạt động cung cấp dịch vụ chứng thực hợp đồng điện tử\ntrong thương mại đã nộp cho cơ quan nhà nước có thẩm quyền nhưng đến ngày\nLuật này có hiệu lực thi hành chưa được xác nhận đăng ký thì được tiếp tục áp\ndụng quy định của pháp luật về TMĐT;\n4 Dịch vụ chứng thực hợp đồng điện tử"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p010:B00",
+        "page": 10,
+        "score": 58.1785087491278,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. CẬP NHẬT MỘT SỐ CHÍNH SÁCH PHÁP LUẬT LIÊN QUAN ĐẾN THƯƠNG MẠI ĐIỆN TỬ\n1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\nNgày 20/6/2023, Quốc hội đã thông qua Luật Bảo vệ người tiêu dùng (sửa đổi), có hiệu lực thi hành kể từ ngày\n01/7/2024. Luật đã bổ sung trách nhiệm của tổ chức, cá nhân kinh doanh với người tiêu dùng (NTD) trong các giao\ndịch trên không gian mạng.\n1\n2\nPhân loại tổ chức, cá nh"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p088:B01",
+        "page": 88,
+        "score": 46.62435892592442,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "PHỤ LỤC: BẢNG CẬP NHẬT KHUNG PHÁP LÝ CƠ BẢN VỀ THƯƠNG MẠI ĐIỆN TỬ\nThời gian\nban hành Luật Trạng thái hiệu lực\n24/11/2023 Luật viễn thông (sửa đổi) 1/7/2024\n22/6/2023 Luật Giao dịch điện tử (sửa đổi) 01/7/2024\n20/6/2023 Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi) 01/7/2024\n16/6/2022 Luật sửa đổi, bổ sung một số điều của Luật Sở hữu trí tuệ 01/03/2022\n11/01/2022\nLuật sửa đổi, bổ sung một số điều"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p88:V1",
+        "page": 88,
+        "score": 44.77406982919323,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] PHỤ LỤC: BẢNG CẬP NHẬT KHUNG PHÁP LÝ CƠ BẢN VỀ THƯƠNG MẠI ĐIỆN TỬ\n(Trang 88, giữa; đơn vị: không ghi)\nThời gian ban hành | Luật: giá trị | Trạng thái hiệu lực: giá trị\n24/11/2023 | Luật viễn thông (sửa đổi) | 1/7/2024\n22/6/2023 | Luật Giao dịch điện tử (sửa đổi) | 01/7/2024\n20/6/2023 | Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi) | 01/7/2024\n16/6/2022 | Luật sửa đổi, bổ sung một số điều"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p016:B00",
+        "page": 16,
+        "score": 43.66437399527117,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Luật Giao dịch điện tử (sửa đổi)\n5\n6\n1\n7\n2\n8\n3\nThực hiện các biện pháp nghiệp vụ, tạm dừng, chấm dứt cung cấp dịch vụ hoặc\nthực hiện biện pháp nghiệp vụ khác theo yêu cầu của cơ quan có thẩm quyền\ntheo quy định của pháp luật;\nThực hiện trách nhiệm của chủ quản hệ thống thông tin phục vụ cung cấp dịch vụ\ntin cậy đáp ứng yêu cầu bảo đảm an toàn thông tin mạng tối thiểu cấp độ 3 theo\nquy định của "
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p16:V1",
+        "page": 16,
+        "score": 41.81961846452405,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[diagram] 4 Dịch vụ chứng thực hợp đồng điện tử\n(Trang 16, giữa; đơn vị: không ghi)\n1. Tổ chức CCDV chứng thực hợp đồng điện tử trong thương mại phải đáp ứng điều kiện hoạt động cung cấp dịch vụ chứng thực hợp đồng điện tử theo quy định của pháp luật về TMĐT và điều kiện kinh doanh dịch vụ tin cậy theo quy định tại Điều 29 của Luật này;\n2. Xác nhận đăng ký hoạt động CCDV chứng thực hợp đồng điện t"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p089:B00",
+        "page": 89,
+        "score": 39.62574981396838,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "PHỤ LỤC: BẢNG CẬP NHẬT KHUNG PHÁP LÝ CƠ BẢN VỀ THƯƠNG MẠI ĐIỆN TỬ\n21/06/2012 Luật Quảng cáo Hết hiệu lực một phần\n23/11/2009 Luật Viễn Thông Hết hiệu lực một phần\n29/6/2006 Luật Công nghệ thông tin (CNTT) Hết hiệu lực một phần\n29/11/2005 Luật Giao dịch điện tử (GDĐT)\n14/06/2005 Luật Thương mại Hết hiệu lực một phần\nNghị định hướng dẫn Luật Văn bản bên trên\n26/4/2023 Nghị định số 17/2023/NĐ-CP quy "
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p018:B01",
+        "page": 18,
+        "score": 39.39944012275278,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Luật Giao dịch điện tử (sửa đổi)\n3\n4\nTrách nhiệm của chủ quản hệ thống thông tin phục vụ giao dịch điện tử\nTrách nhiệm của chủ quản nền tảng số trung gian quy mô rất lớn phục vụ giao dịch điện tử\n1\n1\n2\n2\n3\n3\n4\nGiám sát an toàn hệ thống thông tin phục vụ giao dịch điện tử của mình theo quy\nđịnh của pháp luật về an toàn thông tin mạng."
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p91:V1",
+        "page": 91,
+        "score": 39.115089510955066,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] Danh sách các nghị định liên quan đến thương mại điện tử\n(Trang 91, giữa; đơn vị: không ghi)\nNgày ban hành | Nghị định | Luật\n21/11/2016 | Nghị định 156/2016/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 27/2007/NĐ-CP ngày 23/02/2007 của Chính phủ về giao dịch điện tử trong hoạt động tài chính | Luật GDĐT\n1/7/2016 | Nghị định 80/2016/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định s"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p014:B00",
+      "sach-trang-tmdt-2023:p016:B01",
+      "sach-trang-tmdt-2023:p010:B00"
+    ],
+    "context_chars": 1700,
+    "gold_pages": [
+      14,
+      88
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d16",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "Theo Nghị định 13/2023/NĐ-CP, trong trường hợp nào Bên Xử lý dữ liệu cá nhân phải lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p024:B01",
+        "page": 24,
+        "score": 188.29823894819384,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Mục tiêu\n6 Đánh giá tác động xử lý dữ liệu cá nhân\nBên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá\nnhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân\ncủa mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nBên Xử lý dữ liệu cá nhân tiến hành lập và lưu giữ Hồ sơ đánh giá tác\nđộng xử lý dữ liệu cá nhân trong trường hợp thực hiện hợp đồng\nvới Bên Kiểm soát dữ liệu "
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p023:B00",
+        "page": 23,
+        "score": 98.5387979287409,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\n5 Trách nhiệm của Bên kiểm soát dữ liệu cá nhân và Bên xử lý dữ liệu cá nhân\nBên kiểm soát dữ liệu cá nhân Bên xử lý dữ liệu cá nhân\nThực hiện các biện pháp tổ chức và kỹ thuật\ncùng các biện pháp an toàn, bảo mật phù hợp\nđể chứng minh các hoạt động xử lý dữ liệu đã\nđược thực hiện theo quy định của pháp luật\nvề bảo vệ dữ liệu cá n"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p022:B00",
+        "page": 22,
+        "score": 88.90703748711408,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\n3\n4\nTrường hợp xử lý dữ liệu cá nhân không cần sự đồng ý của chủ thể dữ liệu\nThông báo vi phạm quy định về bảo vệ dữ liệu cá nhân\nTrường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên\nquan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc\nngười khác;\nViệc công khai dữ liệu cá nhân theo quy định của luật.\nViệc xử lý dữ "
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p023:B01",
+        "page": 23,
+        "score": 88.42479162213083,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\nChỉ tiếp nhận dữ liệu cá nhân sau khi có hợp đồng\nhoặc thỏa thuận về xử lý dữ liệu với Bên Kiểm soát\ndữ liệu cá nhân;\nXử lý dữ liệu cá nhân theo đúng hợp đồng hoặc thỏa\nthuận ký kết với Bên Kiểm soát dữ liệu cá nhân;\nThực hiện đầy đủ các biện pháp bảo vệ dữ liệu cá\nnhân quy định tại Nghị định này và các văn bản pháp\nluật khác có "
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p020:B00",
+        "page": 20,
+        "score": 58.39571486730744,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\nNghị định 13/2023/NĐ-CP quy định về bảo vệ dữ liệu cá nhân và trách nhiệm bảo vệ dữ liệu cá nhân của\ncơ quan, tổ chức, cá nhân có liên quan.\n1 Phân loại dữ liệu cá nhân\nDữ liệu cá nhân cơ bản Dữ liệu cá nhân nhạy cảm\nHọ, chữ đệm và tên khai sinh, tên gọi khác (nếu có);\nNgày, tháng, năm sinh; ngày, tháng, năm chết hoặc\nmất tích;\nG"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p021:B00",
+        "page": 21,
+        "score": 55.448902477431346,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\n2 Quyền của chủ thể dữ liệu\n1\n4\n9\n2\n7\n5\n10\n3\n8\n6\n11\nQuyền được biết\nQuyền đồng ý\nQuyền cung cấp dữ liệu\nQuyền truy cập đồng ý\nQuyền phản đối xử lý dữ liệu\nQuyền xóa dữ liệu\nQuyền yêu cầu bồi thường thiệt hại\nQuyền hạn chế xử lý dữ liệu\nQuyền tự bảo vệ\nQuyền rút lại sự đồng ý\nQuyền khiếu nại, tố cáo, khởi kiện;"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p020:B01",
+        "page": 20,
+        "score": 51.75663856549846,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "4. Nghị định số 13/2023/NĐ-CP ngày 17 tháng 4 năm 2023 của Chính phủ\nThông tin về đặc điểm di truyền được thừa hưởng\nhoặc có được của cá nhân;\nThông tin về thuộc tính vật lý, đặc điểm sinh học\nriêng của cá nhân;\nThông tin về đời sống tình dục, xu hướng tình dục\ncủa cá nhân;\nDữ liệu về tội phạm, hành vi phạm tội được thu\nthập, lưu trữ bởi các cơ quan thực thi pháp luật;\nDữ liệu về vị trí của cá nhâ"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p089:B00",
+        "page": 89,
+        "score": 48.31109448459482,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "PHỤ LỤC: BẢNG CẬP NHẬT KHUNG PHÁP LÝ CƠ BẢN VỀ THƯƠNG MẠI ĐIỆN TỬ\n21/06/2012 Luật Quảng cáo Hết hiệu lực một phần\n23/11/2009 Luật Viễn Thông Hết hiệu lực một phần\n29/6/2006 Luật Công nghệ thông tin (CNTT) Hết hiệu lực một phần\n29/11/2005 Luật Giao dịch điện tử (GDĐT)\n14/06/2005 Luật Thương mại Hết hiệu lực một phần\nNghị định hướng dẫn Luật Văn bản bên trên\n26/4/2023 Nghị định số 17/2023/NĐ-CP quy "
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p89:V1",
+        "page": 89,
+        "score": 43.486803504235176,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] Nghị định hướng dẫn Luật\n(Trang 89, giữa; đơn vị: không ghi)\n26/4/2023 | Nghị định số 17/2023/NĐ-CP quy định chi tiết một số điều và biện pháp thi hành Luật Sở hữu trí tuệ về quyền tác giả, quyền liên quan | Luật Sở hữu trí tuệ\n17/4/2023 | Nghị định số 13/2023/NĐ-CP bảo vệ dữ liệu cá nhân | Luật Quản lý thuế\n30/10/2022 | Nghị định 91/2022/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p011:B00",
+        "page": 11,
+        "score": 40.383940434840156,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1. Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi)\n3 Trách nhiệm của tổ chức thiết lập, vận hành nền tảng số trung gian với NTD trong giao dịch\ntrên không gian mạng\n1\n3\n5\n2\n4\n6\nCó trách nhiệm thực hiện quy định tại Điều 37 và Điều 38, Mục 2 Chương III\ntrong trường hợp cung cấp dịch vụ liên tục;\nXây dựng, công bố công khai quy chế hoạt động của nền tảng số trung gian\ncho NTD, trong đó phân định rõ "
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p024:B01",
+      "sach-trang-tmdt-2023:p023:B00",
+      "sach-trang-tmdt-2023:p022:B00"
+    ],
+    "context_chars": 3250,
+    "gold_pages": [
+      24
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "full_k": true,
+    "context_full": true,
+    "page_hit3": true,
+    "rr": 1.0
+  },
+  {
+    "query_id": "d17",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Doanh thu TMĐT B2C của Việt Nam năm 2017 là bao nhiêu tỷ USD?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 0.6,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p040:B00",
+        "page": 40,
+        "score": 44.26073728320657,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. QUY MÔ THỊ TRƯỜNG THƯƠNG MẠI ĐIỆN TỬ BÁN LẺ TẠI VIỆT NAM\n8 Doanh thu TMĐT B2C Việt Nam bao gồm doanh thu tất cả hàng hóa, dịch vụ bán qua kênh TMĐT (loại trừ các giao dịch liên quan đến lĩnh vực tài chính, ngân hàng, tín\ndụng, bảo hiểm, trò chơi trực tuyến).\n9 Số liệu cập nhật đến 6 tháng đầu năm 2023. Nguồn: Bộ Thông tin và Truyền thông\nDoanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)8\n201"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p40:V1",
+        "page": 40,
+        "score": 41.041199795656034,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)\n(Trang 40, giữa; đơn vị: tỷ USD)\n2018: 8,06\n2019: 10,8\n2020: 11,8\n2021: 13,7\n2022: 16,4\n2023: 20,5\nTỷ lệ tăng trưởng — 2018: 30%\nTỷ lệ tăng trưởng — 2019: 25%\nTỷ lệ tăng trưởng — 2020: 18%\nTỷ lệ tăng trưởng — 2021: 16%\nTỷ lệ tăng trưởng — 2022: 20%\nTỷ lệ tăng trưởng — 2023: 25% (*)"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p40:V2",
+        "page": 40,
+        "score": 36.60655544122842,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023\n(Trang 40, nửa dưới; đơn vị: không ghi)\nƯớc tính số lượng người tiêu dùng mua sắm trực tuyến (triệu người) | 2018: 39,9 | 2019: 44,8 | 2020: 49,3 | 2021: 54,6 | 2022: 57,0 | 2023: 61\nƯớc tính giá trị mua sắm trực tuyến của một người (USD) | 2018: 202 | 2019: 225 | 2020: 240 | 2021: 251 | 2022: 288 | 2023: 336\nTỷ trọng doanh thu TMĐT B2C so với tổ"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p037:B03",
+        "page": 37,
+        "score": 31.1694225061369,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nSingapore (đơn vị: Tỷ USD) — 2025 — Doanh thu du lịch trực tuyến: 9\n7. Singapore (đơn vị: Tỷ USD) — 2025 — Doanh thu nội dung nghe nhìn trực tuyến: 4\n7. Singapore (đơn vị: Tỷ USD) — 2025 — Tốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến: 14%\n8. Việt Nam (đơn vị: Tỷ USD) — 2022 — Doanh thu bán lẻ hàng hóa trực tuyến: 15\n8. Việt Nam (đơn vị: Tỷ USD) — 2022 — Doanh thu vận tải và "
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p037:B04",
+        "page": 37,
+        "score": 30.810783850985366,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nViệt Nam (đơn vị: Tỷ USD) — 2023 — Tốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến: 11%\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu bán lẻ hàng hóa trực tuyến: 24\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu vận tải và thực phẩm: 4\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu du lịch trực tuyến: 7\n8. Việt Nam (đơn vị: Tỷ USD) — 2025 — Doanh thu nội dung nghe nhìn trực"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p003:B00",
+        "page": 3,
+        "score": 25.519825107732,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "LỜI GIỚI THIỆU\nKinh tế Việt Nam 2023 duy trì xu hướng phục hồi, tiếp tục là điểm sáng của kinh tế toàn cầu (theo Cổng\nThông tin điện tử Chính phủ). Kinh tế vĩ mô cơ bản ổn định; lạm phát thấp hơn mục tiêu Quốc hội đề ra; nợ\ncông, nợ Chính phủ, nợ nước ngoài, bội chi ngân sách nhà nước được kiểm soát; tăng trưởng được thúc đẩy;\ncác cân đối lớn của nền kinh tế được bảo đảm. Tăng trưởng GDP cả năm kh"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p037:B02",
+        "page": 37,
+        "score": 23.852565362328477,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\n[Số liệu biểu đồ đọc bằng OCR – Tesseract, vị trí và series lấy từ hình vẽ PDF]\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu bán lẻ hàng hóa trực tuyến: 8\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu vận tải và thực phẩm: 4\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu du lịch trực tuyến: 5\n7. Singapore (đơn vị: Tỷ USD) — 2022 — Doanh thu nội dung nghe nhìn trực tuyến: 2\n7. "
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p037:B01",
+        "page": 37,
+        "score": 23.650854915205585,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "8. Việt Nam\nDoanh thu bán lẻ hàng hóa trực tuyến | Doanh thu du lịch trực tuyến\nDoanh thu vận tải và thực phẩm | Doanh thu nội dung nghe nhìn trực tuyến\nTốc độ tăng trưởng doanh thu bán lẻ hàng hóa trực tuyến\nĐơn vị tính: Tỷ USD"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p032:B01",
+        "page": 32,
+        "score": 22.645427566682557,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2.5. Top 10 quốc gia có tỷ lệ TMĐT bán lẻ lớn nhất toàn cầu năm 2022\nTru ng Quố | c | 46,3%\nVươ | ngq | uốc | An h | 36,3%\nHàn Q | uố c | 32,2%\nĐan M | ạc h | 20,2%\nIndonesia | 20,2%\nNa Uy | 19,4%\nMỹ | 16,1% | ( Doanh thu TMĐT B2C so với Tổng doanh thu bán lẻ )\nPhần | L an | 14,6%\nThụy Đi | ển | 14,1%\nCanada | 13,6%\nNguồn: Báo cáo “Global Ecommerce Forecast” - eMarketer"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p32:V2",
+        "page": 32,
+        "score": 22.645427566682557,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 2.5. Top 10 quốc gia có tỷ lệ TMĐT bán lẻ lớn nhất toàn cầu năm 2022\n(Trang 32, nửa dưới; đơn vị: %)\nTrung Quốc — 2022: 46,3% | Vương quốc Anh — 2022: 36,3% | Hàn Quốc — 2022: 32,2% | Đan Mạch — 2022: 20,2% | Indonesia — 2022: 20,2% | Na Uy — 2022: 19,4% | Mỹ — 2022: 16,1% | Phần Lan — 2022: 14,6% | Thụy Điển — 2022: 14,1% | Canada — 2022: 13,6% (Doanh thu TMĐT B2C so với Tổng doanh th"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p040:B00",
+      "sach-trang-tmdt-2023:p40:V1",
+      "sach-trang-tmdt-2023:p40:V2"
+    ],
+    "context_chars": 2023
+  },
+  {
+    "query_id": "d18",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Thời gian giao hàng trung bình của một đơn hàng TMĐT tại Việt Nam năm 2023 là bao nhiêu ngày?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 0.9,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p050:B03",
+        "page": 50,
+        "score": 35.6164261554331,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "14. Ước tính giá trị mua hàng hóa/dịch vụ qua mạng từ thương nhân nước ngoài trong năm 2023\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Giá cả rẻ hơn: 2021: 61%; 2022: 70%; 2023: 59%\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p29:V1",
+        "page": 29,
+        "score": 34.151802946003755,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.3. Thời gian trung bình truy cập Internet của một số quốc gia\n(Trang 29, nửa trên; đơn vị: giờ phút)\nPhilippines — 2023: 9 giờ 14 phút\nThái Lan — 2023: 8 giờ 06 phút\nMalaysia — 2023: 8 giờ 06 phút\nIndonesia — 2023: 7 giờ 42 phút\nSingapore — 2023: 6 giờ 59 phút\nViệt Nam — 2023: 6 giờ 23 phút\nẤn Độ — 2023: 6 giờ 23 phút\nÚc — 2023: 5 giờ 51 phút\nTrung Quốc — 2023: 5 giờ 25 phút\nHàn Quốc"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p042:B02",
+        "page": 42,
+        "score": 33.94375043376138,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "2. Thời gian truy cập Internet trung bình mỗi ngày\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n1. Phương tiện truy cập Internet của người dân — Máy tính để bàn Máy tính xách tay: 2022: 63%; 2023: 50%\n1. Phương tiện truy cập Internet của người dân — Điện thoại di động: 2022: 94%; 2023: 90%\n1. Phương tiện truy cập Internet của người dân — Thiết bị khác (Ipad, Máy tính bảng): 2022: "
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p040:B00",
+        "page": 40,
+        "score": 28.639921593297785,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. QUY MÔ THỊ TRƯỜNG THƯƠNG MẠI ĐIỆN TỬ BÁN LẺ TẠI VIỆT NAM\n8 Doanh thu TMĐT B2C Việt Nam bao gồm doanh thu tất cả hàng hóa, dịch vụ bán qua kênh TMĐT (loại trừ các giao dịch liên quan đến lĩnh vực tài chính, ngân hàng, tín\ndụng, bảo hiểm, trò chơi trực tuyến).\n9 Số liệu cập nhật đến 6 tháng đầu năm 2023. Nguồn: Bộ Thông tin và Truyền thông\nDoanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)8\n201"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p003:B01",
+        "page": 3,
+        "score": 27.953781899284195,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "Nhằm tổng kết tình hình, đồng thời, đánh giá sơ bộ kết quả thực hiện một số mục tiêu phát triển thương\nmại điện tử được đặt ra tại Quyết định số 645/QĐ-TTg ngày 15 tháng 5 năm 2020 của Thủ tướng Chính phủ phê\nduyệt Kế hoạch tổng thể phát triển thương mại điện tử quốc gia giai đoạn 2021 – 2025, Cục Thương mại điện\ntử và Kinh tế số - Bộ Công Thương tiếp tục xây dựng và công bố Sách trắng Thương mại "
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p050:B02",
+        "page": 50,
+        "score": 27.725508594968606,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "14. Ước tính giá trị mua hàng hóa/dịch vụ qua mạng từ thương nhân nước ngoài trong năm 2023\n4%\n9% | Dưới 1 triệu đồng\n38% | Từ 1 triệu - 3 triệu đồng\n21% | Từ 3 triệu - 5 triệu đồng\nTừ 5 triệu - 10 triệu đồng\n33% | Trên 10 triệu đồng\n[Tiêu đề trục dọc] (Tỷ lệ người tiêu dùng mua hàng; của người bán nước ngoài trên; sàn giao dịch TMĐT tại Việt Nam)"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p029:B00",
+        "page": 29,
+        "score": 25.158767295731018,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.3. Thời gian trung bình truy cập Internet của một số quốc gia\nPhilippines | 9 giờ 14 phút\nThái L | an | 8 giờ | 06 | ph | út\nMalaysia | 8 giờ | 06 | ph | út\nIndonesia | 7 giờ | 42 | ph | út\nSingapore | 6 g | iờ 59 phút\nViệt N am | 6 g | iờ 23 phút\nẤn | Độ | 6 g | iờ 23 phút\nÚc | 5 g | iờ 51 phút\nTru ng Quố | c | 5 g | iờ 25 phút\nHàn | Quố | c | 5 g | iờ 21 phút\nTru ng bình | to àn | c ầu | 6 g |"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p42:V2",
+        "page": 42,
+        "score": 24.1473587662823,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 2. Thời gian truy cập Internet trung bình mỗi ngày\n(Trang 42, nửa dưới; đơn vị: Tỷ lệ (%))\nDưới 3 tiếng — 2022: 11%; 2023: 23%\nTừ 3 - 5 tiếng — 2022: 38%; 2023: 37%\nTừ 5 - 7 tiếng — 2022: 30%; 2023: 19%\nTừ 7 - 9 tiếng — 2022: 10%; 2023: 13%\nTrên 9 tiếng — 2022: 12%; 2023: 8%"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p050:B00",
+        "page": 50,
+        "score": 24.02826179264172,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT\ntại Việt Nam\n70% | 2021\n61% | 59% | 53% | 2022\n49%45% | 45% | 2023\n30%35% | 29%32%\n23%\n4% | 3% | 5%\nGiá cả rẻ hơn | Chất lượng | Hàng hóa | Chỉ có thương nhân | Khác\nsản phẩm | có thương hiệu | nước ngoài có bán\ntốt hơn | nước ngoài | mặt hàng đó"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p28:V2",
+        "page": 28,
+        "score": 23.874075847724075,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.2. Thời gian trung bình truy cập Internet toàn cầu\n(Trang 28, nửa dưới; đơn vị: giờ phút)\nQ3 - 2018 — thời gian: 6 giờ 46 phút | Q3 - 2019 — thời gian: 6 giờ 38 phút | Q3 - 2020 — thời gian: 6 giờ 55 phút | Q3 - 2021 — thời gian: 6 giờ 57 phút | Q3 - 2022 — thời gian: 6 giờ 37 phút | Q3 - 2018 — tốc độ tăng trưởng (%): 0,50 | Q3 - 2019 — tốc độ tăng trưởng (%): -2,50 | Q3 - 2020 — tố"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p050:B03",
+      "sach-trang-tmdt-2023:p29:V1",
+      "sach-trang-tmdt-2023:p042:B02"
+    ],
+    "context_chars": 2447
+  },
+  {
+    "query_id": "d19",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Bao nhiêu phần trăm người tiêu dùng ưa chuộng Lazada trong lĩnh vực dịch vụ giao đồ ăn?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.0,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p047:B02",
+        "page": 47,
+        "score": 92.9599744577337,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "7. Hình thức thanh toán phổ biến\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — ShopeeFood, Foody: 51%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Grab: 50%\n6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng — Baemin: 15%\n6.3. Sàn giao dịch T"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p047:B00",
+        "page": 47,
+        "score": 75.00945513077251,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng\n51% | 50%\n15% | 13%\n7%\nShopeeFood, | Grab | Baemin | Be | Khác\nFoody\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng\n50%\n26% | 24%\n14% | 9% | 8% | 16%\nTraveloka | Agoda | Gotadi | Tripi Partner | AirBnB | KhácBooking.com"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p47:V1",
+        "page": 47,
+        "score": 69.73955424253955,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 6.3. Sàn giao dịch TMĐT lĩnh vực dịch vụ giao đồ ăn người tiêu dùng ưa chuộng\n(Trang 47, nửa trên; đơn vị: Tỷ lệ người dùng Internet)\nShopeeFood, Foody — năm: 51%\nGrab — năm: 50%\nBaemin — năm: 15%\nBe — năm: 7%\nKhác — năm: 13%"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p046:B03",
+        "page": 46,
+        "score": 68.25014322101,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\nSàn giao dịch TMĐT lĩnh vực bán buôn bán lẻ người tiêu dùng ưa chuộng — Khác: 2%\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng — Grab: 70%\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng — Be: 23%\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộ"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p046:B02",
+        "page": 46,
+        "score": 66.23822452973559,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Website TMĐT bán hàng: 34%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Sàn giao dịch TMĐT: 61%\n6. Các kênh mua sắm trực tuyến người tiêu dùng ưa chuộng năm 2023 — Diễn đàn"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p046:B01",
+        "page": 46,
+        "score": 59.829688288262645,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "6.1. Sàn giao dịch TMĐT lĩnh vực bán buôn bán lẻ người tiêu dùng ưa chuộng\n81%\n42%\n34%\n20%\n8% | 2%\nShopee | Lazada | TikTok | Tiki | Sendo | Khác\n6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n70%\n23%\n15% | 14%\nGrab | Be | GoJek | Khác\n[Tiêu đề trục dọc] (Tỷ lệ người dùng Internet)"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p46:V3",
+        "page": 46,
+        "score": 48.3500807881171,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 6.2. Sàn giao dịch TMĐT lĩnh vực dịch vụ vận tải người tiêu dùng ưa chuộng\n(Trang 46, nửa dưới; đơn vị: (%))\nGrab — năm: 2023: 70%\nBe — năm: 2023: 23%\nGoJek — năm: 2023: 15%\nKhác — năm: 2023: 14%"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p047:B03",
+        "page": 47,
+        "score": 43.81837635788794,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "7. Hình thức thanh toán phổ biến\nSàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Tripi Partner: 9%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — AirBnB: 8%\n6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng — Khác: 16%\n7. Hình thức thanh toán phổ biến — Tiền mặt khi nhận hàng: 76%\n7. Hình thức thanh toán phổ bi"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p46:V2",
+        "page": 46,
+        "score": 43.43106186424528,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 6.1. Sàn giao dịch TMĐT lĩnh vực bán buôn bán lẻ người tiêu dùng ưa chuộng\n(Trang 46, giữa; đơn vị: (%))\nShopee — năm: 2023: 81%\nLazada — năm: 2023: 42%\nTikTok — năm: 2023: 34%\nTiki — năm: 2023: 20%\nSendo — năm: 2023: 8%\nKhác — năm: 2023: 2%"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p47:V2",
+        "page": 47,
+        "score": 38.6513407193771,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 6.4. Sàn giao dịch TMĐT lĩnh vực du lịch trực tuyến người tiêu dùng ưa chuộng\n(Trang 47, giữa; đơn vị: Tỷ lệ người dùng Internet)\nTraveloka — năm: 50%\nAgoda — năm: 26%\nBooking.com — năm: 24%\nGotadi — năm: 14%\nTripi Partner — năm: 9%\nAirBnB — năm: 8%\nKhác — năm: 16%"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p047:B02",
+      "sach-trang-tmdt-2023:p047:B00",
+      "sach-trang-tmdt-2023:p47:V1"
+    ],
+    "context_chars": 1632
+  },
+  {
+    "query_id": "d20",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Việt Nam có bao nhiêu triệu người dùng Internet vào năm 2023?",
+    "config": "bm25:BV",
+    "error": null,
+    "latency_ms": 1.1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "sach-trang-tmdt-2023:p28:V1",
+        "page": 28,
+        "score": 24.981222900712883,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.1. Lượng người dùng Internet\n(Trang 28, nửa trên; đơn vị: triệu người)\nT1/2019 — lượng người dùng: 4,335 | T1/2020 — lượng người dùng: 4,627 | T1/2021 — lượng người dùng: 4,962 | T1/2022 — lượng người dùng: 5,060 | T1/2023 — lượng người dùng: 5,158 | T1/2019 — tốc độ tăng trưởng (%): 9,00 | T1/2020 — tốc độ tăng trưởng (%): 6,70 | T1/2021 — tốc độ tăng trưởng (%): 7,20 | T1/2022 — tố"
+      },
+      {
+        "rank": 2,
+        "id": "sach-trang-tmdt-2023:p040:B00",
+        "page": 40,
+        "score": 22.986317908063292,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "I. QUY MÔ THỊ TRƯỜNG THƯƠNG MẠI ĐIỆN TỬ BÁN LẺ TẠI VIỆT NAM\n8 Doanh thu TMĐT B2C Việt Nam bao gồm doanh thu tất cả hàng hóa, dịch vụ bán qua kênh TMĐT (loại trừ các giao dịch liên quan đến lĩnh vực tài chính, ngân hàng, tín\ndụng, bảo hiểm, trò chơi trực tuyến).\n9 Số liệu cập nhật đến 6 tháng đầu năm 2023. Nguồn: Bộ Thông tin và Truyền thông\nDoanh thu TMĐT B2C Việt Nam năm 2018 – 2023 (tỷ USD)8\n201"
+      },
+      {
+        "rank": 3,
+        "id": "sach-trang-tmdt-2023:p050:B02",
+        "page": 50,
+        "score": 22.484834667110498,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "14. Ước tính giá trị mua hàng hóa/dịch vụ qua mạng từ thương nhân nước ngoài trong năm 2023\n4%\n9% | Dưới 1 triệu đồng\n38% | Từ 1 triệu - 3 triệu đồng\n21% | Từ 3 triệu - 5 triệu đồng\nTừ 5 triệu - 10 triệu đồng\n33% | Trên 10 triệu đồng\n[Tiêu đề trục dọc] (Tỷ lệ người tiêu dùng mua hàng; của người bán nước ngoài trên; sàn giao dịch TMĐT tại Việt Nam)"
+      },
+      {
+        "rank": 4,
+        "id": "sach-trang-tmdt-2023:p029:B01",
+        "page": 29,
+        "score": 21.514825843365898,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\nngười dùng Internet mua hàng đã qua sử dụng | 14,2%\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\nngười dùng Internet sử dụng dịch vụ mua ngay trả sau | 18,4%"
+      },
+      {
+        "rank": 5,
+        "id": "sach-trang-tmdt-2023:p29:V2",
+        "page": 29,
+        "score": 21.22009981151939,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[infographic] 1.4. Hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu\n(Trang 29, nửa dưới; đơn vị: %)\n57,6% | người dùng Internet có mua hàng hóa hoặc dịch vụ trực tuyến\n14,2% | người dùng Internet mua hàng đã qua sử dụng\n23,5% | người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến\n18,4% | người dùng Internet sử dụng dịch vụ mua ngay trả sau"
+      },
+      {
+        "rank": 6,
+        "id": "sach-trang-tmdt-2023:p40:V2",
+        "page": 40,
+        "score": 20.587256597507675,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[table] Doanh thu TMĐT B2C Việt Nam năm 2018 – 2023\n(Trang 40, nửa dưới; đơn vị: không ghi)\nƯớc tính số lượng người tiêu dùng mua sắm trực tuyến (triệu người) | 2018: 39,9 | 2019: 44,8 | 2020: 49,3 | 2021: 54,6 | 2022: 57,0 | 2023: 61\nƯớc tính giá trị mua sắm trực tuyến của một người (USD) | 2018: 202 | 2019: 225 | 2020: 240 | 2021: 251 | 2022: 288 | 2023: 336\nTỷ trọng doanh thu TMĐT B2C so với tổ"
+      },
+      {
+        "rank": 7,
+        "id": "sach-trang-tmdt-2023:p050:B03",
+        "page": 50,
+        "score": 19.79064849750648,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "14. Ước tính giá trị mua hàng hóa/dịch vụ qua mạng từ thương nhân nước ngoài trong năm 2023\n[Biểu đồ cột đứng – nhãn và giá trị ghép tự động theo toạ độ]\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch TMĐT tại Việt Nam — Giá cả rẻ hơn: 2021: 61%; 2022: 70%; 2023: 59%\n12.1. Lý do người tiêu dùng lựa chọn mua hàng của người bán nước ngoài trên sàn giao dịch"
+      },
+      {
+        "rank": 8,
+        "id": "sach-trang-tmdt-2023:p30:V1",
+        "page": 30,
+        "score": 19.62611377895174,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 1.5. Tỷ lệ người dùng Internet mua sắm trực tuyến hàng tuần tại một số quốc gia\n(Trang 30, nửa trên; đơn vị: %)\nThái Lan — 2023: 66,8%\nHàn Quốc — 2023: 65,6%\nIndonesia — 2023: 62,6%\nẤn Độ — 2023: 62,3%\nTrung Quốc — 2023: 61,9%\nMalaysia — 2023: 61,3%\nSingapore — 2023: 61,0%\nPhilippines — 2023: 61,0%\nViệt Nam — 2023: 60,7%\nÚc — 2023: 53,4%\nTrung bình toàn cầu — 2023: 57,6%"
+      },
+      {
+        "rank": 9,
+        "id": "sach-trang-tmdt-2023:p34:V2",
+        "page": 34,
+        "score": 18.398384652961152,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "V",
+        "text": "[bar_chart] 2. Quy mô nền kinh tế Internet phân theo quốc gia năm 2023\n(Trang 34, nửa dưới; đơn vị: Tỷ USD)\nIndonesia — 2023: 82\nIndonesia — 2025*: 109\nThái Lan — 2023: 36\nThái Lan — 2025*: 49\nViệt Nam — 2023: 30\nViệt Nam — 2025*: 43\nPhilippines — 2023: 24\nPhilippines — 2025*: 35\nMalaysia — 2023: 23\nMalaysia — 2025*: 30\nSingapore — 2023: 22\nSingapore — 2025*: 29"
+      },
+      {
+        "rank": 10,
+        "id": "sach-trang-tmdt-2023:p003:B00",
+        "page": 3,
+        "score": 17.21820742626501,
+        "method": "bm25",
+        "component_ranks": null,
+        "index": "B",
+        "text": "LỜI GIỚI THIỆU\nKinh tế Việt Nam 2023 duy trì xu hướng phục hồi, tiếp tục là điểm sáng của kinh tế toàn cầu (theo Cổng\nThông tin điện tử Chính phủ). Kinh tế vĩ mô cơ bản ổn định; lạm phát thấp hơn mục tiêu Quốc hội đề ra; nợ\ncông, nợ Chính phủ, nợ nước ngoài, bội chi ngân sách nhà nước được kiểm soát; tăng trưởng được thúc đẩy;\ncác cân đối lớn của nền kinh tế được bảo đảm. Tăng trưởng GDP cả năm kh"
+      }
+    ],
+    "context_ids": [
+      "sach-trang-tmdt-2023:p28:V1",
+      "sach-trang-tmdt-2023:p040:B00",
+      "sach-trang-tmdt-2023:p050:B02"
+    ],
+    "context_chars": 1854
+  }
+]

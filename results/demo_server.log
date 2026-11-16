@@ -1,0 +1,14 @@
+Mở http://127.0.0.1:8765/   (Ctrl+C để dừng)
+[09:52:30] 127.0.0.1 "GET /api/questions HTTP/1.1" 200 -
+[09:52:30] 127.0.0.1 "GET /api/chunk?id=sach-trang-tmdt-2023:p40:V2 HTTP/1.1" 200 -
+[09:52:30] 127.0.0.1 "GET /pages/p040.png HTTP/1.1" 200 -
+[09:52:30] 127.0.0.1 "GET /api/traces?split=dev&config=A1 HTTP/1.1" 200 -
+[09:53:09] 127.0.0.1 "GET /?replay=dev/A1/d13&gold=1 HTTP/1.1" 200 -
+[09:53:09] 127.0.0.1 "GET /api/questions HTTP/1.1" 200 -
+[09:53:09] 127.0.0.1 "GET /api/traces?split=test&config=A2 HTTP/1.1" 200 -
+[09:53:09] 127.0.0.1 "GET /favicon.ico HTTP/1.1" 404 -
+[09:53:09] 127.0.0.1 "GET /api/traces?split=dev&config=A1 HTTP/1.1" 200 -
+[09:53:09] 127.0.0.1 "GET /api/chunk?id=sach-trang-tmdt-2023%3Ap47%3AV2 HTTP/1.1" 200 -
+[09:53:09] 127.0.0.1 "GET /pages/p047.png HTTP/1.1" 200 -
+[09:53:30] 127.0.0.1 "GET /api/ask?config=A0&q=Bao%20nhi%C3%AAu%20ph%E1%BA%A7n%20tr%C4%83m%20doanh%20nghi%E1%BB%87p%20s%E1%BB%AD%20d%E1%BB%A5ng%20ch%E1%BB%AF%20k%C3%BD%20%C4%91i%E1%BB%87n%20t%E1%BB%AD%20n%C4%83m%202023%3F HTTP/1.1" 200 -
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 6875.65it/s]

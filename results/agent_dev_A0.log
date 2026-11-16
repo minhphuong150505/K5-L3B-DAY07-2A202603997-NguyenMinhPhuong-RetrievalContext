@@ -1,0 +1,52 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10802.80it/s]
+d01 answered  calls=1 117.16s | Tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước năm 2021 là 7%. [sach-trang-tmdt-2023:p040:B00]
+d02 answered  calls=1 8.03s | Website thuocsi.vn thuộc Công ty TNHH Buymed. [sach-trang-tmdt-2023:p083:B01]
+d03 answered  calls=1 183.62s | Tỷ lệ đơn hàng được thanh toán bằng ví điện tử trên website, ứng dụng cung cấp dịch vụ (CCDV) thương mại điện tử là 7,5%. [sach-trang-tmdt-2023:p072:B
+d04 answered  calls=1 33.73s | Kênh tiếp nhận thông tin và cung cấp dịch vụ của tổ chức cung cấp dịch vụ tin cậy phải hoạt động liên tục 24 giờ trong ngày và 07 ngày trong tuần. Ngo
+d05 answered  calls=1 9.17s | 18,4% người dùng Internet toàn cầu sử dụng dịch vụ mua ngay trả sau. [sach-trang-tmdt-2023:p029:B01]
+d06 answered  calls=2 51.01s | 44% doanh nghiệp sở hữu website, trong đó 42% website có tính năng đặt hàng trực tuyến. [sach-trang-tmdt-2023:p058:B00]
+d07 answered  calls=2 16.59s | Năm 2023, có 76.255 tài khoản doanh nghiệp trên Cổng thông tin quản lý hoạt động thương mại điện tử, tăng 16,4% so với năm 2022. [sach-trang-tmdt-2023
+d08 answered  calls=2 9.32s | Lượng người dùng Internet toàn cầu tháng 1/2023 là 5.060 triệu người, với tốc độ tăng trưởng là 1,90% so với tháng 1/2022. [sach-trang-tmdt-2023:p028:
+d09 answered  calls=1 5.05s | Trở ngại lớn nhất khi mua hàng trực tuyến mà người tiêu dùng gặp phải là chất lượng kém so với quảng cáo, chiếm 54%. [sach-trang-tmdt-2023:p052:B00]
+d10 answered  calls=2 8.81s | Tỷ lệ doanh nghiệp sử dụng phần mềm quản lý nhân sự năm 2023 là 47%, giảm so với 57% của năm 2022. Sự thay đổi này cho thấy một sự giảm 10% trong việc
+d11 answered  calls=1 6.41s | Trong tổng số website/ứng dụng thương mại điện tử, website/ứng dụng bán hàng chiếm 28,8%. [sach-trang-tmdt-2023:p068:B00]
+d12 answered  calls=2 13.49s | Doanh thu bán lẻ hàng hóa trực tuyến năm 2023 của Indonesia là 62 tỷ USD, trong khi của Việt Nam là 24 tỷ USD. Do đó, doanh thu của Indonesia gấp khoả
+d13 answered  calls=2 31.25s | Sàn TMĐT du lịch trực tuyến được người tiêu dùng ưa chuộng nhất là Traveloka với tỷ lệ 50%. Doanh nghiệp vận hành sàn này là Công ty TNHH Traveloka Vi
+d14 answered  calls=2 31.3s | Năm 2023, tỷ lệ người dân Việt Nam sử dụng Internet là 78% và trong số người dùng Internet, có 78% tham gia mua sắm trực tuyến. [sach-trang-tmdt-2023:
+d15 answered  calls=2 82.63s | Luật Giao dịch điện tử (sửa đổi) được Quốc hội thông qua vào ngày 22/6/2023 và có hiệu lực thi hành từ ngày 01/7/2024. [sach-trang-tmdt-2023:p014:B00]
+d16 answered  calls=3 125.28s | Bên Xử lý dữ liệu cá nhân phải lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân trong trường hợp thực hiện hợp đồng với Bên Kiểm soát dữ l
+d17 answered  calls=1 12.58s | Doanh thu TMĐT B2C của Việt Nam năm 2017 là 8,06 tỷ USD. [sach-trang-tmdt-2023:p040:B00]
+d18 abstain   calls=4 60.55s | Không đủ bằng chứng để trả lời.
+d19 abstain   calls=1 14.36s | Không đủ bằng chứng để trả lời.
+d20 answered  calls=1 30.52s | Việt Nam có 43 triệu người dùng Internet vào năm 2023. [sach-trang-tmdt-2023:p034:B01]
+{
+  "config": "A0",
+  "method": "dense",
+  "index": "B",
+  "top_k": 3,
+  "max_steps": 5,
+  "read_page": false,
+  "result_chars": 4000,
+  "model": "gpt-4o-mini",
+  "split": "dev",
+  "n": 20,
+  "errors": 0,
+  "tool_use": "20/20",
+  "tool_calls_distribution": {
+    "1": 10,
+    "2": 8,
+    "3": 1,
+    "4": 1
+  },
+  "answered_answerable": "16/16",
+  "abstain_on_unanswerable": "2/4",
+  "context_evidence_rate": "14/16",
+  "auto_citation_on_gold_page": "16/16",
+  "median_latency_s": 23.55,
+  "avg_llm_calls": 2.25,
+  "total_prompt_tokens": 53619,
+  "total_completion_tokens": 2553,
+  "total_cost_usd": 0.0096,
+  "total_equiv_paid_cost_usd": 0.0096,
+  "avg_context_chars": 2192
+}
