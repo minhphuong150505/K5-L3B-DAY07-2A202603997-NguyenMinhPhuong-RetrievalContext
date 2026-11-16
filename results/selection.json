@@ -1,0 +1,47 @@
+{
+  "selected": "A4",
+  "baseline": "A0",
+  "retrieval_selected": "rerank:BV:k=5:budget=6000",
+  "retrieval_baseline": "dense:B",
+  "frozen_at": "2026-11-16T10:35:59+07:00",
+  "criteria": "thứ tự ưu tiên trên dev: (1) số câu đạt theo ADVANCED.md, (2) số câu thiếu bằng chứng được từ chối đúng, (3) ít từ chối nhầm câu có đáp án, (4) chi phí rồi thời gian",
+  "reason": "A4 đạt 17/20 trên dev (A3 14/20, A1 14/20, A0 13/20, A2 11/20); từ chối đúng 3/4 như A1–A3; 0 từ chối nhầm; chi phí $0,014/20 câu, chấp nhận được",
+  "dev_results": {
+    "A0": {
+      "pass": "13/20 = 65.0%",
+      "grounded_mean_over_2": 1.5,
+      "abstain_correct": "2/4",
+      "false_abstain": "0/16",
+      "cost_usd": 0.0096
+    },
+    "A1": {
+      "pass": "14/20 = 70.0%",
+      "grounded_mean_over_2": 1.5,
+      "abstain_correct": "3/4",
+      "false_abstain": "2/16",
+      "cost_usd": 0.0092
+    },
+    "A2": {
+      "pass": "11/20 = 55.0%",
+      "grounded_mean_over_2": 1.0,
+      "abstain_correct": "3/4",
+      "false_abstain": "7/16",
+      "cost_usd": 0.0161
+    },
+    "A3": {
+      "pass": "14/20 = 70.0%",
+      "grounded_mean_over_2": 1.625,
+      "abstain_correct": "3/4",
+      "false_abstain": "0/16",
+      "cost_usd": 0.0117
+    },
+    "A4": {
+      "pass": "17/20 = 85.0%",
+      "grounded_mean_over_2": 1.812,
+      "abstain_correct": "3/4",
+      "false_abstain": "0/16",
+      "cost_usd": 0.014
+    }
+  },
+  "note": "Chốt trước khi chạy bất kỳ câu test nào; sau thời điểm này không đổi code agent/retrieval/prompt. Test chạy A0 (baseline) và A4."
+}

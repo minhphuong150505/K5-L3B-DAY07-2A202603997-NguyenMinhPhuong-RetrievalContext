@@ -1,6 +1,7 @@
 """Shared helpers: env, Day 6 imports, DB access, OpenRouter client with cost tracking."""
 from __future__ import annotations
 
+import http.client
 import json
 import os
 import sys
@@ -154,9 +155,10 @@ class OpenRouter:
                     time.sleep(delay)
                     continue
                 raise LLMError(last) from None
-            except (urllib.error.URLError, TimeoutError) as e:
+            except (urllib.error.URLError, TimeoutError, OSError, http.client.HTTPException) as e:
+                # transient network errors (timeout, reset, RemoteDisconnected): retry, then report
                 last = f"{type(e).__name__}: {e}"
-                time.sleep(5)
+                time.sleep(5 * (attempt + 1))
                 continue
             if not out.get("choices"):
                 last = json.dumps(out, ensure_ascii=False)[:400]

@@ -1,0 +1,61 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 7018.09it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5623.01it/s]
+d01 answered  calls=1 51.48s | Tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước năm 2021 là 7%. [sach-trang-tmdt-2023:p40:V2]
+d02 answered  calls=1 27.15s | Website thuocsi.vn thuộc Công ty TNHH Buymed. [sach-trang-tmdt-2023:p083:B01]
+d03 answered  calls=1 157.18s | Tỷ lệ đơn hàng được thanh toán bằng ví điện tử trên website, ứng dụng cung cấp dịch vụ (CCDV) thương mại điện tử là 7,5% vào năm 2023. [sach-trang-tmd
+d04 answered  calls=1 23.37s | Kênh tiếp nhận thông tin và cung cấp dịch vụ của tổ chức cung cấp dịch vụ tin cậy phải hoạt động liên tục 24 giờ trong ngày và 07 ngày trong tuần. Đồn
+d05 answered  calls=1 20.41s | 18,4% người dùng Internet toàn cầu sử dụng dịch vụ mua ngay trả sau. [sach-trang-tmdt-2023:p29:V2]
+d06 answered  calls=2 41.38s | Trong năm 2023, 44% doanh nghiệp sở hữu website, trong đó 42% website có tính năng đặt hàng trực tuyến. [sach-trang-tmdt-2023:p058:B00]
+d07 answered  calls=2 50.66s | Năm 2023 có 76.255 tài khoản doanh nghiệp trên Cổng thông tin quản lý hoạt động TMĐT, tăng 16,4% so với năm 2022. [sach-trang-tmdt-2023:p026:B00] [sac
+d08 answered  calls=2 35.53s | Lượng người dùng Internet toàn cầu tháng 1/2023 là 5.158 triệu người và tốc độ tăng trưởng là 1,90% so với năm trước. [sach-trang-tmdt-2023:p28:V1]
+d09 answered  calls=1 17.2s | Trở ngại lớn nhất khi mua hàng trực tuyến mà người tiêu dùng gặp phải là "chất lượng kém so với quảng cáo", chiếm 54%. [sach-trang-tmdt-2023:p52:V1]
+d10 answered  calls=2 38.9s | Tỷ lệ doanh nghiệp sử dụng phần mềm quản lý nhân sự năm 2023 là 47%, giảm so với 57% của năm 2022, tức là giảm 10 điểm phần trăm. [sach-trang-tmdt-202
+d11 answered  calls=1 25.27s | Trong tổng số website/ứng dụng TMĐT, website/ứng dụng TMĐT bán hàng chiếm 28,8%. [sach-trang-tmdt-2023:p68:V1]
+d12 answered  calls=2 45.91s | Doanh thu bán lẻ hàng hóa trực tuyến năm 2023 của Indonesia là 62 tỷ USD, trong khi của Việt Nam là 16 tỷ USD. Do đó, doanh thu của Indonesia gấp khoả
+d13 answered  calls=2 107.42s | Sàn TMĐT du lịch trực tuyến được người tiêu dùng ưa chuộng nhất là Traveloka với tỷ lệ 50%. Doanh nghiệp vận hành sàn này là Công ty TNHH Traveloka Vi
+d14 answered  calls=4 58.02s | Năm 2023, tỷ lệ người dân Việt Nam sử dụng Internet là 78,6%. Trong số người dùng Internet, có 60,7% tham gia mua sắm trực tuyến. [sach-trang-tmdt-202
+d15 answered  calls=2 111.38s | Luật Giao dịch điện tử (sửa đổi) được Quốc hội thông qua vào ngày 22/6/2023 và có hiệu lực thi hành từ ngày 01/7/2024. [sach-trang-tmdt-2023:p014:B00]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/phuong/Documents/Vin20K/Lab7/K5-L3B-DAY07-2A202603997-NguyenMinhPhuong-RetrievalContext/src/rag/agent.py", line 396, in <module>
+    main()
+  File "/home/phuong/Documents/Vin20K/Lab7/K5-L3B-DAY07-2A202603997-NguyenMinhPhuong-RetrievalContext/src/rag/agent.py", line 384, in main
+    t = agent.run(q["id"], q["question"])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/phuong/Documents/Vin20K/Lab7/K5-L3B-DAY07-2A202603997-NguyenMinhPhuong-RetrievalContext/src/rag/agent.py", line 221, in run
+    out = self._chat(messages, tool_schemas(cfg["read_page"], final_only, cfg["strict"]))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/phuong/Documents/Vin20K/Lab7/K5-L3B-DAY07-2A202603997-NguyenMinhPhuong-RetrievalContext/src/rag/agent.py", line 205, in _chat
+    return self.llm.chat(messages, tools=tools, tool_choice="required", temperature=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/phuong/Documents/Vin20K/Lab7/K5-L3B-DAY07-2A202603997-NguyenMinhPhuong-RetrievalContext/src/rag/common.py", line 146, in chat
+    with urllib.request.urlopen(req, timeout=self.timeout) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1457, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
