@@ -369,7 +369,7 @@ def summarize(traces: list[dict], questions: dict[str, dict]) -> dict:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", required=True, choices=("dev", "test"))
+    ap.add_argument("--split", required=True, choices=("dev", "test", "test2"))
     ap.add_argument("--config", required=True, choices=sorted(CONFIGS))
     ap.add_argument("--ids", nargs="*")
     ap.add_argument("--model")

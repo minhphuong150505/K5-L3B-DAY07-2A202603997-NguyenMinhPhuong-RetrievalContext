@@ -1,0 +1,575 @@
+[
+ {
+  "id": "u01",
+  "split": "test2",
+  "group": "table",
+  "answerable": true,
+  "question": "Theo bảng số liệu thị trường TMĐT bán lẻ, tỷ lệ người dân Việt Nam sử dụng Internet năm 2020 là bao nhiêu?",
+  "expected_answer": "70%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 40,
+    "region": "Bảng dưới biểu đồ B2C, hàng 'Tỷ lệ người dân sử dụng Internet', cột 2020",
+    "evidence": "Tỷ lệ người dân sử dụng Internet: 60% | 66% | 70% | 73% | 73,2% | 78,6%",
+    "match": [
+     "Tỷ lệ người dân sử dụng Internet",
+     "70%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u02",
+  "split": "test2",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong danh sách website TMĐT bán hàng có chức năng đặt hàng trực tuyến dẫn đầu về doanh thu, website thegioididong.com thuộc doanh nghiệp nào?",
+  "expected_answer": "Công ty Cổ phần Thế Giới Di Động.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 78,
+    "region": "Bảng 4.1, STT 16",
+    "evidence": "16 | thegioididong.com | Công ty Cổ phần Thế Giới Di Động",
+    "match": [
+     "thegioididong",
+     "Thế Giới Di Động"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u03",
+  "split": "test2",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT bán buôn bán lẻ, Voso thuộc doanh nghiệp nào?",
+  "expected_answer": "Công ty TNHH MTV Thương mại Điện tử Bưu Chính VIETTEL.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 83,
+    "region": "Bảng 4.2, STT 10",
+    "evidence": "10 | Voso | Công ty TNHH MTV Thương mại Điện tử Bưu Chính VIETTEL",
+    "match": [
+     "Voso",
+     "Bưu Chính"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u04",
+  "split": "test2",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT du lịch trực tuyến, Tripi Partner thuộc doanh nghiệp nào?",
+  "expected_answer": "Công ty Cổ phần du lịch Việt Nam Vntravel.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 85,
+    "region": "Bảng 4.5, STT 3",
+    "evidence": "3 Tripi Partner Công ty Cổ phần du lịch Việt Nam Vntravel",
+    "match": [
+     "Tripi Partner",
+     "Vntravel"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u05",
+  "split": "test2",
+  "group": "table",
+  "answerable": true,
+  "question": "Tỷ lệ website/ứng dụng TMĐT bán hàng và website/ứng dụng CCDV TMĐT có chính sách giải quyết tranh chấp, khiếu nại là bao nhiêu?",
+  "expected_answer": "Bán hàng 81,0%; CCDV 85,9%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 75,
+    "region": "Bảng 5.3, hàng 'Chính sách giải quyết tranh chấp, khiếu nại'",
+    "evidence": "Chính sách giải quyết tranh chấp, khiếu nại | 81,0% | 85,9%",
+    "match": [
+     "81,0%",
+     "85,9%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u06",
+  "split": "test2",
+  "group": "table",
+  "answerable": true,
+  "question": "Trên website, ứng dụng TMĐT bán hàng, tỷ lệ đơn hàng được thanh toán bằng tiền mặt (COD) là bao nhiêu?",
+  "expected_answer": "50,6%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 72,
+    "region": "Bảng 4.1 Tỷ lệ đơn hàng được thanh toán qua các hình thức, hàng 'Website, ứng dụng TMĐT bán hàng', cột 'Tiền mặt (COD)'",
+    "evidence": "Website, ứng dụng TMĐT bán hàng: Tiền mặt (COD) 50,6% | Internet banking 34,1% | ...",
+    "match": [
+     "50,6%"
+    ],
+    "note": "Bảng vẽ dạng hình: số 50,6% không có trong text layer PDF trang 72 (đã kiểm bằng ảnh trang). Tr. 74 có cùng con số 50,6% nhưng là nhãn khác (\"Nhân viên công ty giao hàng\") — không phải evidence hợp lệ."
+   }
+  ]
+ },
+ {
+  "id": "u07",
+  "split": "test2",
+  "group": "image",
+  "answerable": true,
+  "question": "Theo sơ đồ quyền của chủ thể dữ liệu trong Nghị định 13/2023/NĐ-CP, quyền số 7 là quyền gì?",
+  "expected_answer": "Quyền cung cấp dữ liệu.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 21,
+    "region": "Sơ đồ khối '2 Quyền của chủ thể dữ liệu', ô số 7 (cột phải, ô đầu)",
+    "evidence": "7 Quyền cung cấp dữ liệu",
+    "match": [
+     "cung cấp dữ liệu"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u08",
+  "split": "test2",
+  "group": "image",
+  "answerable": true,
+  "question": "Theo sơ đồ điều kiện kinh doanh dịch vụ tin cậy, điều kiện thứ nhất là gì?",
+  "expected_answer": "Là doanh nghiệp được thành lập và hoạt động hợp pháp trên lãnh thổ Việt Nam.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 15,
+    "region": "Sơ đồ khối mục 2 'Điều kiện kinh doanh dịch vụ tin cậy', ô số 1",
+    "evidence": "1 Là doanh nghiệp được thành lập và hoạt động hợp pháp trên lãnh thổ Việt Nam;",
+    "match": [
+     "thành lập và hoạt động hợp pháp"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u09",
+  "split": "test2",
+  "group": "image",
+  "answerable": true,
+  "question": "Theo infographic về nguồn nhân lực cho TMĐT, bao nhiêu phần trăm doanh nghiệp ưu tiên tuyển dụng nhân sự được đào tạo về CNTT và TMĐT?",
+  "expected_answer": "65%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 57,
+    "region": "Infographic mục 2. Nguồn nhân lực cho TMĐT (ô '65%')",
+    "evidence": "65% doanh nghiệp ưu tiên tuyển dụng nhân sự được đào tạo về CNTT và TMĐT",
+    "match": [
+     "65%",
+     "ưu tiên tuyển dụng"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u10",
+  "split": "test2",
+  "group": "image",
+  "answerable": true,
+  "question": "Năm 2023 có bao nhiêu website/ứng dụng đã được xác nhận đăng ký trên Cổng thông tin quản lý hoạt động TMĐT và tăng bao nhiêu phần trăm so với năm 2022?",
+  "expected_answer": "1.218 website/ứng dụng, tăng 1,1%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 26,
+    "region": "Infographic khối thứ ba (biểu tượng huy hiệu), dòng 2",
+    "evidence": "1.218 website/ứng dụng đã được xác nhận đăng ký tăng 1,1% so với năm 2022",
+    "match": [
+     "1.218"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u11",
+  "split": "test2",
+  "group": "image",
+  "answerable": true,
+  "question": "Theo infographic hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu, bao nhiêu phần trăm người dùng sử dụng dịch vụ so sánh giá trực tuyến?",
+  "expected_answer": "23,5%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 29,
+    "region": "Infographic 1.4 (nửa dưới trang), dòng thứ 3",
+    "evidence": "23,5% người dùng Internet sử dụng dịch vụ so sánh giá trực tuyến",
+    "match": [
+     "23,5%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u12",
+  "split": "test2",
+  "group": "chart",
+  "answerable": true,
+  "question": "Quốc gia nào có tỷ lệ TMĐT bán lẻ (doanh thu TMĐT B2C so với tổng doanh thu bán lẻ) lớn nhất toàn cầu năm 2022 và tỷ lệ là bao nhiêu?",
+  "expected_answer": "Trung Quốc, 46,3%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 32,
+    "region": "Biểu đồ thanh ngang 2.5 Top 10 quốc gia có tỷ lệ TMĐT bán lẻ lớn nhất 2022, thanh đầu tiên",
+    "evidence": "Trung Quốc 46,3%",
+    "match": [
+     "46,3%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u13",
+  "split": "test2",
+  "group": "chart",
+  "answerable": true,
+  "question": "Lý do hàng đầu khiến người tiêu dùng chưa mua sắm trực tuyến là gì và chiếm bao nhiêu phần trăm?",
+  "expected_answer": "Mua hàng tại cửa hàng thuận tiện hơn, 40%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 52,
+    "region": "Biểu đồ thanh ngang 4. Lý do chưa mua sắm trực tuyến, thanh đầu tiên",
+    "evidence": "Mua hàng tại cửa hàng thuận tiện hơn 40%",
+    "match": [
+     "thuận tiện hơn",
+     "40%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u14",
+  "split": "test2",
+  "group": "chart",
+  "answerable": true,
+  "question": "Cách thức tìm kiếm thông tin phổ biến nhất của người tiêu dùng khi mua hàng trực tuyến là gì và chiếm bao nhiêu phần trăm?",
+  "expected_answer": "Bạn bè, người thân giới thiệu trực tiếp, 53%.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 44,
+    "region": "Biểu đồ thanh ngang 3. Cách thức tìm kiếm thông tin khi mua hàng trực tuyến, thanh đầu tiên",
+    "evidence": "Bạn bè, người thân giới thiệu trực tiếp 53%",
+    "match": [
+     "53%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u15",
+  "split": "test2",
+  "group": "chart",
+  "answerable": true,
+  "question": "Tỷ lệ người tiêu dùng mua hàng qua các website TMĐT nước ngoài thay đổi thế nào từ năm 2021 đến năm 2023?",
+  "expected_answer": "Giảm dần: 43% (2021), 35% (2022), 28% (2023); giảm 15 điểm phần trăm.",
+  "calc": "43 - 28 = 15 điểm %",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 49,
+    "region": "Biểu đồ cột 11. Tỷ lệ người tiêu dùng mua hàng qua các website TMĐT nước ngoài (3 cột 2021–2023)",
+    "evidence": "2021: 43%; 2022: 35%; 2023: 28%",
+    "match": [
+     "43%",
+     "28%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u16",
+  "split": "test2",
+  "group": "chart",
+  "answerable": true,
+  "question": "Phương thức thanh toán nào được doanh nghiệp sử dụng phổ biến thứ hai và chiếm bao nhiêu phần trăm?",
+  "expected_answer": "Chuyển khoản Internet banking, 87% (sau thanh toán tiền mặt 88%).",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 64,
+    "region": "Biểu đồ thanh ngang 3. Phương thức thanh toán mà doanh nghiệp đang sử dụng, thanh thứ hai",
+    "evidence": "Thanh toán tiền mặt 88%; Chuyển khoản Internet banking 87%",
+    "match": [
+     "87%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u17",
+  "split": "test2",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Năm 2023, bao nhiêu phần trăm người dùng truy cập Internet bằng điện thoại di động, và bao nhiêu phần trăm sử dụng điện thoại di động để đặt hàng trực tuyến?",
+  "expected_answer": "90% người dùng truy cập Internet bằng điện thoại di động (tr. 42); 91% dùng điện thoại di động để đặt hàng trực tuyến (tr. 45).",
+  "gold_mode": "all",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 42,
+    "region": "Biểu đồ cột 1. Phương tiện truy cập Internet, nhóm 'Điện thoại di động', cột 2023",
+    "evidence": "Điện thoại di động: 2022 94%; 2023 90%",
+    "match": [
+     "94%",
+     "90%"
+    ]
+   },
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 45,
+    "region": "Biểu đồ cột 4. Phương tiện điện tử thường được sử dụng để đặt hàng trực tuyến, nhóm 'Điện thoại di động', cột 2023",
+    "evidence": "Điện thoại di động: 2022 91%; 2023 91%",
+    "match": [
+     "91%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u18",
+  "split": "test2",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Sàn giao dịch TMĐT bán buôn bán lẻ nào được người tiêu dùng ưa chuộng nhất, với tỷ lệ bao nhiêu, và doanh nghiệp nào vận hành sàn này theo danh sách doanh nghiệp dẫn đầu thị trường?",
+  "expected_answer": "Shopee, 81%; do Công ty TNHH Shopee vận hành.",
+  "gold_mode": "all",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 46,
+    "region": "Biểu đồ cột 6.1, cột Shopee",
+    "evidence": "Shopee 81%",
+    "match": [
+     "Shopee",
+     "81%"
+    ]
+   },
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 83,
+    "region": "Bảng 4.1 STT 6 / bảng 4.2 STT 5",
+    "evidence": "Shopee | Công ty TNHH Shopee",
+    "match": [
+     "Công ty TNHH Shopee"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u19",
+  "split": "test2",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Doanh thu bán lẻ TMĐT của khu vực Bắc Mỹ năm 2022 là bao nhiêu, và Mỹ chiếm bao nhiêu phần trăm thị phần TMĐT toàn cầu năm 2022?",
+  "expected_answer": "Bắc Mỹ 1.144,99 tỷ USD; Mỹ chiếm 19,2% thị phần TMĐT toàn cầu.",
+  "gold_mode": "all",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 31,
+    "region": "Biểu đồ thanh ngang 2.3 Doanh thu bán lẻ TMĐT toàn cầu theo khu vực 2022, thanh 'Bắc Mỹ'",
+    "evidence": "Bắc Mỹ 1.144,99 (tỷ USD)",
+    "match": [
+     "1.144,99"
+    ]
+   },
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 32,
+    "region": "Biểu đồ thanh ngang 2.4 Top 12 quốc gia chiếm thị phần TMĐT lớn nhất 2022, thanh 'Mỹ'",
+    "evidence": "Mỹ 19,2%",
+    "match": [
+     "19,2%"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u20",
+  "split": "test2",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Sàn TMĐT giao đồ ăn nào được người tiêu dùng ưa chuộng nhất, với tỷ lệ bao nhiêu, và doanh nghiệp nào vận hành sàn này theo danh sách doanh nghiệp dẫn đầu thị trường giao đồ ăn?",
+  "expected_answer": "ShopeeFood/Foody, 51%; do Công ty Cổ phần Foody vận hành.",
+  "gold_mode": "all",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 47,
+    "region": "Biểu đồ cột 6.3, cột 'ShopeeFood, Foody'",
+    "evidence": "ShopeeFood, Foody 51%",
+    "match": [
+     "Foody",
+     "51%"
+    ]
+   },
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 84,
+    "region": "Bảng 4.4 Nhóm doanh nghiệp dẫn đầu dịch vụ giao đồ ăn, STT 4",
+    "evidence": "4 ShopeeFood, Foody Công ty Cổ phần Foody",
+    "match": [
+     "Công ty Cổ phần Foody"
+    ]
+   },
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 83,
+    "region": "Bảng 4.1, STT 7 (evidence thay thế cho tên doanh nghiệp)",
+    "evidence": "7 ShopeeFood Công ty Cổ phần Foody",
+    "match": [
+     "Công ty Cổ phần Foody"
+    ],
+    "alternative_of": 1
+   }
+  ]
+ },
+ {
+  "id": "u21",
+  "split": "test2",
+  "group": "text",
+  "answerable": true,
+  "question": "Theo Lời giới thiệu, tốc độ tăng trưởng TMĐT của Việt Nam được xếp vào nhóm bao nhiêu quốc gia dẫn đầu thế giới, theo nguồn nào?",
+  "expected_answer": "Nhóm 10 quốc gia có tốc độ tăng trưởng TMĐT hàng đầu thế giới, tính đến tháng 12/2023 theo Statista.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 3,
+    "region": "Lời giới thiệu, đoạn 2",
+    "evidence": "được xếp vào nhóm 10 quốc gia có tốc độ tăng trưởng thương mại điện tử hàng đầu thế giới (tính đến tháng 12/2023 theo Statista)",
+    "match": [
+     "Statista"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u22",
+  "split": "test2",
+  "group": "text",
+  "answerable": true,
+  "question": "Theo Nghị định 13/2023/NĐ-CP, thông tin về tài khoản số của cá nhân thuộc loại dữ liệu cá nhân nào?",
+  "expected_answer": "Dữ liệu cá nhân cơ bản.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 20,
+    "region": "Khối '1 Phân loại dữ liệu cá nhân', cột 'Dữ liệu cá nhân cơ bản'",
+    "evidence": "Dữ liệu cá nhân cơ bản: ... Thông tin về tài khoản số của cá nhân; dữ liệu cá nhân phản ánh hoạt động, lịch sử hoạt động trên không gian mạng;",
+    "match": [
+     "tài khoản số của cá nhân"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u23",
+  "split": "test2",
+  "group": "text",
+  "answerable": true,
+  "question": "Theo Chỉ thị 18/CT-TTg, thẻ Căn cước công dân gắn chíp hoặc dữ liệu dân cư được ứng dụng để xác thực chủ thể hoạt động TMĐT khi giao kết hợp đồng trên nền tảng nào?",
+  "expected_answer": "Trên Trục phát triển hợp đồng điện tử Việt Nam.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 25,
+    "region": "Mục '2. Một số giải pháp' của Chỉ thị 18/CT-TTg, gạch đầu dòng 5",
+    "evidence": "Ứng dụng thẻ Căn cước công dân gắn chịp hoặc dữ liệu dân cư để xác thực chủ thể của hoạt động TMĐT tham gia giao kết hợp đồng trên Trục phát triển hợp đồng điện tử Việt Nam;",
+    "match": [
+     "Trục phát triển hợp đồng điện tử"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u24",
+  "split": "test2",
+  "group": "text",
+  "answerable": true,
+  "question": "Theo Luật Bảo vệ quyền lợi người tiêu dùng (sửa đổi), tổ chức vận hành nền tảng số trung gian phải cung cấp thông tin về tổ chức, cá nhân kinh doanh trên nền tảng trong trường hợp nào?",
+  "expected_answer": "Khi người tiêu dùng giao dịch với tổ chức, cá nhân kinh doanh đó có yêu cầu.",
+  "gold": [
+   {
+    "source_id": "sach-trang-tmdt-2023",
+    "page": 11,
+    "region": "Khối '3 Trách nhiệm của tổ chức thiết lập, vận hành nền tảng số trung gian', ô số 4",
+    "evidence": "Cung cấp thông tin về tổ chức, cá nhân kinh doanh hoạt động trên nền tảng số trung gian khi NTD giao dịch với tổ chức, cá nhân kinh doanh đó có yêu cầu;",
+    "match": [
+     "Cung cấp thông tin về tổ chức"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "u25",
+  "split": "test2",
+  "group": "unanswerable",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "Tỷ lệ người dùng Internet mua sắm trực tuyến hàng tuần tại Mỹ là bao nhiêu?",
+  "absence_reason": "Biểu đồ 1.5 (tr. 30) chỉ có Thái Lan, Hàn Quốc, Indonesia, Ấn Độ, Trung Quốc, Malaysia, Singapore, Philippines, Việt Nam, Úc và trung bình toàn cầu; 'Mỹ' chỉ xuất hiện ở tr. 31–33 (doanh thu, thị phần)."
+ },
+ {
+  "id": "u26",
+  "split": "test2",
+  "group": "unanswerable",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "Quy mô nền kinh tế Internet của Campuchia năm 2023 là bao nhiêu tỷ USD?",
+  "absence_reason": "Biểu đồ 2 (tr. 34) chỉ có Indonesia, Thái Lan, Việt Nam, Philippines, Malaysia, Singapore; 'Campuchia' không xuất hiện trong toàn văn."
+ },
+ {
+  "id": "u27",
+  "split": "test2",
+  "group": "unanswerable",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "Bao nhiêu phần trăm người tiêu dùng ưa chuộng Tiki trong lĩnh vực dịch vụ giao đồ ăn?",
+  "absence_reason": "Biểu đồ 6.3 (tr. 47) chỉ có ShopeeFood/Foody, Grab, Baemin, Be, Khác; Tiki chỉ có ở biểu đồ bán buôn bán lẻ (tr. 46, 20%) và bảng doanh nghiệp (tr. 83)."
+ },
+ {
+  "id": "u28",
+  "split": "test2",
+  "group": "unanswerable",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "Năm 2023, các website TMĐT bán hàng tại Việt Nam xử lý tổng cộng bao nhiêu triệu đơn hàng thành công?",
+  "absence_reason": "Tài liệu chỉ có tỷ lệ % đơn hàng thành công theo tỉnh/thành (tr. 77, 82) và theo người bán (tr. 80); không có số đơn hàng tuyệt đối ('triệu đơn' không xuất hiện)."
+ },
+ {
+  "id": "u29",
+  "split": "test2",
+  "group": "unanswerable",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "Tỷ lệ doanh nghiệp sử dụng phần mềm quản lý kho năm 2023 là bao nhiêu?",
+  "absence_reason": "Biểu đồ 1.1 (tr. 55) chỉ có phần mềm quản lý nhân sự, chuỗi cung ứng, chăm sóc khách hàng, quản trị doanh nghiệp; 'quản lý kho' không xuất hiện."
+ },
+ {
+  "id": "u30",
+  "split": "test2",
+  "group": "unanswerable",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "Mức lương trung bình của nhân sự làm thương mại điện tử tại Việt Nam năm 2023 là bao nhiêu?",
+  "absence_reason": "Tài liệu chỉ có tỷ lệ doanh nghiệp ưu tiên tuyển nhân sự đào tạo CNTT/TMĐT (tr. 57); 'lương' không xuất hiện trong toàn văn."
+ }
+]

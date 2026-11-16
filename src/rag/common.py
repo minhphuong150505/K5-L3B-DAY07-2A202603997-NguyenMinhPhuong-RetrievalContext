@@ -66,7 +66,13 @@ def write_json(path: Path, obj: Any) -> None:
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=2, default=str) + "\n", encoding="utf-8")
 
 
+BENCHMARK_TEST2 = ROOT / "benchmark" / "questions_test2.json"
+
+
 def load_questions(split: str | None = None) -> list[dict]:
+    """dev/test from questions.json; test2 (fresh held-out set, see README_DAY7.md) from its own file."""
+    if split == "test2":
+        return read_json(BENCHMARK_TEST2)
     qs = read_json(BENCHMARK)
     return [q for q in qs if split in (None, "all") or q["split"] == split]
 
