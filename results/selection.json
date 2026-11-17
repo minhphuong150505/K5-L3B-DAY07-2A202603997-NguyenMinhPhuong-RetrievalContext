@@ -48,6 +48,15 @@
       "abstain_correct": "3/4",
       "false_abstain": "0/16",
       "cost_usd": 0.0161
+    },
+    "A6": {
+      "pass": "17/20 = 85.0%",
+      "grounded_mean_over_2": 1.812,
+      "abstain_correct": "3/4",
+      "false_abstain": "0/16",
+      "citations_valid": "21/24",
+      "cost_usd": 0.6398,
+      "model": "gpt-4.1"
     }
   },
   "note": "Chốt trước khi chạy bất kỳ câu test nào; sau thời điểm này không đổi code agent/retrieval/prompt. Test chạy A0 (baseline) và A4.",
@@ -57,5 +66,12 @@
     "baseline": "A0",
     "reason": "Sau khi test gốc đạt 83,3% (<90%), thử A5 (A4 + kiểm đủ citation + luật chỉ tiêu) trên dev: 15/20 < A4 17/20 → giữ A4 theo cùng tiêu chí. test2 (benchmark/questions_test2.json) đã commit trước khi viết A5; chạy A0 và A4 trên test2 đúng một lần.",
     "note": "Không chỉnh gì sau thời điểm này cho tới khi chấm xong test2."
+  },
+  "test3": {
+    "frozen_at": "2026-11-17T12:01:11+07:00",
+    "selected": "A6",
+    "baseline": "A0",
+    "exception": "A6 và A4 hòa trên dev ở cả 3 tiêu chí đầu (17/20, từ chối đúng 3/4, 0 từ chối nhầm); theo tiêu chí (4) chi phí thì A4 thắng. Sinh viên CHỌN A6 làm ngoại lệ có chủ đích, công bố trước khi chạy test3, vì mục tiêu của vòng này là đánh giá tác động của model mạnh hơn (gpt-4.1) trên bộ test độc lập; A6 có tỷ lệ citation hỗ trợ cao hơn (21/24 so với 18/21). Chỉ chạy A6 (và baseline A0) trên test3 đúng một lần; không chạy A4 trên test3.",
+    "note": "test3 (benchmark/questions_test3.json) commit trước khi viết A6 (ccf2625)."
   }
 }

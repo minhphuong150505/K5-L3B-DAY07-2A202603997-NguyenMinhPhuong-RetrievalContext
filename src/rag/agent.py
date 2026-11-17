@@ -46,6 +46,10 @@ CONFIGS: dict[str, dict[str, Any]] = {
     # + rule against substituting a near-synonym metric (preference rate != market share, % != count)
     "A5": {"method": "rerank", "index": "BV", "top_k": 5, "max_steps": 8, "read_page": True,
            "result_chars": 7000, "strict": True, "tolerant": True, "answer_rules": True, "coverage": True},
+    # improvement 6: exactly A4 (selected config) with a stronger agent model; one factor changed.
+    # Judged on dev, then on the fresh test3 only (test and test2 were already evaluated).
+    "A6": {"method": "rerank", "index": "BV", "top_k": 5, "max_steps": 8, "read_page": True,
+           "result_chars": 7000, "strict": True, "tolerant": True, "answer_rules": True, "model": "gpt-4.1"},
 }
 
 METRIC_RULES = """
@@ -223,7 +227,8 @@ def check_quotes_tolerant(evidence: list, seen: dict, citations: list[str]) -> t
 class Agent:
     def __init__(self, name: str, model: str | None = None) -> None:
         self.name, self.cfg = name, CONFIGS[name]
-        self.model = model or os.getenv("AGENT_MODEL", "gpt-4o-mini")
+        # per-config model (A6) overrides the default agent model from .env
+        self.model = model or self.cfg.get("model") or os.getenv("AGENT_MODEL", "gpt-4o-mini")
         self.llm = OpenRouter(self.model, timeout=int(os.getenv("LLM_TIMEOUT_S", "60")))
         self.retriever = build(self.cfg["method"], self.cfg["index"])
         self.by_page: dict[int, list[dict]] = {}

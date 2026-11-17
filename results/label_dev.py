@@ -35,13 +35,15 @@ ANS = {
            "d11": (0, "28,8% sai (đúng 71,2%): chunk V tr. 68 đảo nhãn", {0: False}),
            "d12": (1, "Đáp số 3,875 đúng nhưng số 16 lấy từ Philippines (p035:B03); kiểm 'đủ citation' không bắt được vì số có trong chunk được trích, sai đối tượng", {1: False}),
            "d14": (1, "78,6% đúng; 60,7% sai chỉ tiêu (mua sắm hàng tuần tr. 30) dù có luật chỉ tiêu", {1: False})},
+    "A6": {"d11": (0, "28,8% sai (đúng 71,2%): chunk p068:B00 ghép nhãn biểu đồ tròn mơ hồ — model mạnh hơn không tự phát hiện", {0: False}),
+           "d14": (1, "78,6% đúng; ý 2 trả lời 60,7% 'mua sắm hàng tuần' (tr. 30) thay vì 78% tham gia mua sắm (tr. 44) → sai chỉ tiêu", {1: False})},
 }
 # câu thiếu bằng chứng: True nếu agent từ chối
 UNANS = {"d17", "d18", "d19", "d20"}
 UN_REASON = {"d17": "Doanh thu B2C 2017 không có (biểu đồ bắt đầu 2018)", "d18": "Không có thời gian giao hàng",
              "d19": "Lazada không có trong biểu đồ giao đồ ăn", "d20": "Không có số người dùng Internet tuyệt đối của VN"}
 
-for cfg in ("A0", "A1", "A2", "A3", "A4", "A5"):
+for cfg in ("A0", "A1", "A2", "A3", "A4", "A5", "A6"):
     traces = json.loads((R / cfg / "traces.json").read_text(encoding="utf-8"))
     out = []
     for t in traces:

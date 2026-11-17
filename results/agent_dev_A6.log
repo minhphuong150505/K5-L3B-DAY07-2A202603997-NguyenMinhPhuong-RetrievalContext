@@ -1,0 +1,57 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4432.11it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 4683.19it/s]
+d01 answered  calls=2 82.03s | Tỷ trọng doanh thu TMĐT B2C so với tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng cả nước năm 2021 là 7%. [sach-trang-tmdt-2023:p40:V2]
+d02 answered  calls=2 28.26s | Website thuocsi.vn thuộc Công ty TNHH Buymed trong nhóm doanh nghiệp dẫn đầu thị trường cung cấp dịch vụ TMĐT bán buôn bán lẻ. [sach-trang-tmdt-2023:p
+d03 answered  calls=2 198.82s | Tỷ lệ đơn hàng được thanh toán bằng ví điện tử trên website, ứng dụng cung cấp dịch vụ (CCDV) thương mại điện tử năm 2023 là 7,5%. [sach-trang-tmdt-20
+d04 answered  calls=7 177.02s | Theo Sách trắng Thương mại điện tử Việt Nam 2023, kênh tiếp nhận thông tin và cung cấp dịch vụ của tổ chức cung cấp dịch vụ tin cậy phải bảo đảm hoạt 
+d05 answered  calls=2 22.41s | Theo infographic về hoạt động mua sắm trực tuyến hàng tuần của người dùng Internet toàn cầu, có 18,4% người dùng sử dụng dịch vụ mua ngay trả sau. [sa
+d06 answered  calls=2 131.95s | Năm 2023, 44% doanh nghiệp sở hữu website và trong số đó, 42% website có tính năng đặt hàng trực tuyến. [sach-trang-tmdt-2023:p058:B00]
+d07 answered  calls=2 41.64s | Năm 2023, có 76.255 tài khoản doanh nghiệp trên Cổng thông tin quản lý hoạt động thương mại điện tử, tăng 16,4% so với năm 2022. [sach-trang-tmdt-2023
+d08 answered  calls=2 44.08s | Lượng người dùng Internet toàn cầu tháng 1/2023 là 5.158 triệu người và tốc độ tăng trưởng là 1,90%. [sach-trang-tmdt-2023:p28:V1]
+d09 answered  calls=2 18.53s | Trở ngại lớn nhất khi mua hàng trực tuyến mà người tiêu dùng gặp phải là "Chất lượng kém so với quảng cáo", chiếm 54% người tiêu dùng năm 2023. [sach-
+d10 answered  calls=2 27.43s | Tỷ lệ doanh nghiệp sử dụng phần mềm quản lý nhân sự năm 2023 là 47%. So với năm 2022 (57%), tỷ lệ này đã giảm 10 điểm phần trăm. [sach-trang-tmdt-2023
+d11 answered  calls=3 104.64s | Trong tổng số website/ứng dụng thương mại điện tử (phần thông tin chung chương V), website/ứng dụng TMĐT bán hàng chiếm 28,8% năm 2023. [sach-trang-tm
+d12 answered  calls=3 88.95s | Theo số liệu e-Conomy SEA trong Sách trắng, doanh thu bán lẻ hàng hóa trực tuyến năm 2023 của Indonesia là 62 tỷ USD, của Việt Nam là 16 tỷ USD. Như v
+d13 answered  calls=3 41.36s | Sàn thương mại điện tử du lịch trực tuyến được người tiêu dùng ưa chuộng nhất năm 2023 là Traveloka với tỷ lệ 50%. Doanh nghiệp vận hành sàn này là Cô
+d14 answered  calls=5 53.16s | Năm 2023, tỷ lệ người dân Việt Nam sử dụng Internet là 78,6%. Trong số người dùng Internet, có 60,7% tham gia mua sắm trực tuyến hàng tuần. [sach-tran
+d15 answered  calls=3 29.73s | Luật Giao dịch điện tử (sửa đổi) được Quốc hội thông qua ngày 22/6/2023 và có hiệu lực thi hành từ ngày 01/7/2024. [sach-trang-tmdt-2023:p014:B00] [sa
+d16 answered  calls=2 44.44s | Theo Nghị định 13/2023/NĐ-CP, Bên Xử lý dữ liệu cá nhân phải lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân trong trường hợp thực hiện h
+d17 abstain   calls=7 116.73s | Không đủ bằng chứng để trả lời.
+d18 abstain   calls=7 85.83s | Không đủ bằng chứng để trả lời.
+d19 abstain   calls=7 82.32s | Không đủ bằng chứng để trả lời.
+d20 answered  calls=7 80.41s | Năm 2023, Việt Nam có 5,158 triệu người dùng Internet. [sach-trang-tmdt-2023:p28:V1]
+{
+  "config": "A6",
+  "method": "rerank",
+  "index": "BV",
+  "top_k": 5,
+  "max_steps": 8,
+  "read_page": true,
+  "result_chars": 7000,
+  "strict": true,
+  "tolerant": true,
+  "answer_rules": true,
+  "model": "gpt-4.1",
+  "split": "dev",
+  "n": 20,
+  "errors": 0,
+  "tool_use": "20/20",
+  "tool_calls_distribution": {
+    "2": 10,
+    "3": 4,
+    "5": 1,
+    "7": 5
+  },
+  "answered_answerable": "16/16",
+  "abstain_on_unanswerable": "3/4",
+  "context_evidence_rate": "15/16",
+  "auto_citation_on_gold_page": "16/16",
+  "median_latency_s": 66.78,
+  "avg_llm_calls": 4.45,
+  "total_prompt_tokens": 301632,
+  "total_completion_tokens": 4571,
+  "total_cost_usd": 0.6398,
+  "total_equiv_paid_cost_usd": 0.6398,
+  "avg_context_chars": 4801
+}

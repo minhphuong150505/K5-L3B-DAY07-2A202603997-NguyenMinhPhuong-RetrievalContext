@@ -118,7 +118,7 @@ class LLMError(RuntimeError):
 PRICE_PER_M = {"gemini-2.5-flash": (0.30, 2.50), "gemini-2.5-flash-lite": (0.10, 0.40),
                "gemini-3-flash-preview": (0.50, 3.00),
                "gemini-3.5-flash": (1.50, 9.00), "gemini-3.1-flash-lite": (0.25, 1.50),
-               "gpt-4o-mini": (0.15, 0.60)}  # openai.com/api/pricing (standard tier)
+               "gpt-4o-mini": (0.15, 0.60), "gpt-4.1": (2.00, 8.00)}  # openai.com/api/pricing (standard tier)
 
 PROVIDERS = {
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", "GEMINI_API_KEY"),
