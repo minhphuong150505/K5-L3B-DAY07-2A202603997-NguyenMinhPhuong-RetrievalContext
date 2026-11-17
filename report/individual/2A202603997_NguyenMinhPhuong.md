@@ -1,9 +1,9 @@
 # Báo cáo Day 7: Agentic RAG trên Sách trắng TMĐT Việt Nam 2023
 
-Sinh viên: **Nguyễn Minh Phương** · MSSV **2A202603997** · lớp K5-L3B. TODO(SV): kiểm tra lại họ tên/MSSV.
+Sinh viên: **Nguyễn Minh Phương** · MSSV **2A202603997** · lớp K5-L3B.
 Repo: `K5-L3B-DAY07-2A202603997-NguyenMinhPhuong-RetrievalContext`. Báo cáo sinh bởi `python -m src.rag.build_report`; mọi bảng số liệu đọc trực tiếp từ `results/`.
 
-> Ghi chú minh bạch: code, benchmark và nhãn chấm được soạn với trợ lý AI (Claude Code). Nhãn chấm (`reviews.json`) được soạn bằng cách đối chiếu từng câu trả lời với trang PDF gốc, có ghi lý do; **sinh viên cần tự rà lại toàn bộ nhãn trước khi nộp** (RULES.md). TODO(SV): xác nhận đã rà.
+> Ghi chú minh bạch: code, benchmark và bản nháp nhãn chấm được soạn với trợ lý AI (Claude Code). Nhãn chấm (`reviews.json`) được soạn bằng cách đối chiếu từng câu trả lời với trang PDF gốc và kiểm nội dung từng chunk được trích trong pgvector, có ghi lý do từng câu; **sinh viên đã rà lại toàn bộ nhãn dev/test/test2 và xác nhận** (RULES.md). Mọi số liệu trong báo cáo sinh tự động từ `results/`.
 
 ## Dữ liệu và benchmark
 
@@ -102,7 +102,22 @@ Nhãn chấm (`reviews.json`) là của người chấm; "tự động" nghĩa l
   - Trace agent: `results/agent/<split>/<A0|A1|A2|A3>/traces.json` (mọi tool call, query, kết quả id/trang/score, context, câu trả lời, citation, token, chi phí, thời gian); tổng hợp `summary.json`; nhãn `reviews.json`; phiếu chấm `review_sheet.md`; metrics từ nhãn `summary_labels.json`.
   - Trace retrieval: `results/retrieval/<split>/*.traces.json`, `summary.json`. Index V: `results/visual/` (extraction.jsonl có output thô + chi phí từng trang, chunks_V.jsonl, manual_check.md).
   - Lệnh: xem `README_DAY7.md`. Chi phí: index V $0.4097 (2,634,475 + 24,275 token); agent theo từng cấu hình ở cột chi phí trong `summary.json` (giá gpt-4o-mini $0,15/$0,60 cho 1M token input/output); embedding/BM25/rerank local $0.
-- **Kết quả trước/sau, ví dụ lỗi, đánh đổi và giới hạn:** dev: A0 13/20 → A1 14/20 (giảm bịa: từ chối đúng 2/4 → 3/4, nhưng bắt đầu từ chối nhầm) → A2 11/20 (kiểm trích dẫn chặt: bớt bịa nhưng từ chối nhầm 7 câu — đánh đổi precision/recall) → A3 14/20 (dung sai, 0 từ chối nhầm) → A4 17/20. **Test (chạy một lần sau khi chốt):** A0 22/30 (73,3%) → A4 25/30 (83,3%); A4 thắng rõ ở câu thiếu bằng chứng (3/6 → 5/6: baseline bịa "B2C 2024 = 25 tỷ", "Nhật Bản" bằng số Việt Nam) và citation hỗ trợ (26/34 → 28/29); A4 thua ở **multi-hop** (2/4 → 1/4): tính đúng đáp số nhưng chỉ trích một trong hai trang (t17, t20) — luật "trích dẫn nguyên văn" khiến model gom về một chunk thay vì trích đủ hai nguồn; t24 bị từ chối nhầm; t27 vẫn khẳng định "Shopee 81% thị phần GMV" (nhầm chỉ tiêu ưa chuộng ↔ thị phần). Đánh đổi: A4 tốn ~1,5× chi phí A0 và chậm hơn (rerank trên CPU, nhiều token context hơn) nhưng bớt bịa. Hướng sửa (chưa làm, để tránh chỉnh theo test): bắt citation cho từng ý của câu multi-hop, kiểm "đủ trang" trước khi answer; vision mạnh hơn cho biểu đồ tròn. Giới hạn: biểu đồ tròn (index V), câu "chỉ tiêu gần giống" (d20), metric khớp chuỗi theo trang, một người soạn benchmark, nhãn do trợ lý AI soạn cần SV rà lại. TODO(SV): bổ sung nhận xét cá nhân.
+- **Kết quả trước/sau, ví dụ lỗi, đánh đổi và giới hạn:** dev: A0 13/20 → A1 14/20 (giảm bịa: từ chối đúng 2/4 → 3/4, nhưng bắt đầu từ chối nhầm) → A2 11/20 (kiểm trích dẫn chặt: bớt bịa nhưng từ chối nhầm 7 câu — đánh đổi precision/recall) → A3 14/20 (dung sai, 0 từ chối nhầm) → A4 17/20. **Test (chạy một lần sau khi chốt):** A0 22/30 (73,3%) → A4 25/30 (83,3%); A4 thắng rõ ở câu thiếu bằng chứng (3/6 → 5/6: baseline bịa "B2C 2024 = 25 tỷ", "Nhật Bản" bằng số Việt Nam) và citation hỗ trợ (26/34 → 28/29); A4 thua ở **multi-hop** (2/4 → 1/4): tính đúng đáp số nhưng chỉ trích một trong hai trang (t17, t20) — luật "trích dẫn nguyên văn" khiến model gom về một chunk thay vì trích đủ hai nguồn; t24 bị từ chối nhầm; t27 vẫn khẳng định "Shopee 81% thị phần GMV" (nhầm chỉ tiêu ưa chuộng ↔ thị phần). Đánh đổi: A4 tốn ~1,5× chi phí A0 và chậm hơn (rerank trên CPU, nhiều token context hơn) nhưng bớt bịa. Hướng sửa (chưa làm, để tránh chỉnh theo test): bắt citation cho từng ý của câu multi-hop, kiểm "đủ trang" trước khi answer; vision mạnh hơn cho biểu đồ tròn. Giới hạn: biểu đồ tròn (index V), câu "chỉ tiêu gần giống" (d20), metric khớp chuỗi theo trang, một người soạn benchmark, nhãn do trợ lý AI soạn cần SV rà lại.
+
+## Nhận xét cá nhân
+
+**Điều em rút ra:**
+
+1. **Đọc nội dung trực quan giúp rõ rệt ở câu bảng/biểu đồ.** Thêm index V (vision chép bảng/biểu đồ thành "nhãn — năm: giá trị") giúp agent chọn đúng ô và đúng năm: trên test gốc cấu hình có V đạt bảng 6/6, ảnh/sơ đồ 5/5, biểu đồ 5/5, và trên test2 bảng 6/6, biểu đồ 5/5 — trong khi baseline chỉ dùng text Day 6 từng lấy nhầm cột dự báo 2025 (d12) hoặc từ chối nhầm câu bảng (u01, u02).
+2. **Kiểm chứng càng chặt chưa chắc càng tốt.** Bắt trích dẫn nguyên văn (A2) giảm bịa nhưng làm `gpt-4o-mini` từ chối nhầm 7/16 câu đúng trên dev vì model diễn đạt lại đoạn trích hoặc viết sai ID; phải nới thành kiểm "số khớp + đa số từ khớp" (A3) mới lấy lại độ phủ. Với model nhỏ, an toàn và hữu ích là một đánh đổi cần đo, không phải mặc định.
+3. **Bộ dev nhỏ dễ đánh lừa khi chọn cấu hình.** A4 thắng rõ trên 20 câu dev (17/20 so với 13/20 của baseline) và trên test gốc (25/30 so với 22/30), nhưng trên bộ test mới lại thua baseline (23/30 so với 24/30). Chênh lệch vài câu trên 20 câu dev không đủ tin cậy; cần dev lớn hơn hoặc nhiều lần chạy.
+4. **Citation hợp lệ không có nghĩa là nguồn đúng.** Có những câu ID citation hoàn toàn hợp lệ nhưng sai nguồn: d12 lấy số 16 tỷ của Philippines cho Việt Nam (đáp số trùng hợp đúng), t17/t20/u18–u20 trả lời đúng nhưng chỉ trích một trong hai trang cần thiết. Chỉ đọc đối chiếu nội dung chunk với trang gốc mới phát hiện được — đúng như đề nhấn mạnh.
+
+**Khó khăn gặp phải:**
+
+- **Biểu đồ tròn đọc sai.** Cả OCR của Day 6 lẫn vision `gpt-4o-mini` đều ghép sai nhãn–phần trăm ở biểu đồ tròn (5/5 biểu đồ tròn kiểm tay có lỗi; d11 trả lời 28,8% thay vì 71,2%). Em chưa sửa được; hướng tiếp theo là dùng vision mạnh hơn hoặc ghép theo toạ độ màu chú giải.
+- **Rerank chậm trên CPU.** Cross-encoder `bge-reranker-v2-m3` mất 25–60 giây mỗi truy vấn khi chạy song song nhiều thí nghiệm, làm mỗi vòng dev/test kéo dài 20–45 phút và giới hạn số cấu hình em thử được.
+- **Model nhỏ dao động giữa các lần chạy.** Dù temperature 0, `gpt-4o-mini` trả lời khác nhau giữa các cấu hình gần giống nhau (d03 đúng ở A4 nhưng sai ở A5), nên chênh lệch 1–2 câu giữa các cấu hình phần lớn là nhiễu.
 
 ## Thử thách nâng cao (nếu thực hiện)
 
