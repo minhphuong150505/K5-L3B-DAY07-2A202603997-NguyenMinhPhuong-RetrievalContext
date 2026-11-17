@@ -70,9 +70,9 @@ BENCHMARK_TEST2 = ROOT / "benchmark" / "questions_test2.json"
 
 
 def load_questions(split: str | None = None) -> list[dict]:
-    """dev/test from questions.json; test2 (fresh held-out set, see README_DAY7.md) from its own file."""
-    if split == "test2":
-        return read_json(BENCHMARK_TEST2)
+    """dev/test from questions.json; test2/test3 (fresh held-out sets, see README_DAY7.md) from their own files."""
+    if split in ("test2", "test3"):  # fresh held-out sets, each in its own file
+        return read_json(ROOT / "benchmark" / f"questions_{split}.json")
     qs = read_json(BENCHMARK)
     return [q for q in qs if split in (None, "all") or q["split"] == split]
 

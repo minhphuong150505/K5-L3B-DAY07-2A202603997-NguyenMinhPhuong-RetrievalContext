@@ -100,7 +100,7 @@ def run(cfg: dict, questions: list[dict]) -> tuple[dict, list[dict]]:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", required=True, choices=("dev", "test", "test2"))
+    ap.add_argument("--split", required=True, choices=("dev", "test", "test2", "test3"))
     ap.add_argument("--configs", nargs="+", required=True)
     args = ap.parse_args()
     qs = load_questions(args.split)
