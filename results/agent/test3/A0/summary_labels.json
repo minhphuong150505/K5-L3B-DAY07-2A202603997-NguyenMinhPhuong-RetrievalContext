@@ -1,0 +1,46 @@
+{
+  "config": "A0",
+  "split": "test3",
+  "grounded": {
+    "0": 5,
+    "1": 1,
+    "2": 18
+  },
+  "citations_valid": 25,
+  "citations_total": 34,
+  "answers_with_citation": 26,
+  "answers": 26,
+  "abstain_correct": 5,
+  "unanswerable": 6,
+  "false_abstain": 0,
+  "answerable": 24,
+  "errors": 0,
+  "pass_by_group": {
+    "table": {
+      "pass": 5,
+      "N": 6
+    },
+    "image": {
+      "pass": 3,
+      "N": 5
+    },
+    "chart": {
+      "pass": 4,
+      "N": 5
+    },
+    "multihop": {
+      "pass": 3,
+      "N": 4
+    },
+    "text": {
+      "pass": 3,
+      "N": 4
+    },
+    "unanswerable": {
+      "pass": 5,
+      "N": 6
+    }
+  },
+  "grounded_mean_over_2": 1.542,
+  "pass_rate": "23/30 = 76.7%"
+}

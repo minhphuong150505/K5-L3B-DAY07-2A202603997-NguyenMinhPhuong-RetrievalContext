@@ -1,0 +1,272 @@
+[
+ {
+  "query_id": "v01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v06",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai dòng bảng: 11/01/2022 – 01/03/2022 là luật sửa đổi nhiều luật; Luật Doanh nghiệp là 17/06/2020, hết hiệu lực một phần (tr. 88)"
+ },
+ {
+  "query_id": "v07",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai ô: 'Quyền phản đối xử lý dữ liệu' là ô số 8; ô số 4 là 'Quyền rút lại sự đồng ý' (tr. 21)"
+ },
+ {
+  "query_id": "v08",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai ô: 'Xây dựng, công bố công khai quy chế' là ô số 3; ô số 2 là 'Chỉ định, công bố công khai đầu mối liên hệ…' (tr. 11)"
+ },
+ {
+  "query_id": "v09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v10",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v12",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v13",
+  "answer_grade": 0,
+  "citation_support": [
+   false,
+   false
+  ],
+  "pass": false,
+  "reason": "Sai: 'Dưới 3 tiếng' 23% không phải cao nhất; cao nhất là 'Từ 3–5 tiếng' 37% (tr. 42)"
+ },
+ {
+  "query_id": "v14",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v15",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v17",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v18",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   false
+  ],
+  "pass": false,
+  "reason": "eMarketer 89,67 tỷ đúng; nói e-Conomy 'không có số liệu' — sai, tr. 34 có 130 tỷ USD (2022)"
+ },
+ {
+  "query_id": "v19",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v20",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v21",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v22",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v23",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "v24",
+  "answer_grade": 0,
+  "citation_support": [
+   false,
+   false
+  ],
+  "pass": false,
+  "reason": "Sai/không trả lời đúng ý: không nêu 01 bản chính trong 60 ngày (tr. 24); trích tr. 22–23 không chứa quy định này"
+ },
+ {
+  "query_id": "v25",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Đức trong biểu đồ 1.5 (tr. 30) → từ chối đúng"
+ },
+ {
+  "query_id": "v26",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Khẳng định 'Mỹ 2028 dự báo 1.720 tỷ USD' — 1.720 là dự báo 2027*, tài liệu không có 2028"
+ },
+ {
+  "query_id": "v27",
+  "abstention_correct": true,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Nêu rõ Shopee không được đề cập trong mảng du lịch; số kèm theo (Traveloka 50%, Agoda 26%, Booking 24%) đúng tr. 47 → coi là từ chối đúng"
+ },
+ {
+  "query_id": "v28",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Lào → từ chối đúng"
+ },
+ {
+  "query_id": "v29",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có chi phí giao hàng tuyệt đối mỗi đơn → từ chối đúng"
+ },
+ {
+  "query_id": "v30",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có số doanh nghiệp khảo sát theo tỉnh → từ chối đúng"
+ }
+]
