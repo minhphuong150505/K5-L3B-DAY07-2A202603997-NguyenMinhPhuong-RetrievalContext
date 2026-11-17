@@ -13,3 +13,6 @@ starter/results/
 # Tài liệu gốc không có giấy phép tái phân phối rõ ràng: tải lại theo README
 data/BCTMDT2023-file-31-1-pdf.pdf
 work/
+
+# runtime log of the local demo server
+results/demo_server.log
