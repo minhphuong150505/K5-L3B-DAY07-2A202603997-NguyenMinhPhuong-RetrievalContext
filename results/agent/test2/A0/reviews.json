@@ -1,0 +1,265 @@
+[
+ {
+  "query_id": "u01",
+  "answer_grade": 0,
+  "citation_support": [],
+  "pass": false,
+  "reason": "Từ chối nhầm câu có đáp án"
+ },
+ {
+  "query_id": "u02",
+  "answer_grade": 0,
+  "citation_support": [],
+  "pass": false,
+  "reason": "Từ chối nhầm câu có đáp án"
+ },
+ {
+  "query_id": "u03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u07",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai: 'Quyền yêu cầu bồi thường thiệt hại' là ô số 10; ô số 7 là 'Quyền cung cấp dữ liệu' (tr. 21)"
+ },
+ {
+  "query_id": "u08",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u10",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "1.218 và 1,1% đúng nhưng tự thêm 'năm 2022 có 1.204' — không có trong chunk được trích hay tài liệu (khẳng định vô căn cứ)"
+ },
+ {
+  "query_id": "u11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u12",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u13",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u14",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u15",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u16",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai đối tượng: 60% 'Chuyển khoản' là phương thức thanh toán của NGƯỜI TIÊU DÙNG (tr. 47); câu hỏi về doanh nghiệp: Internet banking 87% (tr. 64)"
+ },
+ {
+  "query_id": "u17",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u18",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": false,
+  "reason": "Shopee 81% đúng; phần doanh nghiệp vận hành sai (liệt kê các sàn khác thay vì Công ty TNHH Shopee, tr. 83)"
+ },
+ {
+  "query_id": "u19",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u20",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u21",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u22",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u23",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u24",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u25",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Mỹ trong biểu đồ 1.5 (tr. 30) → từ chối đúng"
+ },
+ {
+  "query_id": "u26",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Campuchia → từ chối đúng"
+ },
+ {
+  "query_id": "u27",
+  "abstention_correct": true,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Nêu rõ Tiki không có trong danh sách giao đồ ăn; các số kèm theo (51%, 50%, 15%, 7%, 13%) đúng tr. 47 → coi là từ chối đúng"
+ },
+ {
+  "query_id": "u28",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có số đơn hàng tuyệt đối → từ chối đúng"
+ },
+ {
+  "query_id": "u29",
+  "abstention_correct": true,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Nêu rõ tài liệu không nêu phần mềm quản lý kho; các số phần mềm khác đúng tr. 55 → coi là từ chối đúng"
+ },
+ {
+  "query_id": "u30",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có mức lương → từ chối đúng"
+ }
+]

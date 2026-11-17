@@ -1,0 +1,261 @@
+[
+ {
+  "query_id": "u01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u06",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u07",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Sai: 'Quyền yêu cầu bồi thường thiệt hại' là ô số 10; ô số 7 là 'Quyền cung cấp dữ liệu' (tr. 21)"
+ },
+ {
+  "query_id": "u08",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u10",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u12",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u13",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u14",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u15",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u17",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u18",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "Shopee 81% và Công ty TNHH Shopee đều đúng, nhưng chỉ trích tr. 46; tên doanh nghiệp (tr. 83) không có citation → thiếu evidence"
+ },
+ {
+  "query_id": "u19",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "1.144,99 tỷ và 19,2% đều đúng, nhưng chỉ trích tr. 31; 19,2% (tr. 32) không có trong chunk được trích → thiếu evidence"
+ },
+ {
+  "query_id": "u20",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "pass": false,
+  "reason": "ShopeeFood/Foody 51% và Công ty Cổ phần Foody đều đúng, nhưng chỉ trích tr. 47; tên doanh nghiệp (tr. 84/83) không có citation → thiếu evidence"
+ },
+ {
+  "query_id": "u21",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u22",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "pass": true,
+  "reason": "Đúng và đủ; citation chứa đúng số liệu/ý trên trang gốc (đã kiểm trong DB và ảnh trang)"
+ },
+ {
+  "query_id": "u23",
+  "answer_grade": 0,
+  "citation_support": [],
+  "pass": false,
+  "reason": "Từ chối nhầm: tr. 25 có 'Trục phát triển hợp đồng điện tử Việt Nam'"
+ },
+ {
+  "query_id": "u24",
+  "answer_grade": 0,
+  "citation_support": [],
+  "pass": false,
+  "reason": "Từ chối nhầm: tr. 11 ô số 4 có đủ thông tin"
+ },
+ {
+  "query_id": "u25",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Mỹ trong biểu đồ 1.5 (tr. 30) → từ chối đúng"
+ },
+ {
+  "query_id": "u26",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Campuchia → từ chối đúng"
+ },
+ {
+  "query_id": "u27",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có Tiki trong biểu đồ giao đồ ăn → từ chối đúng"
+ },
+ {
+  "query_id": "u28",
+  "abstention_correct": false,
+  "citation_support": [
+   false
+  ],
+  "pass": false,
+  "reason": "Khẳng định '61 triệu đơn hàng thành công' — 61 triệu là số NGƯỜI TIÊU DÙNG mua sắm trực tuyến (tr. 40), không phải số đơn hàng"
+ },
+ {
+  "query_id": "u29",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có phần mềm quản lý kho → từ chối đúng"
+ },
+ {
+  "query_id": "u30",
+  "abstention_correct": true,
+  "citation_support": [],
+  "pass": true,
+  "reason": "Không có mức lương → từ chối đúng"
+ }
+]

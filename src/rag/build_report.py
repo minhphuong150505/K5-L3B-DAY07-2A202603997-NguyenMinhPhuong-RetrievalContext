@@ -83,6 +83,20 @@ def pass_rows() -> list[list]:
     return rows
 
 
+def compare_rows(split: str, cfgs: list[str]) -> list[list]:
+    labs = {c: j(f"agent/{split}/{c}/summary_labels.json") for c in cfgs}
+    if not all(labs.values()):
+        return []
+    rows = []
+    for g in ("table", "image", "chart", "multihop", "text", "unanswerable"):
+        rows.append([GROUP_VI[g]] + [f"{labs[c]['pass_by_group'].get(g, {}).get('pass', 0)}/{labs[c]['pass_by_group'].get(g, {}).get('N', 0)}" for c in cfgs])
+    rows.append(["**Toàn bộ**"] + [f"**{labs[c]['pass_rate']}**" for c in cfgs])
+    rows.append(["Grounded 0/1/2 · TB/2"] + [f"{labs[c]['grounded']['0']}/{labs[c]['grounded']['1']}/{labs[c]['grounded']['2']} · {labs[c]['grounded_mean_over_2']:.2f}" for c in cfgs])
+    rows.append(["Citation hợp lệ"] + [f"{labs[c]['citations_valid']}/{labs[c]['citations_total']}" for c in cfgs])
+    rows.append(["Từ chối đúng / từ chối nhầm"] + [f"{labs[c]['abstain_correct']}/{labs[c]['unanswerable']} · {labs[c]['false_abstain']}/{labs[c]['answerable']}" for c in cfgs])
+    return rows
+
+
 def per_query_rows(split: str, cfg: str, ids: list[str]) -> list[list]:
     tr = {t["query_id"]: t for t in (j(f"agent/{split}/{cfg}/traces.json") or [])}
     rv = {r["query_id"]: r for r in (j(f"agent/{split}/{cfg}/reviews.json") or [])}
@@ -129,7 +143,9 @@ def main() -> None:
         ("Cấu hình đã chọn (retrieval)", "rerank:BV:k=5:budget=6000", "Chạy sau khi chốt trên dev"),
         ("Baseline", "dense:B", "Day 6 nguyên trạng"),
     ])
-    agent_rows = [r for r in (agent_row(sp, c) for sp in ("dev", "test") for c in ("A0", "A1", "A2", "A3", "A4")) if r]
+    agent_rows = [r for r in (agent_row(sp, c) for sp in ("dev", "test", "test2") for c in ("A0", "A1", "A2", "A3", "A4", "A5")) if r]
+    ret_test2 = retrieval_rows("test2", [("Cấu hình đã chọn (retrieval)", "rerank:BV:k=5:budget=6000", "test2 — bộ test mới"),
+                                         ("Baseline", "dense:B", "test2 — bộ test mới")])
     test_ids = [q["id"] for q in qs if q["split"] == "test"]
 
     report = f"""# Báo cáo Day 7: Agentic RAG trên Sách trắng TMĐT Việt Nam 2023
@@ -150,7 +166,7 @@ Repo: `K5-L3B-DAY07-2A202603997-NguyenMinhPhuong-RetrievalContext`. Báo cáo si
 
 Câu hỏi gốc, không filter, cùng corpus/index/nhãn; top-3 luôn được xuất để so sánh Hit@3. Context Evidence Rate = mọi evidence bắt buộc nằm trong context đóng gói theo budget ký tự. Chi phí retrieval = $0 (model local); thời gian đo trên CPU laptop (rerank chậm vì CPU bị chia sẻ với job khác).
 
-{md_table(["Cấu hình", "Phương pháp, top-k, filter, rerank, context budget", "Giả thuyết / thay đổi", "Split", "Hit@1", "Evidence Hit@3", "Context Evidence Rate", "Thời gian / chi phí"], ret_dev + ret_test)}
+{md_table(["Cấu hình", "Phương pháp, top-k, filter, rerank, context budget", "Giả thuyết / thay đổi", "Split", "Hit@1", "Evidence Hit@3", "Context Evidence Rate", "Thời gian / chi phí"], ret_dev + ret_test + ret_test2)}
 
 **Nhận xét retrieval (dev):** index B của Day 6 đã khá mạnh vì Day 6 có OCR và ghép nhãn–giá trị biểu đồ, nên mọi phương pháp đạt Evidence Hit@3 16/16 trên dev; khác biệt nằm ở **Hit@1** và **Context Evidence Rate** (câu multi-hop cần đủ 2 trang). Rerank cho Hit@1 cao nhất nhưng chậm (CPU). Tăng top-k lên 5 giúp đủ evidence cho câu multi-hop. Lưu ý: metric khớp chuỗi trên trang có thể tính hit khi chunk đúng trang nhưng câu trả lời vẫn đọc sai ô — vì vậy đánh giá câu trả lời được chấm riêng ở mục sau.
 
@@ -193,7 +209,15 @@ Nhãn chấm (`reviews.json`) là của người chấm; "tự động" nghĩa l
 
 **Kết luận phần nâng cao:** cấu hình chốt trên dev đạt **25/30 = 83,3%** trên test, **chưa đạt ngưỡng 90%** (cần ≥ 27/30) nên **không đủ điều kiện nhận 15 điểm bonus**; báo cáo trung thực theo ADVANCED.md, không chọn lại câu, không chỉnh theo test. Lỗi: multi-hop t17, t18, t20 (thiếu citation trang thứ hai hoặc lấy số dự báo 2027), t24 (từ chối nhầm), t27 (khẳng định thị phần GMV không có trong tài liệu). Nếu muốn thử lại phải sửa trên dev **và soạn bộ test mới** (RULES.md).
 
-- **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:** `results/agent/test/{selected}/` (traces, reviews có lý do từng câu, summary_labels); evidence từng câu trong `benchmark/questions.json`. Câu lỗi hệ thống/timeout tính không đạt và báo riêng (cột lỗi).
+### Lần thử thứ hai: bộ test mới (test2)
+
+Vì test gốc đã được dùng để đánh giá, theo RULES.md/ADVANCED.md tôi **soạn bộ test mới** `benchmark/questions_test2.json` (30 câu: bảng 6, ảnh/sơ đồ 5, biểu đồ 5, multi-hop 4, text 4, thiếu bằng chứng 6; không trùng câu hay evidence với dev/test; kiểm `match` với text layer, câu u06 là bảng vẽ nên kiểm bằng ảnh) và **commit trước khi sửa agent** (commit `ed00c3f`). Trên dev thử thêm **A5** = A4 + kiểm "đủ citation" bằng code (mọi con số lấy từ tài liệu phải nằm trong chunk được trích) + luật không thay chỉ tiêu gần nghĩa: dev **15/20 < A4 17/20** (d03 tụt; d12 vẫn lấy số Philippines — kiểm số không phân biệt được đối tượng) → **giữ A4** theo cùng tiêu chí, ghi vào `results/selection.json` (khóa `test2`) trước khi chạy test2. Chạy A0 và A4 trên test2 **đúng một lần**:
+
+{md_table(["Nhóm test2", "A0 (baseline)", "A4 (chốt trên dev)"], compare_rows("test2", ["A0", "A4"]))}
+
+**Kết luận test2:** A4 **23/30 = 76,7%**, A0 **24/30 = 80,0%** — cả hai **dưới 90%**; **không đạt bonus**. Cải thiện trên dev (A0 13/20 → A4 17/20) **không khái quát** sang test mới: A4 mạnh hơn ở bảng/biểu đồ/ảnh (nhờ index V) nhưng **lặp lại đúng lỗi multi-hop** của test gốc — trả lời đúng mà chỉ trích trang đầu (u18, u19, u20; giống t17, t20) — và từ chối nhầm 2 câu text (u23, u24) do luật kiểm chứng làm model dè dặt. Baseline A0 trích đủ hai trang ở multi-hop (3/4) và từ chối đúng 6/6 nhưng sai ở bảng/sơ đồ (u01, u02 từ chối nhầm; u07, u16 sai đối tượng; u10 thêm số 1.204 không có trong tài liệu). Bài học: (1) dev 20 câu quá nhỏ để chọn giữa các cấu hình chênh 2–3 câu; (2) lỗi "trích một trang" là lỗi hệ thống của A2–A4 — luật kiểm trích dẫn khiến model gom citation về một chunk; nên kiểm "mỗi đối tượng/trang được hỏi có ít nhất một citation" ở mức tool thay vì prompt; (3) model nhỏ `gpt-4o-mini` dao động giữa các lần chạy (d03 đúng ở A4, sai ở A5).
+
+- **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:** test gốc `results/agent/test/{selected}/`, test2 `results/agent/test2/A0|A4/` (`label_test2.py` ghi lý do từng câu) (traces, reviews có lý do từng câu, summary_labels); evidence từng câu trong `benchmark/questions.json`. Câu lỗi hệ thống/timeout tính không đạt và báo riêng (cột lỗi).
 - **Giới hạn, cách tái lập và đường dẫn benchmark:** tái lập theo `README_DAY7.md` (Docker DB Day 6 → `visual_index` → `eval_retrieval` → `agent` → `review` → `build_report`). LLM có tính ngẫu nhiên nhỏ dù temperature 0; vision chỉ chạy một lần (output lưu ở `results/visual/extraction.jsonl` để tái dựng index V mà không gọi lại API: `python -m src.rag.visual_index --skip-extract`). Benchmark: `benchmark/questions.json`.
 """
     OUT.parent.mkdir(parents=True, exist_ok=True)

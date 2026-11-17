@@ -28,6 +28,8 @@ Câu hỏi gốc, không filter, cùng corpus/index/nhãn; top-3 luôn được 
 | Cải thiện 2b | `rerank:BV:k=5:budget=6000` · rerank, index BV, top-5, không filter, budget 6000 ký tự | Tăng top-k 3→5, budget 4000→6000: đủ evidence cho multi-hop | dev | 14/16 (88%) | 16/16 (100%) | 15/16 (94%) | 25049 ms/truy vấn (trung vị) · $0 |
 | Cấu hình đã chọn (retrieval) | `rerank:BV:k=5:budget=6000` · rerank, index BV, top-5, không filter, budget 6000 ký tự | Chạy sau khi chốt trên dev | test | 22/24 (92%) | 24/24 (100%) | 22/24 (92%) | 35461 ms/truy vấn (trung vị) · $0 |
 | Baseline | `dense:B` · dense, index B, top-3, không filter, budget 4000 ký tự | Day 6 nguyên trạng | test | 19/24 (79%) | 23/24 (96%) | 20/24 (83%) | 4633 ms/truy vấn (trung vị) · $0 |
+| Cấu hình đã chọn (retrieval) | `rerank:BV:k=5:budget=6000` · rerank, index BV, top-5, không filter, budget 6000 ký tự | test2 — bộ test mới | test2 | 22/24 (92%) | 23/24 (96%) | 23/24 (96%) | 47775 ms/truy vấn (trung vị) · $0 |
+| Baseline | `dense:B` · dense, index B, top-3, không filter, budget 4000 ký tự | test2 — bộ test mới | test2 | 18/24 (75%) | 23/24 (96%) | 22/24 (92%) | 1064 ms/truy vấn (trung vị) · $0 |
 
 **Nhận xét retrieval (dev):** index B của Day 6 đã khá mạnh vì Day 6 có OCR và ghép nhãn–giá trị biểu đồ, nên mọi phương pháp đạt Evidence Hit@3 16/16 trên dev; khác biệt nằm ở **Hit@1** và **Context Evidence Rate** (câu multi-hop cần đủ 2 trang). Rerank cho Hit@1 cao nhất nhưng chậm (CPU). Tăng top-k lên 5 giúp đủ evidence cho câu multi-hop. Lưu ý: metric khớp chuỗi trên trang có thể tính hit khi chunk đúng trang nhưng câu trả lời vẫn đọc sai ô — vì vậy đánh giá câu trả lời được chấm riêng ở mục sau.
 
@@ -53,8 +55,11 @@ Câu hỏi gốc, không filter, cùng corpus/index/nhãn; top-3 luôn được 
 | A2 / dev | 20/20 | 1 lượt: 12, 2 lượt: 7, 4 lượt: 1 (TB 2.35 lượt LLM) | 8/0/8 · 1.00 | 10/12 | 10/10 | 3/4 | 7/16 |
 | A3 / dev | 20/20 | 1 lượt: 12, 2 lượt: 8 (TB 2 lượt LLM) | 1/4/11 · 1.62 | 18/22 | 17/17 | 3/4 | 0/16 |
 | A4 / dev | 20/20 | 1 lượt: 12, 2 lượt: 7, 4 lượt: 1 (TB 2.05 lượt LLM) | 1/1/14 · 1.81 | 18/21 | 17/17 | 3/4 | 0/16 |
+| A5 / dev | 20/20 | 1 lượt: 12, 2 lượt: 6, 4 lượt: 2 (TB 2.15 lượt LLM) | 2/2/12 · 1.62 | 16/21 | 17/17 | 3/4 | 0/16 |
 | A0 / test | 30/30 | 1 lượt: 24, 2 lượt: 5, 3 lượt: 1 (TB 2.1 lượt LLM) | 2/3/19 · 1.71 | 26/34 | 27/27 | 3/6 | 0/24 |
 | A4 / test | 30/30 | 1 lượt: 21, 2 lượt: 6, 4 lượt: 3 (TB 2.23 lượt LLM) | 1/3/20 · 1.79 | 28/29 | 24/24 | 5/6 | 1/24 |
+| A0 / test2 | 30/30 | 1 lượt: 23, 2 lượt: 5, 4 lượt: 2 (TB 2.23 lượt LLM) | 4/2/18 · 1.58 | 27/29 | 24/24 | 6/6 | 2/24 |
+| A4 / test2 | 30/30 | 1 lượt: 23, 2 lượt: 3, 3 lượt: 2, 4 lượt: 2 (TB 2.27 lượt LLM) | 3/3/18 · 1.62 | 24/26 | 23/23 | 5/6 | 2/24 |
 
 Nhãn chấm (`reviews.json`) là của người chấm; "tự động" nghĩa là chỉ đếm hành vi từ chối từ trace, chưa chấm tay. Citation hợp lệ = citation có trong context **và** đọc thấy hỗ trợ ý được trích.
 
@@ -117,5 +122,24 @@ Nhãn chấm (`reviews.json`) là của người chấm; "tự động" nghĩa l
 
 **Kết luận phần nâng cao:** cấu hình chốt trên dev đạt **25/30 = 83,3%** trên test, **chưa đạt ngưỡng 90%** (cần ≥ 27/30) nên **không đủ điều kiện nhận 15 điểm bonus**; báo cáo trung thực theo ADVANCED.md, không chọn lại câu, không chỉnh theo test. Lỗi: multi-hop t17, t18, t20 (thiếu citation trang thứ hai hoặc lấy số dự báo 2027), t24 (từ chối nhầm), t27 (khẳng định thị phần GMV không có trong tài liệu). Nếu muốn thử lại phải sửa trên dev **và soạn bộ test mới** (RULES.md).
 
-- **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:** `results/agent/test/A4/` (traces, reviews có lý do từng câu, summary_labels); evidence từng câu trong `benchmark/questions.json`. Câu lỗi hệ thống/timeout tính không đạt và báo riêng (cột lỗi).
+### Lần thử thứ hai: bộ test mới (test2)
+
+Vì test gốc đã được dùng để đánh giá, theo RULES.md/ADVANCED.md tôi **soạn bộ test mới** `benchmark/questions_test2.json` (30 câu: bảng 6, ảnh/sơ đồ 5, biểu đồ 5, multi-hop 4, text 4, thiếu bằng chứng 6; không trùng câu hay evidence với dev/test; kiểm `match` với text layer, câu u06 là bảng vẽ nên kiểm bằng ảnh) và **commit trước khi sửa agent** (commit `ed00c3f`). Trên dev thử thêm **A5** = A4 + kiểm "đủ citation" bằng code (mọi con số lấy từ tài liệu phải nằm trong chunk được trích) + luật không thay chỉ tiêu gần nghĩa: dev **15/20 < A4 17/20** (d03 tụt; d12 vẫn lấy số Philippines — kiểm số không phân biệt được đối tượng) → **giữ A4** theo cùng tiêu chí, ghi vào `results/selection.json` (khóa `test2`) trước khi chạy test2. Chạy A0 và A4 trên test2 **đúng một lần**:
+
+| Nhóm test2 | A0 (baseline) | A4 (chốt trên dev) |
+|---|---|---|
+| Bảng | 4/6 | 6/6 |
+| Ảnh, sơ đồ | 3/5 | 4/5 |
+| Biểu đồ | 4/5 | 5/5 |
+| Multi-hop | 3/4 | 1/4 |
+| Text | 4/4 | 2/4 |
+| Thiếu bằng chứng | 6/6 | 5/6 |
+| **Toàn bộ** | **24/30 = 80.0%** | **23/30 = 76.7%** |
+| Grounded 0/1/2 · TB/2 | 4/2/18 · 1.58 | 3/3/18 · 1.62 |
+| Citation hợp lệ | 27/29 | 24/26 |
+| Từ chối đúng / từ chối nhầm | 6/6 · 2/24 | 5/6 · 2/24 |
+
+**Kết luận test2:** A4 **23/30 = 76,7%**, A0 **24/30 = 80,0%** — cả hai **dưới 90%**; **không đạt bonus**. Cải thiện trên dev (A0 13/20 → A4 17/20) **không khái quát** sang test mới: A4 mạnh hơn ở bảng/biểu đồ/ảnh (nhờ index V) nhưng **lặp lại đúng lỗi multi-hop** của test gốc — trả lời đúng mà chỉ trích trang đầu (u18, u19, u20; giống t17, t20) — và từ chối nhầm 2 câu text (u23, u24) do luật kiểm chứng làm model dè dặt. Baseline A0 trích đủ hai trang ở multi-hop (3/4) và từ chối đúng 6/6 nhưng sai ở bảng/sơ đồ (u01, u02 từ chối nhầm; u07, u16 sai đối tượng; u10 thêm số 1.204 không có trong tài liệu). Bài học: (1) dev 20 câu quá nhỏ để chọn giữa các cấu hình chênh 2–3 câu; (2) lỗi "trích một trang" là lỗi hệ thống của A2–A4 — luật kiểm trích dẫn khiến model gom citation về một chunk; nên kiểm "mỗi đối tượng/trang được hỏi có ít nhất một citation" ở mức tool thay vì prompt; (3) model nhỏ `gpt-4o-mini` dao động giữa các lần chạy (d03 đúng ở A4, sai ở A5).
+
+- **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:** test gốc `results/agent/test/A4/`, test2 `results/agent/test2/A0|A4/` (`label_test2.py` ghi lý do từng câu) (traces, reviews có lý do từng câu, summary_labels); evidence từng câu trong `benchmark/questions.json`. Câu lỗi hệ thống/timeout tính không đạt và báo riêng (cột lỗi).
 - **Giới hạn, cách tái lập và đường dẫn benchmark:** tái lập theo `README_DAY7.md` (Docker DB Day 6 → `visual_index` → `eval_retrieval` → `agent` → `review` → `build_report`). LLM có tính ngẫu nhiên nhỏ dù temperature 0; vision chỉ chạy một lần (output lưu ở `results/visual/extraction.jsonl` để tái dựng index V mà không gọi lại API: `python -m src.rag.visual_index --skip-extract`). Benchmark: `benchmark/questions.json`.
